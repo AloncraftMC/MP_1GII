@@ -1,0 +1,12 @@
+centralmedio: obj/central.o obj/circulo.o obj/punto.o
+	g++ -o bin/centralmedio obj/central.o obj/circulo.o obj/punto.o
+obj/central.o: src/central.cpp include/punto.h include/circulo.h
+	g++ -Iinclude -c src/central.cpp -o obj/central.o
+obj/punto.o: src/punto.cpp include/punto.h
+	g++ -Iinclude -c src/punto.cpp -o obj/punto.o
+obj/circulo.o: src/circulo.cpp include/circulo.h
+	g++ -Iinclude -c src/circulo.cpp -o obj/circulo.o
+clean:
+	rm -f bin/* obj/*.o
+
+  
