@@ -5,6 +5,7 @@
 ## Árbol de prácticas con archivos `.h` y `.cpp`
 
 ### Práctica 1: Modularización y compilación separada
+PDF: [Guión Práctica 1](PDFs/Práctica1_MP2526.pdf)
 
 #### Version1: Ejemplo básico `circulomedio`
 - [`circulomedio.cpp`](Práctica%201/Version1/circulomedio.cpp)
@@ -29,11 +30,13 @@
 - [`main.cpp`](Práctica%201/canciones/src/main.cpp)
 
 ### Práctica 2: Vectores, cadenas estilo C y matrices
+PDF: [Guión Práctica 2](PDFs/Práctica2_MP2425.pdf)
 - [`ejercicio1.cpp`](Práctica%202/ejercicio1.cpp)
 - [`ejercicio2.cpp`](Práctica%202/ejercicio2.cpp)
 - [`ejercicio3.cpp`](Práctica%202/ejercicio3.cpp)
 
 ### Práctica 3: Uso básico de punteros y matrices
+PDF: [Guión Práctica 3](PDFs/Practica3MP2526.pdf)
 - [`ejercicio1.cpp`](Práctica%203/ejercicio1.cpp)
 - [`ejercicio2.1.cpp`](Práctica%203/ejercicio2.1.cpp)
 - [`ejercicio2.2.cpp`](Práctica%203/ejercicio2.2.cpp)
@@ -41,6 +44,7 @@
 - [`ejercicio2.4.cpp`](Práctica%203/ejercicio2.4.cpp)
 
 ### Práctica 4: Memoria dinámica
+PDF: [Guión Práctica 4](PDFs/Practica4MP_2526.pdf)
 
 #### Parte 1: Operaciones básicas con memoria dinámica
 - [`ejercicio1.cpp`](Práctica%204/Parte%201/ejercicio1.cpp)
@@ -62,6 +66,7 @@
 - [`main.cpp`](Práctica%204/Parte%204/src/main.cpp)
 
 ### Práctica 5: Memoria dinámica II y estructuras dinámicas
+PDF: [Guión Práctica 5](PDFs/Practica5MP_2526.pdf)
 #### Parte 1: Tabla hash con listas enlazadas
 - [`TablaHash.h`](Práctica%205/Parte%201/include/TablaHash.h)
 - [`TablaHash.cpp`](Práctica%205/Parte%201/src/TablaHash.cpp)
