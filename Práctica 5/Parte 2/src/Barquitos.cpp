@@ -13,11 +13,8 @@ Barquitos::Barquitos(int filas, int columnas){
 
         this->tablero[i] = new int[columnas];
 
-        for(int j = 0; j < columnas; j++){
-
+        for(int j = 0; j < columnas; j++)
             this->tablero[i][j] = this->AGUA;
-            
-        }
 
     }
 
