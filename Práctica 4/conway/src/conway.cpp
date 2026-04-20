@@ -89,6 +89,13 @@ void GameOfLife::nextGeneration(){
 
     // Copio al tablero
 
+    for(int i = 0; i < rows; i++)   delete[] this->board[i];
+    
+    delete[] this->board;
+    this->board = aux;
+
+    /* Menos eficiente:
+
     for(int i = 0; i < rows; i++){
         
         for(int j = 0; j < cols; j++){
@@ -98,6 +105,8 @@ void GameOfLife::nextGeneration(){
         }
 
     }
+
+    */
 
     // Libero la memoria
 

@@ -8,7 +8,7 @@ inline int TablaHash::hash(int clave){ return clave % this->capacidad; }
 TablaHash::TablaHash(int capacidad){
 
     this->capacidad = capacidad;
-    this->tabla = new Nodo*[this->capacidad];
+    this->tabla = new Nodo*[capacidad];
     
     for(int i = 0; i < this->capacidad; i++)    // Al principio, la lista no tiene nodos (nullptr)
         this->tabla[i] = nullptr;
@@ -31,7 +31,7 @@ TablaHash::~TablaHash(){
 
     }
 
-    delete[] tabla; // Elimino la lista
+    delete[] this->tabla; // Elimino la lista
 
 }
 
@@ -44,8 +44,8 @@ void TablaHash::insertar(int clave){
 
     // Hago que el nuevo nodo sea el primero de la fila
 
-    nuevo->siguiente = tabla[indice];
-    tabla[indice] = nuevo;
+    nuevo->siguiente = this->tabla[indice];
+    this->tabla[indice] = nuevo;
 
 }
 
@@ -54,7 +54,7 @@ bool TablaHash::buscar(int clave){
     int indice = this->hash(clave);
     bool res = false;
 
-    Nodo* nodo = tabla[indice]; 
+    Nodo* nodo = this->tabla[indice]; 
 
     // Recorro la lista donde debería estar el elemento desde la raíz hasta la punta (nullptr)
 
@@ -73,7 +73,7 @@ bool TablaHash::eliminar(int clave){
 
     int indice = this->hash(clave);
 
-    Nodo* nodo = tabla[indice];
+    Nodo* nodo = this->tabla[indice];
     Nodo* anterior = nullptr;
 
     // Recorro la lista donde debería estar el elemento desde la raíz hasta la punta (nullptr)
@@ -83,7 +83,7 @@ bool TablaHash::eliminar(int clave){
         if(nodo->dato == clave){
 
             if(anterior == nullptr)
-                tabla[indice] = nodo->siguiente;    // Si es el primero de la fila
+                this->tabla[indice] = nodo->siguiente;    // Si es el primero de la fila
             else
                 anterior->siguiente = nodo->siguiente;  // Si no es el primero
 
