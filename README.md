@@ -77,3 +77,21 @@ PDF: [Guión Práctica 5](PDFs/Practica5MP_2526.pdf)
 - [`Barquitos.cpp`](Práctica%205/Parte%202/src/Barquitos.cpp)
 - [`main.cpp`](Práctica%205/Parte%202/src/main.cpp)
 
+### Proyecto Final:
+PDF: [Guión Proyecto Final Parte 1](PDFs/practica_final_mp_2526_parte1.pdf)
+
+#### Parte 1:
+- [`album.h`](Proyecto%20Final/Parte%201/include/album.h)
+- [`artist.h`](Proyecto%20Final/Parte%201/include/artist.h)
+- [`date.h`](Proyecto%20Final/Parte%201/include/date.h)
+- [`playlist.h`](Proyecto%20Final/Parte%201/include/playlist.h)
+- [`song.h`](Proyecto%20Final/Parte%201/include/song.h)
+- [`user.h`](Proyecto%20Final/Parte%201/include/user.h)
+- [`album.cpp`](Proyecto%20Final/Parte%201/src/album.cpp)
+- [`artist.cpp`](Proyecto%20Final/Parte%201/src/artist.cpp)
+- [`date.cpp`](Proyecto%20Final/Parte%201/src/date.cpp)
+- [`main.cpp`](Proyecto%20Final/Parte%201/src/main.cpp)
+- [`playlist.cpp`](Proyecto%20Final/Parte%201/src/playlist.cpp)
+- [`song.cpp`](Proyecto%20Final/Parte%201/src/song.cpp)
+- [`user.cpp`](Proyecto%20Final/Parte%201/src/user.cpp)
+
