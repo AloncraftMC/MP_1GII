@@ -34,12 +34,12 @@ class Playlist {
         Playlist(const Playlist& playlist) { this->pasteAttributes(playlist); }
         ~Playlist();
 
-        inline string getTitle() const          { return this->title; }
-        inline const User& getCreator() const   { return *this->creator; }
-        inline Date getCreationDate() const     { return this->creationDate; }
-        inline int getMaxSongs() const          { return this->max_songs; }
-        inline int getNumSongs() const          { return this->num_songs; }
-        inline PlaylistPrivacy getPrivacy()     { return this->privacy; }
+        inline string getTitle() const              { return this->title; }
+        inline const User& getCreator() const       { return *this->creator; }
+        inline Date getCreationDate() const         { return this->creationDate; }
+        inline int getMaxSongs() const              { return this->max_songs; }
+        inline int getNumSongs() const              { return this->num_songs; }
+        inline PlaylistPrivacy getPrivacy() const   { return this->privacy; }
 
         inline void setTitle(string title)              { this->title = title; }
         inline void setCreationDate(Date creationDate)  { this->creationDate = creationDate; }
@@ -48,10 +48,10 @@ class Playlist {
         bool addSong(Song* song, User* whoAddsIt);
         bool deleteSong(Song* song, User* whoRemovesIt);
 
-                 Playlist& operator= (const Playlist& playlist);
-                      bool operator==(const Playlist& playlist);
-        inline        bool operator!=(const Playlist& playlist) { return !(*this == playlist); }
-        inline const Song& operator[](int i) const              { return *this->songs[i]; }
+                     Playlist& operator= (const Playlist& playlist);
+        inline       bool      operator==(const Playlist& playlist) { return this->title == playlist.title && this->creator == playlist.creator; }
+        inline       bool      operator!=(const Playlist& playlist) { return !(*this == playlist); }
+        inline const Song&     operator[](int i) const              { return *this->songs[i]; }
 
 };
 

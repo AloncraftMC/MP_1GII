@@ -21,7 +21,7 @@ class Song {
         Song(string title, Genre genre, int duration);
 
         inline string getTitle() const  { return this->title; }
-        inline Genre getGenre() const   { return this->genre; }
+               string getGenre() const;
         inline int getDuration() const  { return this->duration; }
 
         inline void setTitle(string title)      { this->title = title; }
@@ -35,8 +35,6 @@ class Song {
         }
         inline bool operator!=(const Song& song) const { return !(*this == song); }
 
-        static string genreToString(Genre genre);
-
 };
 
 inline ostream& operator<<(ostream& flujo, const Song& song){
@@ -44,7 +42,7 @@ inline ostream& operator<<(ostream& flujo, const Song& song){
                  << song.getDuration() / 60 << ":"              // Minutos
                  << (song.getDuration() % 60 < 10 ? "0" : "")   // Mostrar 0 en decenas si seg < 10
                  << song.getDuration() % 60 << ") | "           // Segundos
-                 << Song::genreToString(song.getGenre());
+                 << song.getGenre();
 }
 
 #endif

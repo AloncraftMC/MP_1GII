@@ -43,7 +43,7 @@ inline ostream& operator<<(ostream& flujo, const Date& date){
     
     return flujo << (date.getDay() < 10 ? "0" : "")         // Mostrar 0 si d < 10
                  << date.getDay() << "/"                    // Día (-> dd)
-                 << (date.getDay() < 10 ? "0" : "")         // Mostrar 0 si m < 10
+                 << (date.getMonth() < 10 ? "0" : "")         // Mostrar 0 si m < 10
                  << date.getMonth() << "/"                  // Mes (-> mm)
                  << (date.getYear() < 10 ? "0" : "")        // Mostrar 0 si y < 10
                  << (date.getYear() < 100 ? "0" : "")       // Mostrar 0 si y < 100

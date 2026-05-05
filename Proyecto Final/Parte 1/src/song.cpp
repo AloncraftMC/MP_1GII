@@ -1,8 +1,23 @@
 #include "song.h"
 
-string Song::genreToString(Genre genre) {
+Song::Song(){
 
-    switch(genre){
+    this->title = "New song";
+    this->duration = 0;
+
+}
+
+Song::Song(string title, Genre genre, int duration){
+
+    this->title = title;
+    this->genre = genre;
+    this->duration = duration;
+
+}
+
+string Song::getGenre() const {
+
+    switch(this->genre){
         case POP:           return "Pop";
         case ROCK:          return "Rock";
         case HIPHOP:        return "Hiphop";
@@ -16,20 +31,5 @@ string Song::genreToString(Genre genre) {
         case METAL:         return "Metal";
         default:            return "Unknown";
     }
-
-}
-
-Song::Song(){
-
-    this->title = "Nueva canción";
-    this->duration = 0;
-
-}
-
-Song::Song(string title, Genre genre, int duration){
-
-    this->title = title;
-    this->genre = genre;
-    this->duration = duration;
 
 }

@@ -13,7 +13,7 @@ class Artist {
 
     public:
 
-        Artist() { this->name = "Nuevo artista"; }
+        Artist() { this->name = "New artist"; }
         Artist(string name) { this->name = name; }
 
         inline string getName() const { return this->name; }

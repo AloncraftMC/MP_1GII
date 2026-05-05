@@ -15,7 +15,7 @@ void Playlist::pasteAttributes(const Playlist& playlist){
     this->creationDate = playlist.creationDate;
     this->max_songs = playlist.max_songs;
     this->num_songs = playlist.num_songs;
-    this->songs = new Song*[playlist.num_songs];
+    this->songs = new Song*[playlist.max_songs];
 
     for(int i = 0; i < playlist.num_songs; i++)
         this->songs[i] = playlist.songs[i];
@@ -26,7 +26,7 @@ void Playlist::pasteAttributes(const Playlist& playlist){
 
 Playlist::Playlist(){
 
-    this->title = "Nueva lista de reproducción";
+    this->title = "New playlist";
     this->creator = new User();
     this->creationDate = Date();
     this->init();
@@ -76,7 +76,7 @@ bool Playlist::addSong(Song* song, User* whoAddsIt){
 
     // Añadir el nuevo elemento
 
-    this->songs[num_songs] = song;
+    this->songs[this->num_songs] = song;
     this->num_songs++;
 
     return true;
@@ -103,10 +103,10 @@ bool Playlist::deleteSong(Song* song, User* whoRemovesIt){
 
     // Eliminar el último elemento
 
-    this->songs[num_songs - 1] = nullptr;
+    this->songs[this->num_songs - 1] = nullptr;
     this->num_songs--;
 
-    // Reducir si se queda a menos de la mitad
+    // Reducir si se queda a menos de la mitad del máximo
 
     if(this->num_songs < this->max_songs / 2){
 
@@ -142,8 +142,8 @@ Playlist& Playlist::operator=(const Playlist& playlist){
 ostream& operator<<(ostream& flujo, const Playlist& playlist){
 
     flujo << playlist.getTitle() << " | "
-          << playlist.getNumSongs() << " canciones" << endl << "Creada por "
-          << playlist.getCreator().getName() << " el "
+          << playlist.getNumSongs() << " songs" << endl << "Created by "
+          << playlist.getCreator().getName() << " on "
           << playlist.getCreationDate() << endl;
 
     for(int i = 0; i < playlist.getNumSongs(); i++)

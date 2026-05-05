@@ -15,7 +15,7 @@ void Album::pasteAttributes(const Album& album){
 
 Album::Album(){
 
-    this->title = "Nuevo álbum";
+    this->title = "New album";
     this->artist = new Artist();
     this->releaseDate = Date();
     this->num_songs = 0;
@@ -23,13 +23,25 @@ Album::Album(){
 
 }
 
-Album::Album(string title, Artist* artist, Date releaseDate, int num_songs, Song** songs){
+Album::Album(string title, Artist* artist, Date releaseDate, Song** songs, int num_songs){
 
     this->title = title;
     this->artist = artist;
     this->releaseDate = releaseDate;
     this->num_songs = num_songs;
-    this->songs = songs;
+    
+    if(num_songs > 0){
+
+        this->songs = new Song*[num_songs];
+        
+        for(int i = 0; i < num_songs; i++)
+            this->songs[i] = songs[i];
+
+    }else{
+        
+        this->songs = nullptr;
+
+    }
 
 }
 
@@ -47,7 +59,19 @@ void Album::setNewSongs(int num_songs, Song** songs){
     this->num_songs = num_songs;
 
     delete[] this->songs;
-    this->songs = songs;
+    
+    if(num_songs > 0){
+
+        this->songs = new Song*[num_songs];
+
+        for(int i = 0; i < num_songs; i++)
+            this->songs[i] = songs[i];
+
+    }else{
+
+        this->songs = nullptr;
+
+    }
 
 }
 
@@ -69,7 +93,7 @@ ostream& operator<<(ostream& flujo, const Album& album){
     flujo << album.getTitle() << " - "
           << album.getArtist() << " ("
           << album.getReleaseDate() << ")" << endl << "["
-          << album.getNumSongs() << " canciones]" << endl;
+          << album.getNumSongs() << " songs]" << endl;
 
     for(int i = 0; i < album.getNumSongs(); i++)
         flujo << i + 1 << ". " << album[i] << endl;

@@ -23,7 +23,7 @@ class Album {
     public:
 
         Album();
-        Album(string title, Artist* artist, Date releaseDate, int num_songs, Song** songs);
+        Album(string title, Artist* artist, Date releaseDate, Song** songs, int num_songs);
         Album(const Album& album) { this->pasteAttributes(album); }
         ~Album();
 
@@ -37,8 +37,8 @@ class Album {
         inline void setReleaseDate(Date releaseDate)    { this->releaseDate = releaseDate; }
                void setNewSongs(int num_songs, Song** songs);
 
-                    Album& operator=(const Album& album);
-        inline const Song& operator[](int i) const { return *this->songs[i]; }
+                     Album& operator= (const Album& album);
+        inline const Song&  operator[](int i) const { return *this->songs[i]; }
 
 };
 
