@@ -30,7 +30,7 @@ Playlist::Playlist(){
     this->creator = new User();
     this->creationDate = Date();
     this->init();
-    this->privacy = PUBLIC;
+    this->privacy = PlaylistPrivacy::PUBLIC;
 
 }
 

@@ -43,7 +43,7 @@ User::User(){
     this->name = "New user";
     this->email = "user@example.com";
     this->birthdate = Date();
-    this->gender = OTHER;
+    this->gender = Gender::OTHER;
     this->init();
 
 }
@@ -60,6 +60,8 @@ User::User(string name, string email, Date birthdate, Gender gender){
 
 User::~User(){
 
+    // Eliminar sólo las playlists privadas 
+
     for(int i = 0; i < this->num_playlists; i++)
         if(this->playlists[i]->getPrivacy() == PlaylistPrivacy::PRIVATE)
             delete this->playlists[i];
@@ -75,10 +77,10 @@ User::~User(){
 string User::getGender() const {
 
     switch(gender){
-        case FEMALE:    return "Female";
-        case MALE:      return "Male";
-        case OTHER:     return "Other";
-        default:        return "Unknown";
+        case Gender::FEMALE:    return "Female";
+        case Gender::MALE:      return "Male";
+        case Gender::OTHER:     return "Other";
+        default:                return "Unknown";
     }
 
 }

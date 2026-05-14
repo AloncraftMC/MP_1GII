@@ -18,18 +18,18 @@ Song::Song(string title, Genre genre, int duration){
 string Song::getGenre() const {
 
     switch(this->genre){
-        case POP:           return "Pop";
-        case ROCK:          return "Rock";
-        case HIPHOP:        return "Hiphop";
-        case COUNTRY:       return "Country";
-        case JAZZ:          return "Jazz";
-        case BLUES:         return "Blues";
-        case ELECTRONIC:    return "Electronic";
-        case REGGAE:        return "Reggae";
-        case CLASSICAL:     return "Classical";
-        case FOLK:          return "Folk";
-        case METAL:         return "Metal";
-        default:            return "Unknown";
+        case Genre::POP:            return "Pop";
+        case Genre::ROCK:           return "Rock";
+        case Genre::HIPHOP:         return "Hiphop";
+        case Genre::COUNTRY:        return "Country";
+        case Genre::JAZZ:           return "Jazz";
+        case Genre::BLUES:          return "Blues";
+        case Genre::ELECTRONIC:     return "Electronic";
+        case Genre::REGGAE:         return "Reggae";
+        case Genre::CLASSICAL:      return "Classical";
+        case Genre::FOLK:           return "Folk";
+        case Genre::METAL:          return "Metal";
+        default:                    return "Unknown";
     }
 
 }

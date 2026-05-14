@@ -42,13 +42,13 @@ class Date {
 inline ostream& operator<<(ostream& flujo, const Date& date){
     
     return flujo << (date.getDay() < 10 ? "0" : "")         // Mostrar 0 si d < 10
-                 << date.getDay() << "/"                    // Día (-> dd)
-                 << (date.getMonth() < 10 ? "0" : "")         // Mostrar 0 si m < 10
-                 << date.getMonth() << "/"                  // Mes (-> mm)
+                 <<  date.getDay() << "/"                   // Día (-> dd)
+                 << (date.getMonth() < 10 ? "0" : "")       // Mostrar 0 si m < 10
+                 <<  date.getMonth() << "/"                 // Mes (-> mm)
                  << (date.getYear() < 10 ? "0" : "")        // Mostrar 0 si y < 10
                  << (date.getYear() < 100 ? "0" : "")       // Mostrar 0 si y < 100
                  << (date.getYear() < 1000 ? "0" : "")      // Mostrar 0 si y < 1000
-                 << date.getYear();                         // Año (-> yyyy)
+                 <<  date.getYear();                        // Año (-> yyyy)
 
 }
 
