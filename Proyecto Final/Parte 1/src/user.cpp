@@ -60,6 +60,10 @@ User::User(string name, string email, Date birthdate, Gender gender){
 
 User::~User(){
 
+    for(int i = 0; i < this->num_playlists; i++)
+        if(this->playlists[i]->getPrivacy() == PlaylistPrivacy::PRIVATE)
+            delete this->playlists[i];
+
     delete[] this->saved_songs;
     delete[] this->playlists;
 
