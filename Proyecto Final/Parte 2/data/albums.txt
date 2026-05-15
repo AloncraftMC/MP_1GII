@@ -1,0 +1,30 @@
+Discovery;2001/03/12;Daft Punk;4;One More Time;Aerodynamic;Digital Love;Harder Better Faster Stronger
+Back in Black;1980/07/25;AC/DC;4;Hells Bells;Shoot to Thrill;Back in Black;You Shook Me All Night Long
+Thriller;1982/11/30;Michael Jackson;4;Wanna Be Startin' Somethin';Thriller;Beat It;Billie Jean
+The Dark Side of the Moon;1973/03/01;Pink Floyd;4;Time;Money;Us and Them;Brain Damage
+Rumours;1977/02/04;Fleetwood Mac;4;Second Hand News;Dreams;Never Going Back Again;Don't Stop
+A Night at the Opera;1975/11/21;Queen;4;Death on Two Legs;Lazing on a Sunday Afternoon;Seaside Rendezvous;Bohemian Rhapsody
+Master of Puppets;1986/03/03;Metallica;4;Battery;Master of Puppets;The Thing That Should Not Be;Welcome Home
+Kind of Blue;1959/08/17;Miles Davis;4;So What;Freddie Freeloader;Blue in Green;All Blues
+Abbey Road;1969/09/26;The Beatles;4;Come Together;Something;Maxwell's Silver Hammer;Oh! Darling
+Future Nostalgia;2020/03/27;Dua Lipa;4;Future Nostalgia;Don't Start Now;Levitating;Love Again
+Motomami;2022/03/18;Rosalía;4;Saoko;Candy;La Fama;Chicken Teriyaki
+Random Access Memories;2013/05/17;Daft Punk;3;Give Life Back to Music;Giorgio by Moroder;Get Lucky
+Legend;1984/05/08;Bob Marley;3;Is This Love;No Woman No Cry;Could You Be Loved
+Un Verano Sin Ti;2022/05/06;Bad Bunny;3;Moscow Mule;Me Porto Bonito;Titi Me Pregunto
+Appetite for Destruction;1987/07/21;Guns N' Roses;3;Welcome to the Jungle;It is So Easy;Nightrain
+Nevermind;1991/09/24;Nirvana;3;Smells Like Teen Spirit;Come as You Are;Lithium
+OK Computer;1997/06/16;Radiohead;3;Paranoid Android;Karma Police;No Surprises
+Sgt. Pepper's Lonely Hearts Club Band;1967/06/01;The Beatles;3;Lucy in the Sky with Diamonds;With a Little Help from My Friends;A Day in the Life
+Wish You Were Here;1975/09/12;Pink Floyd;3;Shine On You Crazy Diamond;Wish You Were Here;Have a Cigar
+Bad;1987/08/31;Michael Jackson;3;Bad;Man in the Mirror;Smooth Criminal
+Lemonade;2016/04/23;Beyoncé;3;Hold Up;Formation;Sorry
+DAMN.;2017/04/14;Kendrick Lamar;3;DNA.;HUMBLE.;LOVE.
+1989;2014/10/27;Taylor Swift;3;Blank Space;Shake It Off;Style
+21;2011/01/24;Adele;3;Rolling in the Deep;Someone Like You;Set Fire to the Rain
+The Black Album;1991/08/12;Metallica;3;Enter Sandman;Nothing Else Matters;The Unforgiven
+AM;2013/09/09;Arctic Monkeys;3;Do I Wanna Know?;R U Mine?;Arabella
+After Hours;2020/03/20;The Weeknd;3;Blinding Lights;Save Your Tears;After Hours
+Definitely Maybe;1994/08/29;Oasis;3;Live Forever;Supersonic;Cigarettes & Alcohol
+The Joshua Tree;1987/03/09;U2;3;With or Without You;Where the Streets Have No Name;I Still Haven't Found What I'm Looking For
+The Rise and Fall of Ziggy Stardust;1972/06/16;David Bowie;3;Starman;Suffragette City;Rock 'n' Roll Suicide

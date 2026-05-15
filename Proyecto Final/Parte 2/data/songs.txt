@@ -1,0 +1,101 @@
+One More Time;ELECTRONIC;211;Discovery
+Aerodynamic;ELECTRONIC;288;Discovery
+Digital Love;ELECTRONIC;399;Discovery
+Harder Better Faster Stronger;ELECTRONIC;156;Discovery
+Hells Bells;ROCK;477;Back in Black
+Shoot to Thrill;ROCK;336;Back in Black
+Back in Black;ROCK;394;Back in Black
+You Shook Me All Night Long;ROCK;425;Back in Black
+Wanna Be Startin' Somethin';POP;128;Thriller
+Thriller;POP;314;Thriller
+Beat It;POP;449;Thriller
+Billie Jean;POP;249;Thriller
+Time;ROCK;466;The Dark Side of the Moon
+Money;ROCK;329;The Dark Side of the Moon
+Us and Them;ROCK;322;The Dark Side of the Moon
+Brain Damage;ROCK;340;The Dark Side of the Moon
+Second Hand News;ROCK;371;Rumours
+Dreams;ROCK;331;Rumours
+Never Going Back Again;ROCK;434;Rumours
+Don't Stop;ROCK;319;Rumours
+Death on Two Legs;ROCK;236;A Night at the Opera
+Lazing on a Sunday Afternoon;ROCK;183;A Night at the Opera
+Seaside Rendezvous;ROCK;342;A Night at the Opera
+Bohemian Rhapsody;ROCK;480;A Night at the Opera
+Battery;METAL;207;Master of Puppets
+Master of Puppets;METAL;445;Master of Puppets
+The Thing That Should Not Be;METAL;294;Master of Puppets
+Welcome Home;METAL;363;Master of Puppets
+So What;JAZZ;286;Kind of Blue
+Freddie Freeloader;JAZZ;318;Kind of Blue
+Blue in Green;JAZZ;133;Kind of Blue
+All Blues;JAZZ;146;Kind of Blue
+Come Together;ROCK;304;Abbey Road
+Something;ROCK;293;Abbey Road
+Maxwell's Silver Hammer;ROCK;293;Abbey Road
+Oh! Darling;ROCK;276;Abbey Road
+Future Nostalgia;POP;465;Future Nostalgia
+Don't Start Now;POP;434;Future Nostalgia
+Levitating;POP;366;Future Nostalgia
+Love Again;POP;373;Future Nostalgia
+Saoko;POP;241;Motomami
+Candy;POP;345;Motomami
+La Fama;POP;249;Motomami
+Chicken Teriyaki;POP;352;Motomami
+Give Life Back to Music;ELECTRONIC;401;Random Access Memories
+Giorgio by Moroder;ELECTRONIC;226;Random Access Memories
+Get Lucky;ELECTRONIC;471;Random Access Memories
+Is This Love;REGGAE;366;Legend
+No Woman No Cry;REGGAE;353;Legend
+Could You Be Loved;REGGAE;184;Legend
+Moscow Mule;HIPHOP;153;Un Verano Sin Ti
+Me Porto Bonito;HIPHOP;436;Un Verano Sin Ti
+Titi Me Pregunto;HIPHOP;251;Un Verano Sin Ti
+Welcome to the Jungle;ROCK;357;Appetite for Destruction
+It is So Easy;ROCK;354;Appetite for Destruction
+Nightrain;ROCK;193;Appetite for Destruction
+Smells Like Teen Spirit;ROCK;208;Nevermind
+Come as You Are;ROCK;195;Nevermind
+Lithium;ROCK;325;Nevermind
+Paranoid Android;ROCK;253;OK Computer
+Karma Police;ROCK;173;OK Computer
+No Surprises;ROCK;226;OK Computer
+Lucy in the Sky with Diamonds;ROCK;465;Sgt. Pepper's Lonely Hearts Club Band
+With a Little Help from My Friends;ROCK;425;Sgt. Pepper's Lonely Hearts Club Band
+A Day in the Life;ROCK;181;Sgt. Pepper's Lonely Hearts Club Band
+Shine On You Crazy Diamond;ROCK;405;Wish You Were Here
+Wish You Were Here;ROCK;383;Wish You Were Here
+Have a Cigar;ROCK;213;Wish You Were Here
+Bad;POP;315;Bad
+Man in the Mirror;POP;429;Bad
+Smooth Criminal;POP;215;Bad
+Hold Up;POP;401;Lemonade
+Formation;POP;170;Lemonade
+Sorry;POP;193;Lemonade
+DNA.;HIPHOP;378;DAMN.
+HUMBLE.;HIPHOP;385;DAMN.
+LOVE.;HIPHOP;292;DAMN.
+Blank Space;POP;143;1989
+Shake It Off;POP;435;1989
+Style;POP;402;1989
+Rolling in the Deep;POP;340;21
+Someone Like You;POP;381;21
+Set Fire to the Rain;POP;371;21
+Enter Sandman;METAL;278;The Black Album
+Nothing Else Matters;METAL;223;The Black Album
+The Unforgiven;METAL;445;The Black Album
+Do I Wanna Know?;ROCK;432;AM
+R U Mine?;ROCK;166;AM
+Arabella;ROCK;467;AM
+Blinding Lights;POP;337;After Hours
+Save Your Tears;POP;210;After Hours
+After Hours;POP;402;After Hours
+Live Forever;ROCK;245;Definitely Maybe
+Supersonic;ROCK;454;Definitely Maybe
+Cigarettes & Alcohol;ROCK;142;Definitely Maybe
+With or Without You;ROCK;414;The Joshua Tree
+Where the Streets Have No Name;ROCK;440;The Joshua Tree
+I Still Haven't Found What I'm Looking For;ROCK;352;The Joshua Tree
+Starman;ROCK;469;The Rise and Fall of Ziggy Stardust
+Suffragette City;ROCK;152;The Rise and Fall of Ziggy Stardust
+Rock 'n' Roll Suicide;ROCK;335;The Rise and Fall of Ziggy Stardust

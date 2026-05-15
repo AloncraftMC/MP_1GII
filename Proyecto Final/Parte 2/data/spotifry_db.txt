@@ -1,0 +1,21 @@
+USER;alice.j@mail.com;Thriller|Saoko|Time|One More Time|Digital Love|Starman|Billie Jean|Hells Bells
+PLAYLIST;Rock Classics;bob.smith@provider.net;2024/05/10;PUBLIC;Back in Black|Hells Bells|Shoot to Thrill|Thunderstruck|Bohemian Rhapsody;alice.j@mail.com|charlie.b@music.org|diana.p@wonder.com|ethan.h@mission.es
+USER;bob.smith@provider.net;Back in Black|Thunderstruck|Hells Bells|Shoot to Thrill
+PLAYLIST;Daft Punk Essentials;alice.j@mail.com;2023/11/15;PUBLIC;One More Time|Aerodynamic|Digital Love|Harder Better Faster Stronger;bob.smith@provider.net|fiona.g@southside.com
+USER;charlie.b@music.org;Thriller|Billie Jean|Bad|Smooth Criminal|Man in the Mirror
+PLAYLIST;Gym Mix;charlie.b@music.org;2025/01/20;PRIVATE;Saoko|Motomami|Bizcochito|Despechá;
+USER;diana.p@wonder.com;Starman|Life on Mars?|Heroes|Space Oddity
+PLAYLIST;Bowie Greatest;diana.p@wonder.com;2022/03/12;PUBLIC;Starman|Space Oddity|Life on Mars?|Heroes|Changes|Modern Love;alice.j@mail.com|bob.smith@provider.net|g.miller@cinema.net
+USER;ethan.h@mission.es;One More Time|Digital Love
+USER;fiona.g@southside.com;Hells Bells|Back in Black|Shoot to Thrill
+PLAYLIST;Empty List;fiona.g@southside.com;2024/12/25;PUBLIC;;
+USER;g.miller@cinema.net;
+USER;h.abbott@hogwarts.edu;Thriller|Bad|Billie Jean|Smooth Criminal|Black or White|Earth Song|Heal the World|You Are Not Alone|Remember the Time
+USER;ian.c@division.uk;Time|Money|Us and Them|Brain Damage|Eclipse
+PLAYLIST;Pink Floyd Deep;ian.c@division.uk;2021/08/30;PUBLIC;Time|Money|Us and Them|Brain Damage|Eclipse;h.abbott@hogwarts.edu|julia.r@hollywood.com
+USER;julia.r@hollywood.com;One More Time|Aerodynamic
+USER;kevin.p@tameimpala.com;
+USER;lana.dr@honeymoon.com;Saoko|Bizcochito
+USER;miles.d@jazz.org;Starman|Heroes
+USER;nina.s@soul.com;Time|Money
+USER;oscar.i@acting.com;Thriller|Bad
