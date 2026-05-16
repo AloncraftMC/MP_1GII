@@ -1,0 +1,5 @@
+<map id="UserList::addUser" name="UserList::addUser">
+<area shape="rect" id="Node000001" title="Añade un usuario a la lista de usuarios si no se ha alcanzado el límite máximo de usuarios." alt="" coords="189,5,327,31"/>
+<area shape="rect" id="Node000002" href="$classUserList.html#af8ff6d909af4608a32665d537d4d5982" title="Constructor con parámetros." alt="" coords="5,5,141,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,21,142,21,142,15,175,15"/>
+</map>

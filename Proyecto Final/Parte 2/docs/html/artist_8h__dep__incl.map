@@ -1,0 +1,32 @@
+<map id="include/artist.h" name="include/artist.h">
+<area shape="rect" id="Node000001" title="Declaración de la clase Artist." alt="" coords="186,5,305,31"/>
+<area shape="rect" id="Node000002" href="$album_8h.html" title="Declaración de la clase Album." alt="" coords="131,79,258,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,44,205,80,201,77,227,41"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html" title=" " alt="" coords="142,372,247,397"/>
+<area shape="poly" id="edge17_Node000001_Node000006" title=" " alt="" coords="173,34,117,50,64,76,41,93,24,113,12,137,8,164,8,239,12,265,23,287,39,307,60,324,108,352,154,370,152,374,105,356,57,329,36,311,18,290,7,266,3,240,3,163,7,135,19,110,38,89,61,72,115,45,171,29"/>
+<area shape="rect" id="Node000011" href="$artistlist_8h.html" title="Declaración de la clase ArtistList." alt="" coords="499,152,637,177"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="262,41,288,73,323,102,366,123,411,138,499,155,498,160,410,143,364,128,320,106,284,77,258,44"/>
+<area shape="rect" id="Node000013" href="$artist_8cpp.html" title="Implementación de la clase Artist." alt="" coords="333,79,440,104"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="281,34,365,76,362,81,279,39"/>
+<area shape="rect" id="Node000003" href="$albumlist_8h.html" title="Declaración de la clase AlbumList." alt="" coords="283,152,429,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="234,107,331,149,329,154,232,112"/>
+<area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="197,118,197,372,192,372,192,118"/>
+<area shape="rect" id="Node000010" href="$album_8cpp.html" title="Implementación de la clase Album." alt="" coords="43,152,157,177"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="170,114,117,154,114,150,167,110"/>
+<area shape="rect" id="Node000004" href="$songlist_8h.html" title="Declaración de la clase SongList." alt="" coords="232,225,368,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="340,190,311,227,307,224,336,187"/>
+<area shape="rect" id="Node000005" href="$spotifry_8h.html" title="Declaración de la clase Spotifry." alt="" coords="379,299,512,324"/>
+<area shape="poly" id="edge8_Node000003_Node000005" title=" " alt="" coords="373,188,440,297,436,300,368,191"/>
+<area shape="rect" id="Node000009" href="$albumlist_8cpp.html" title="Implementación de la clase AlbumList." alt="" coords="443,225,576,251"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="394,181,485,223,483,228,392,185"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="337,254,423,296,420,301,334,259"/>
+<area shape="rect" id="Node000008" href="$songlist_8cpp.html" title="Implementación de la clase SongList." alt="" coords="232,299,355,324"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="300,265,297,299,292,298,295,264"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="393,330,236,374,235,369,391,325"/>
+<area shape="rect" id="Node000007" href="$spotifry_8cpp.html" title="Implementación de la clase Spotifry." alt="" coords="385,372,505,397"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="448,338,448,372,443,372,443,338"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="652,176,695,187,730,202,743,212,750,224,750,238,742,252,727,265,704,276,645,292,577,302,512,309,512,303,576,297,644,286,703,271,724,260,738,249,745,236,745,226,739,216,728,207,693,192,651,181"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="552,190,521,227,517,224,548,186"/>
+<area shape="rect" id="Node000012" href="$artistlist_8cpp.html" title="Implementación de la clase ArtistList." alt="" coords="601,225,727,251"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="596,183,650,223,647,227,593,188"/>
+</map>

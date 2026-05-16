@@ -1,0 +1,68 @@
+\doxysection{song.\+h}
+\hypertarget{song_8h_source}{}\label{song_8h_source}\index{include/song.h@{include/song.h}}
+\mbox{\hyperlink{song_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ SONG\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ SONG\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}}\ \{\mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbda061dcf4785583d8653942f2d252174fa}{POP}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbdab39e373af8c527684a4f0ded36bd961c}{ROCK}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbdae27c9473c8c14378f2d12362b2bf2052}{HIPHOP}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbdae31c1f26ef014d7770d29bff6bf3347d}{COUNTRY}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbdabe6f1fd008b7070f5611e08345f569d4}{JAZZ}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbda740d9b7cfa15179d19256d186cdc6e60}{BLUES}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbda7e04401310218f44073c2acb7d7011a0}{ELECTRONIC}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbda0b5df8a848785c03840cb3848b770d96}{REGGAE}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbda648824b3676352bfab53d9bcf217389d}{CLASSICAL}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbda030b84a0871fd45baaf8f8c1b2b8c79d}{FOLK}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbda1d94993b8bf3e32473e513152cfa1c68}{METAL}},\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbda6ce26a62afab55d7606ad4e92428b30c}{UNKNOWN}}\};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSong}{Song}}\ \{}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ title;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}}\ genre;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ duration;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORES}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSong_a1a73ff262627ce78860ec622859cf249}{Song}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSong_a1a73ff262627ce78860ec622859cf249}{Song}}(\textcolor{keywordtype}{string}\ title,\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}}\ genre,\ \textcolor{keywordtype}{int}\ duration);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classSong_a925af949926d58af4a28daa9ad2f993e}{getTitle}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>title;\ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classSong_ac84072062021a880613034b02f74c301}{getGenre}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSong_ae305917a759e91936bce1faf4afae886}{getDuration}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>duration;\ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ SETTERS}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSong_a30bb726054ffa3e8fbb9cad8bc7046b9}{setTitle}}(\textcolor{keywordtype}{string}\ title)\ \{\ this-\/>title\ =\ title;\ \}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSong_a9d45409c11d44028fee72b7a2e8e5896}{setGenre}}(\mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}}\ genre)\ \{\ this-\/>genre\ =\ genre;\ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSong_a3d93e209dfd59ae1feffdb0dd3d2cfcd}{setDuration}}(\textcolor{keywordtype}{int}\ duration)\ \{\ this-\/>duration\ =\ duration;\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ SOBRECARGAS\ DE\ OPERADORES}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSong_a68776e6de690a66a96eca549cd3e67e5}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSong}{Song}}\&\ song)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>title\ ==\ song.title\ \&\&}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>genre\ ==\ song.genre\ \&\&}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>duration\ ==\ song.duration;}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSong_adaaaeba4a43b5497a8a325959a9f7c8f}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSong}{Song}}\&\ song)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ ==\ song);\ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00115\ \textcolor{keyword}{inline}\ ostream\&\ \mbox{\hyperlink{song_8h_a71fbb621095556441f5bd36d4ab15c81}{operator<<}}(ostream\&\ flujo,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classSong}{Song}}\&\ song)\{}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordflow}{return}\ flujo\ <<\ \ song.\mbox{\hyperlink{classSong_a925af949926d58af4a28daa9ad2f993e}{getTitle}}()\ <<\ \textcolor{stringliteral}{"{}\ ("{}}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \ song.\mbox{\hyperlink{classSong_ae305917a759e91936bce1faf4afae886}{getDuration}}()\ /\ 60\ <<\ \textcolor{stringliteral}{"{}:"{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Minutos}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ (song.\mbox{\hyperlink{classSong_ae305917a759e91936bce1faf4afae886}{getDuration}}()\ \%\ 60\ <\ 10\ ?\ \textcolor{stringliteral}{"{}0"{}}\ :\ \textcolor{stringliteral}{"{}"{}})\ \ \ \textcolor{comment}{//\ Mostrar\ 0\ en\ decenas\ si\ seg\ <\ 10}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \ song.\mbox{\hyperlink{classSong_ae305917a759e91936bce1faf4afae886}{getDuration}}()\ \%\ 60\ <<\ \textcolor{stringliteral}{"{})\ |\ "{}}\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Segundos}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \ song.\mbox{\hyperlink{classSong_ac84072062021a880613034b02f74c301}{getGenre}}();}
+\DoxyCodeLine{00121\ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,50 @@
+\doxysection{albumlist.\+h}
+\hypertarget{albumlist_8h_source}{}\label{albumlist_8h_source}\index{include/albumlist.h@{include/albumlist.h}}
+\mbox{\hyperlink{albumlist_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ ALBUMLIST\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ ALBUMLIST\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{album_8h}{album.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{albumlist_8h_a8da7860c6703e1286bb8d0f86c71117c}{MAX\_ALBUMS}}\ =\ 1000;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSongList}{SongList}};}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classArtistList}{ArtistList}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAlbumList}{AlbumList}}\{}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ current\_size;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAlbum}{Album}}*\ list[\mbox{\hyperlink{albumlist_8h_a8da7860c6703e1286bb8d0f86c71117c}{MAX\_ALBUMS}}];\ \ \ \ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR\ Y\ DESTRUCTOR}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAlbumList}{AlbumList}}(\textcolor{keywordtype}{string}\ file\_path,\ \mbox{\hyperlink{classArtistList}{ArtistList}}\&\ artistList,\ \mbox{\hyperlink{classSongList}{SongList}}\&\ songList);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAlbumList_ab273a421a67952cb889fff6aad146de6}{\string~AlbumList}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classAlbumList_a029bdd97ecd363f2bc5b7b77f5d7d938}{getCurrentSize}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>current\_size;\ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classAlbum}{Album}}*\ \mbox{\hyperlink{classAlbumList_aece98eb6281e3d8fcfcae42a968788a4}{getAlbumById}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>list[id];\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ OTROS\ MÉTODOS}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classAlbumList_a9acd4d13e86aaae978cd090f834e21a9}{dump}}(\textcolor{keywordtype}{string}\ file\_path);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAlbumList_a99fa794c7f816491b536f879685a8a04}{printAlbum}}(\textcolor{keywordtype}{string}\ title)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

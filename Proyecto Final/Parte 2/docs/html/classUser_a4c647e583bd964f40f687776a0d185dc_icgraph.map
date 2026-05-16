@@ -1,0 +1,5 @@
+<map id="User::getEmail" name="User::getEmail">
+<area shape="rect" id="Node000001" title="Obtiene el correo electrónico del usuario." alt="" coords="152,5,271,31"/>
+<area shape="rect" id="Node000002" href="$user_8h.html#a4beffcafdd2fa80a301f67238176d9ad" title="Sobrecarga del operador de inserción." alt="" coords="5,5,104,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,21,104,21,104,15,138,15"/>
+</map>

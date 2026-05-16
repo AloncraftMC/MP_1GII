@@ -1,0 +1,17 @@
+<map id="Album::getTitle" name="Album::getTitle">
+<area shape="rect" id="Node000001" title="Obtiene el título del álbum." alt="" coords="408,80,531,105"/>
+<area shape="rect" id="Node000002" href="$classSongList.html#aead7f865a0c47db9a0ea47d29a483d64" title="Añade una nueva canción a la lista." alt="" coords="206,153,347,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="432,114,361,144,326,156,325,151,359,140,430,109"/>
+<area shape="rect" id="Node000005" href="$classAlbumList.html#a9acd4d13e86aaae978cd090f834e21a9" title="Guarda la lista de álbumes en un archivo .txt." alt="" coords="211,5,343,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="430,76,359,44,325,33,327,28,361,40,433,71"/>
+<area shape="rect" id="Node000006" href="$album_8cpp.html#a075843d3817d4532f7296e6394440fa5" title="Sobrecarga del operador de inserción para imprimir un álbum." alt="" coords="227,104,326,129"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="395,105,327,113,326,108,394,99"/>
+<area shape="rect" id="Node000007" href="$classAlbumList.html#a99fa794c7f816491b536f879685a8a04" title="Imprime la información de un álbum dado su título." alt="" coords="193,55,360,80"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="394,86,360,81,361,76,395,80"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="48,55,103,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="209,151,192,144,136,113,92,82,95,78,139,108,194,140,211,146"/>
+<area shape="rect" id="Node000004" href="$classSongList.html#a08466314e695fd6822fc23d217f68210" title="Constructor con parámetros." alt="" coords="5,153,145,179"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="192,169,145,169,145,163,192,163"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="212,37,103,63,102,58,210,31"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="179,70,103,70,103,65,179,65"/>
+</map>

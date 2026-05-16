@@ -1,0 +1,7 @@
+<map id="SongList::addSong" name="SongList::addSong">
+<area shape="rect" id="Node000001" title="Añade una nueva canción a la lista." alt="" coords="193,31,335,56"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="48,5,103,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,35,103,24,103,19,180,29"/>
+<area shape="rect" id="Node000003" href="$classSongList.html#a08466314e695fd6822fc23d217f68210" title="Constructor con parámetros." alt="" coords="5,55,145,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,57,146,61,145,56,179,51"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="Album::getReleaseDate" name="Album::getReleaseDate">
+<area shape="rect" id="Node000001" title="Obtiene la fecha de lanzamiento del álbum." alt="" coords="323,55,499,80"/>
+<area shape="rect" id="Node000002" href="$classAlbumList.html#a9acd4d13e86aaae978cd090f834e21a9" title="Guarda la lista de álbumes en un archivo .txt." alt="" coords="125,5,257,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,54,248,33,249,28,341,49"/>
+<area shape="rect" id="Node000004" href="$album_8cpp.html#a075843d3817d4532f7296e6394440fa5" title="Sobrecarga del operador de inserción para imprimir un álbum." alt="" coords="142,55,241,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="309,70,241,70,241,65,309,65"/>
+<area shape="rect" id="Node000005" href="$classAlbumList.html#a99fa794c7f816491b536f879685a8a04" title="Imprime la información de un álbum dado su título." alt="" coords="108,104,275,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="341,86,249,107,248,101,340,80"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,37,109,45,61,61,59,55,107,39,131,32"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="134,102,107,94,60,79,61,73,109,89,136,97"/>
+</map>

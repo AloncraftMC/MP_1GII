@@ -1,0 +1,314 @@
+\doxysection{Date Class Reference}
+\hypertarget{classDate}{}\label{classDate}\index{Date@{Date}}
+
+
+Representa una fecha con día, mes y año.  
+
+
+
+
+{\ttfamily \#include $<$date.\+h$>$}
+
+
+
+Collaboration diagram for Date\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classDate__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDate_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDate_ab1ad19969fa570605a6b0cd32b0da822}{Date}} (int day, int month, int year)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDate_a0f253815240e70f4c39cb93cc68bd3f4}{get\+Day}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el día. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDate_a332f6e3a2f6a40d73742b6dab7be0f64}{get\+Month}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el mes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDate_a8b0869f34c2b38d108ab83ee2e770e5d}{get\+Year}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el año. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDate_a2f97b9d1ac5ef0ef6b6cab3335c5303d}{set\+Day}} (int day)
+\begin{DoxyCompactList}\small\item\em Establece el día. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDate_a23aa56014dd581d691607df5d4474f64}{set\+Month}} (int month)
+\begin{DoxyCompactList}\small\item\em Establece el mes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDate_a895c4ae9868e43577cf59d9c679d7a71}{set\+Year}} (int year)
+\begin{DoxyCompactList}\small\item\em Establece el año. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDate_a673f3c9086fb0643c907565df3463acc}{operator==}} (const \mbox{\hyperlink{classDate}{Date}} \&date) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de igualdad. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDate_aa50f7ad426d9b78c9c7fafb4c1a40aa7}{operator!=}} (const \mbox{\hyperlink{classDate}{Date}} \&date) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de desigualdad. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDate_accffb10f21653cea13ff0eac78852d3d}{operator$<$}} (const \mbox{\hyperlink{classDate}{Date}} \&date) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de comparación menor que. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDate_a7b73a2b2a5c2cf8434561332e83d7f95}{operator$>$}} (const \mbox{\hyperlink{classDate}{Date}} \&date) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de comparación mayor que. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDate_aa3cbe8bfdc0bfd9e95bc33f500f502d7}{operator$>$=}} (const \mbox{\hyperlink{classDate}{Date}} \&date) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de comparación mayor o igual que. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDate_a56326220c79a04d4da216d6be3f14f57}{operator$<$=}} (const \mbox{\hyperlink{classDate}{Date}} \&date) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de comparación menor o igual que. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una fecha con día, mes y año. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDate_a4e59ed4ba66eec61c27460c5d09fa1bd}\label{classDate_a4e59ed4ba66eec61c27460c5d09fa1bd} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\Hypertarget{classDate_ab1ad19969fa570605a6b0cd32b0da822}\label{classDate_ab1ad19969fa570605a6b0cd32b0da822} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{int}]{day,  }\item[{int}]{month,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & Día \\
+\hline
+{\em month} & Mes \\
+\hline
+{\em year} & Año\\
+\hline
+{\em day} & Día (1-\/31) \\
+\hline
+{\em month} & Mes (1-\/12) \\
+\hline
+{\em year} & Año (ej. 2026) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDate_a0f253815240e70f4c39cb93cc68bd3f4}\label{classDate_a0f253815240e70f4c39cb93cc68bd3f4} 
+\index{Date@{Date}!getDay@{getDay}}
+\index{getDay@{getDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getDay()}{getDay()}}
+{\footnotesize\ttfamily int Date\+::get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el día. 
+
+\begin{DoxyReturn}{Returns}
+Día. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDate_a0f253815240e70f4c39cb93cc68bd3f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classDate_a332f6e3a2f6a40d73742b6dab7be0f64}\label{classDate_a332f6e3a2f6a40d73742b6dab7be0f64} 
+\index{Date@{Date}!getMonth@{getMonth}}
+\index{getMonth@{getMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getMonth()}{getMonth()}}
+{\footnotesize\ttfamily int Date\+::get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el mes. 
+
+\begin{DoxyReturn}{Returns}
+Mes. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDate_a332f6e3a2f6a40d73742b6dab7be0f64_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classDate_a8b0869f34c2b38d108ab83ee2e770e5d}\label{classDate_a8b0869f34c2b38d108ab83ee2e770e5d} 
+\index{Date@{Date}!getYear@{getYear}}
+\index{getYear@{getYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily int Date\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el año. 
+
+\begin{DoxyReturn}{Returns}
+Año. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDate_a8b0869f34c2b38d108ab83ee2e770e5d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classDate_aa50f7ad426d9b78c9c7fafb4c1a40aa7}\label{classDate_aa50f7ad426d9b78c9c7fafb4c1a40aa7} 
+\index{Date@{Date}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Date\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDate}{Date}} \&}]{date }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de desigualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Fecha a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si las fechas son diferentes, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classDate_accffb10f21653cea13ff0eac78852d3d}\label{classDate_accffb10f21653cea13ff0eac78852d3d} 
+\index{Date@{Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Date\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDate}{Date}} \&}]{date }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador de comparación menor que. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Fecha a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si esta fecha es anterior a la fecha dada, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classDate_a56326220c79a04d4da216d6be3f14f57}\label{classDate_a56326220c79a04d4da216d6be3f14f57} 
+\index{Date@{Date}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Date\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDate}{Date}} \&}]{date }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de comparación menor o igual que. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Fecha a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si esta fecha es anterior o igual a la fecha dada, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classDate_a673f3c9086fb0643c907565df3463acc}\label{classDate_a673f3c9086fb0643c907565df3463acc} 
+\index{Date@{Date}!operator==@{operator==}}
+\index{operator==@{operator==}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Date\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDate}{Date}} \&}]{date }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de igualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Fecha a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si las fechas son iguales, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classDate_a7b73a2b2a5c2cf8434561332e83d7f95}\label{classDate_a7b73a2b2a5c2cf8434561332e83d7f95} 
+\index{Date@{Date}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Date\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDate}{Date}} \&}]{date }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de comparación mayor que. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Fecha a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si esta fecha es posterior a la fecha dada, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classDate_aa3cbe8bfdc0bfd9e95bc33f500f502d7}\label{classDate_aa3cbe8bfdc0bfd9e95bc33f500f502d7} 
+\index{Date@{Date}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Date\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDate}{Date}} \&}]{date }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de comparación mayor o igual que. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Fecha a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si esta fecha es posterior o igual a la fecha dada, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classDate_a2f97b9d1ac5ef0ef6b6cab3335c5303d}\label{classDate_a2f97b9d1ac5ef0ef6b6cab3335c5303d} 
+\index{Date@{Date}!setDay@{setDay}}
+\index{setDay@{setDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{setDay()}{setDay()}}
+{\footnotesize\ttfamily void Date\+::set\+Day (\begin{DoxyParamCaption}\item[{int}]{day }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el día. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & Día. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDate_a23aa56014dd581d691607df5d4474f64}\label{classDate_a23aa56014dd581d691607df5d4474f64} 
+\index{Date@{Date}!setMonth@{setMonth}}
+\index{setMonth@{setMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{setMonth()}{setMonth()}}
+{\footnotesize\ttfamily void Date\+::set\+Month (\begin{DoxyParamCaption}\item[{int}]{month }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el mes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & Mes. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDate_a895c4ae9868e43577cf59d9c679d7a71}\label{classDate_a895c4ae9868e43577cf59d9c679d7a71} 
+\index{Date@{Date}!setYear@{setYear}}
+\index{setYear@{setYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{setYear()}{setYear()}}
+{\footnotesize\ttfamily void Date\+::set\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el año. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & Año. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{date_8h}{date.\+h}}\item 
+src/\mbox{\hyperlink{date_8cpp}{date.\+cpp}}\end{DoxyCompactItemize}

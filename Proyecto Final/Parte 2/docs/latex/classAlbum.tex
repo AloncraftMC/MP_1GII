@@ -1,0 +1,367 @@
+\doxysection{Album Class Reference}
+\hypertarget{classAlbum}{}\label{classAlbum}\index{Album@{Album}}
+
+
+Representa un álbum musical, con su título, artista, fecha de lanzamiento y canciones.  
+
+
+
+
+{\ttfamily \#include $<$album.\+h$>$}
+
+
+
+Collaboration diagram for Album\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classAlbum__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAlbum_a5442b9cbed3b590e2e1151a9f262dd7a}{Album}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlbum_afa426cb36a1c367511f11bce9cd4f398}{Album}} (string title, \mbox{\hyperlink{classArtist}{Artist}} \texorpdfstring{$\ast$}{*}artist, \mbox{\hyperlink{classDate}{Date}} release\+Date, \mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}songs, int num\+\_\+songs)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlbum_a0295d9d1143305f56ee7a7ac7e44ac12}{Album}} (const \mbox{\hyperlink{classAlbum}{Album}} \&album)
+\begin{DoxyCompactList}\small\item\em Constructor copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlbum_a2c50054e79d185716987fe5edfcf62bf}{\texorpdfstring{$\sim$}{\string~}\+Album}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAlbum_ac7c1ad3540f1d41eea819523e1c0bc0f}{get\+Title}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el título del álbum. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArtist}{Artist}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classAlbum_a1c71eabd1bba3a56afa3e0ba9d065771}{get\+Artist}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el artista del álbum. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDate}{Date}} \mbox{\hyperlink{classAlbum_a54d74a4e76f220eb29811b912a3c7643}{get\+Release\+Date}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la fecha de lanzamiento del álbum. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAlbum_aad08ac53b79e50154502938f487f0cc5}{get\+Num\+Songs}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número de canciones en el álbum. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classAlbum_a3e30bfc672437271b2134b4e85204a0b}{get\+Song}} (int i) const
+\begin{DoxyCompactList}\small\item\em Obtiene una canción del álbum. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlbum_acd3d96b3286707a93d0d2bf54006b4ec}{set\+Title}} (string title)
+\begin{DoxyCompactList}\small\item\em Establece el título del álbum. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlbum_a0ed4afa85da74f8c4ce17cfee3b50dd6}{set\+Artist}} (\mbox{\hyperlink{classArtist}{Artist}} \texorpdfstring{$\ast$}{*}artist)
+\begin{DoxyCompactList}\small\item\em Establece el artista del álbum. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlbum_ac01544e2fd28ed90b15bb28f041c28c9}{set\+Release\+Date}} (\mbox{\hyperlink{classDate}{Date}} release\+Date)
+\begin{DoxyCompactList}\small\item\em Establece la fecha de lanzamiento del álbum. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlbum_a79244c5cfa64c508957073138aec7b9f}{set\+New\+Songs}} (int num\+\_\+songs, \mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}songs)
+\begin{DoxyCompactList}\small\item\em Establece las canciones del álbum. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlbum}{Album}} \& \mbox{\hyperlink{classAlbum_a86cc02a9360df608dbd26178169a204e}{operator=}} (const \mbox{\hyperlink{classAlbum}{Album}} \&album)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de asignación. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classSong}{Song}} \& \mbox{\hyperlink{classAlbum_a5c3ea2a64b356ecc85f08813a79144c5}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de indexación. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAlbum_a7400a7d5c42929eb10b965f2e1af176a}{add\+Song}} (\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}song)
+\begin{DoxyCompactList}\small\item\em Añade una canción al álbum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un álbum musical, con su título, artista, fecha de lanzamiento y canciones. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAlbum_a5442b9cbed3b590e2e1151a9f262dd7a}\label{classAlbum_a5442b9cbed3b590e2e1151a9f262dd7a} 
+\index{Album@{Album}!Album@{Album}}
+\index{Album@{Album}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{Album()}{Album()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Album\+::\+Album (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\Hypertarget{classAlbum_afa426cb36a1c367511f11bce9cd4f398}\label{classAlbum_afa426cb36a1c367511f11bce9cd4f398} 
+\index{Album@{Album}!Album@{Album}}
+\index{Album@{Album}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{Album()}{Album()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Album\+::\+Album (\begin{DoxyParamCaption}\item[{string}]{title,  }\item[{\mbox{\hyperlink{classArtist}{Artist}} \texorpdfstring{$\ast$}{*}}]{artist,  }\item[{\mbox{\hyperlink{classDate}{Date}}}]{release\+Date,  }\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{songs,  }\item[{int}]{num\+\_\+songs }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Título del álbum. \\
+\hline
+{\em artist} & Puntero al artista del álbum. \\
+\hline
+{\em release\+Date} & Fecha de lanzamiento del álbum. \\
+\hline
+{\em songs} & Array de punteros a las canciones del álbum. \\
+\hline
+{\em num\+\_\+songs} & Número de canciones en el álbum. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAlbum_a0295d9d1143305f56ee7a7ac7e44ac12}\label{classAlbum_a0295d9d1143305f56ee7a7ac7e44ac12} 
+\index{Album@{Album}!Album@{Album}}
+\index{Album@{Album}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{Album()}{Album()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Album\+::\+Album (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAlbum}{Album}} \&}]{album }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em album} & El álbum a copiar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAlbum_a2c50054e79d185716987fe5edfcf62bf}\label{classAlbum_a2c50054e79d185716987fe5edfcf62bf} 
+\index{Album@{Album}!````~Album@{\texorpdfstring{$\sim$}{\string~}Album}}
+\index{````~Album@{\texorpdfstring{$\sim$}{\string~}Album}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Album()}{\string~Album()}}
+{\footnotesize\ttfamily Album\+::\texorpdfstring{$\sim$}{\string~}\+Album (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\begin{DoxyWarning}{Warning}
+Sólo libera la memoria del array de punteros a canciones, no de las canciones ni del artista, ya que el álbum no es el propietario de esos objetos. 
+\end{DoxyWarning}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAlbum_a7400a7d5c42929eb10b965f2e1af176a}\label{classAlbum_a7400a7d5c42929eb10b965f2e1af176a} 
+\index{Album@{Album}!addSong@{addSong}}
+\index{addSong@{addSong}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{addSong()}{addSong()}}
+{\footnotesize\ttfamily bool Album\+::add\+Song (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}}]{song }\end{DoxyParamCaption})}
+
+
+
+Añade una canción al álbum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song} & La canción a añadir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la canción se añadió correctamente, false en caso contrario.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em song} & Puntero a la canción a añadir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la canción se añadió correctamente, false en caso contrario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbum_a7400a7d5c42929eb10b965f2e1af176a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbum_a1c71eabd1bba3a56afa3e0ba9d065771}\label{classAlbum_a1c71eabd1bba3a56afa3e0ba9d065771} 
+\index{Album@{Album}!getArtist@{getArtist}}
+\index{getArtist@{getArtist}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{getArtist()}{getArtist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArtist}{Artist}} \texorpdfstring{$\ast$}{*} Album\+::get\+Artist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el artista del álbum. 
+
+\begin{DoxyReturn}{Returns}
+Puntero al artista del álbum. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbum_a1c71eabd1bba3a56afa3e0ba9d065771_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbum_aad08ac53b79e50154502938f487f0cc5}\label{classAlbum_aad08ac53b79e50154502938f487f0cc5} 
+\index{Album@{Album}!getNumSongs@{getNumSongs}}
+\index{getNumSongs@{getNumSongs}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{getNumSongs()}{getNumSongs()}}
+{\footnotesize\ttfamily int Album\+::get\+Num\+Songs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número de canciones en el álbum. 
+
+\begin{DoxyReturn}{Returns}
+El número de canciones en el álbum. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbum_aad08ac53b79e50154502938f487f0cc5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbum_a54d74a4e76f220eb29811b912a3c7643}\label{classAlbum_a54d74a4e76f220eb29811b912a3c7643} 
+\index{Album@{Album}!getReleaseDate@{getReleaseDate}}
+\index{getReleaseDate@{getReleaseDate}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{getReleaseDate()}{getReleaseDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDate}{Date}} Album\+::get\+Release\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la fecha de lanzamiento del álbum. 
+
+\begin{DoxyReturn}{Returns}
+La fecha de lanzamiento del álbum. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbum_a54d74a4e76f220eb29811b912a3c7643_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbum_a3e30bfc672437271b2134b4e85204a0b}\label{classAlbum_a3e30bfc672437271b2134b4e85204a0b} 
+\index{Album@{Album}!getSong@{getSong}}
+\index{getSong@{getSong}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{getSong()}{getSong()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*} Album\+::get\+Song (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene una canción del álbum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Índice de la canción a obtener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero a la canción solicitada. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbum_a3e30bfc672437271b2134b4e85204a0b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbum_ac7c1ad3540f1d41eea819523e1c0bc0f}\label{classAlbum_ac7c1ad3540f1d41eea819523e1c0bc0f} 
+\index{Album@{Album}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily string Album\+::get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el título del álbum. 
+
+\begin{DoxyReturn}{Returns}
+El título del álbum. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbum_ac7c1ad3540f1d41eea819523e1c0bc0f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbum_a86cc02a9360df608dbd26178169a204e}\label{classAlbum_a86cc02a9360df608dbd26178169a204e} 
+\index{Album@{Album}!operator=@{operator=}}
+\index{operator=@{operator=}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlbum}{Album}} \& Album\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAlbum}{Album}} \&}]{album }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em album} & El álbum a asignar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al álbum asignado. 
+\end{DoxyReturn}
+\Hypertarget{classAlbum_a5c3ea2a64b356ecc85f08813a79144c5}\label{classAlbum_a5c3ea2a64b356ecc85f08813a79144c5} 
+\index{Album@{Album}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classSong}{Song}} \& Album\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de indexación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Índice de la canción a obtener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia constante a la canción solicitada. 
+\end{DoxyReturn}
+\Hypertarget{classAlbum_a0ed4afa85da74f8c4ce17cfee3b50dd6}\label{classAlbum_a0ed4afa85da74f8c4ce17cfee3b50dd6} 
+\index{Album@{Album}!setArtist@{setArtist}}
+\index{setArtist@{setArtist}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{setArtist()}{setArtist()}}
+{\footnotesize\ttfamily void Album\+::set\+Artist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArtist}{Artist}} \texorpdfstring{$\ast$}{*}}]{artist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el artista del álbum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em artist} & El nuevo artista del álbum. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAlbum_a79244c5cfa64c508957073138aec7b9f}\label{classAlbum_a79244c5cfa64c508957073138aec7b9f} 
+\index{Album@{Album}!setNewSongs@{setNewSongs}}
+\index{setNewSongs@{setNewSongs}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{setNewSongs()}{setNewSongs()}}
+{\footnotesize\ttfamily void Album\+::set\+New\+Songs (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+songs,  }\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{songs }\end{DoxyParamCaption})}
+
+
+
+Establece las canciones del álbum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+songs} & El número de canciones en el álbum. \\
+\hline
+{\em songs} & El array de punteros a las canciones del álbum. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAlbum_ac01544e2fd28ed90b15bb28f041c28c9}\label{classAlbum_ac01544e2fd28ed90b15bb28f041c28c9} 
+\index{Album@{Album}!setReleaseDate@{setReleaseDate}}
+\index{setReleaseDate@{setReleaseDate}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{setReleaseDate()}{setReleaseDate()}}
+{\footnotesize\ttfamily void Album\+::set\+Release\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDate}{Date}}}]{release\+Date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la fecha de lanzamiento del álbum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em release\+Date} & La nueva fecha de lanzamiento del álbum. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAlbum_acd3d96b3286707a93d0d2bf54006b4ec}\label{classAlbum_acd3d96b3286707a93d0d2bf54006b4ec} 
+\index{Album@{Album}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!Album@{Album}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void Album\+::set\+Title (\begin{DoxyParamCaption}\item[{string}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el título del álbum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & El nuevo título del álbum. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{album_8h}{album.\+h}}\item 
+src/\mbox{\hyperlink{album_8cpp}{album.\+cpp}}\end{DoxyCompactItemize}

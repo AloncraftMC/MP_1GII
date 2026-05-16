@@ -1,0 +1,9 @@
+<map id="operator&lt;&lt;" name="operator&lt;&lt;">
+<area shape="rect" id="Node000001" title="Sobrecarga del operador de inserción para imprimir una fecha en formato dd/mm/yyyy." alt="" coords="5,55,104,80"/>
+<area shape="rect" id="Node000002" href="$classDate.html#a0f253815240e70f4c39cb93cc68bd3f4" title="Obtiene el día." alt="" coords="159,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,52,158,32,159,37,97,57"/>
+<area shape="rect" id="Node000003" href="$classDate.html#a332f6e3a2f6a40d73742b6dab7be0f64" title="Obtiene el mes." alt="" coords="152,55,275,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,65,138,65,138,70,104,70"/>
+<area shape="rect" id="Node000004" href="$classDate.html#a8b0869f34c2b38d108ab83ee2e770e5d" title="Obtiene el año." alt="" coords="159,104,268,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,77,159,97,158,102,95,83"/>
+</map>

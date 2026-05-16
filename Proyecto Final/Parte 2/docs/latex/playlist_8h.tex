@@ -1,0 +1,103 @@
+\doxysection{include/playlist.h File Reference}
+\hypertarget{playlist_8h}{}\label{playlist_8h}\index{include/playlist.h@{include/playlist.h}}
+
+
+Declaración de la clase \doxylink{classPlaylist}{Playlist}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}date.\+h"{}}\newline
+{\ttfamily \#include "{}song.\+h"{}}\newline
+{\ttfamily \#include "{}user.\+h"{}}\newline
+Include dependency graph for playlist.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{playlist_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{playlist_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPlaylist}{Playlist}}
+\begin{DoxyCompactList}\small\item\em Representa una lista de reproducción creada por un usuario, con un título, una fecha de creación, una lista de canciones y una configuración de privacidad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}{Playlist\+Privacy}} \{ \mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8ae81e3f79af4b80e22c6b86d63ea397bf}{PUBLIC}}
+, \mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8a0f0fd409954c4ec858e4cd7594059792}{PRIVATE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum para la privacidad de las playlists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{playlist_8h_a838d202b1c3aa7fd2ff34df660bd63b8}{operator$<$$<$}} (ostream \&flujo, const \mbox{\hyperlink{classPlaylist}{Playlist}} \&playlist)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de inserción para imprimir una playlist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaración de la clase \doxylink{classPlaylist}{Playlist}. 
+
+\begin{DoxyAuthor}{Author}
+Alonso Hernández Robles (F1) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}\label{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8} 
+\index{playlist.h@{playlist.h}!PlaylistPrivacy@{PlaylistPrivacy}}
+\index{PlaylistPrivacy@{PlaylistPrivacy}!playlist.h@{playlist.h}}
+\doxysubsubsection{\texorpdfstring{PlaylistPrivacy}{PlaylistPrivacy}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}{Playlist\+Privacy}}}
+
+
+
+Enum para la privacidad de las playlists. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PUBLIC@{PUBLIC}!playlist.h@{playlist.h}}\index{playlist.h@{playlist.h}!PUBLIC@{PUBLIC}}}\Hypertarget{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8ae81e3f79af4b80e22c6b86d63ea397bf}\label{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8ae81e3f79af4b80e22c6b86d63ea397bf} 
+PUBLIC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PRIVATE@{PRIVATE}!playlist.h@{playlist.h}}\index{playlist.h@{playlist.h}!PRIVATE@{PRIVATE}}}\Hypertarget{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8a0f0fd409954c4ec858e4cd7594059792}\label{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8a0f0fd409954c4ec858e4cd7594059792} 
+PRIVATE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{playlist_8h_a838d202b1c3aa7fd2ff34df660bd63b8}\label{playlist_8h_a838d202b1c3aa7fd2ff34df660bd63b8} 
+\index{playlist.h@{playlist.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!playlist.h@{playlist.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{classPlaylist}{Playlist}} \&}]{playlist }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador de inserción para imprimir una playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flujo} & Flujo de salida. \\
+\hline
+{\em playlist} & \doxylink{classPlaylist}{Playlist} a imprimir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al flujo de salida. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{playlist_8h_a838d202b1c3aa7fd2ff34df660bd63b8_cgraph}
+\end{center}
+\end{figure}

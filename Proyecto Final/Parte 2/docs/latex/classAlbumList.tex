@@ -1,0 +1,192 @@
+\doxysection{Album\+List Class Reference}
+\hypertarget{classAlbumList}{}\label{classAlbumList}\index{AlbumList@{AlbumList}}
+
+
+Representa una lista dinámica de álbumes.  
+
+
+
+
+{\ttfamily \#include $<$albumlist.\+h$>$}
+
+
+
+Collaboration diagram for Album\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classAlbumList__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAlbumList_a8a9387311ae947549a5e4f4ae33dfcb9}{Album\+List}} (string file\+\_\+path, \mbox{\hyperlink{classArtistList}{Artist\+List}} \&artist\+List, \mbox{\hyperlink{classSongList}{Song\+List}} \&song\+List)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlbumList_ab273a421a67952cb889fff6aad146de6}{\texorpdfstring{$\sim$}{\string~}\+Album\+List}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAlbumList_a029bdd97ecd363f2bc5b7b77f5d7d938}{get\+Current\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número actual de álbumes en la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlbum}{Album}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classAlbumList_aece98eb6281e3d8fcfcae42a968788a4}{get\+Album\+By\+Id}} (int id) const
+\begin{DoxyCompactList}\small\item\em Obtiene un álbum por su posición en la lista. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAlbumList_a9acd4d13e86aaae978cd090f834e21a9}{dump}} (string file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Guarda la lista de álbumes en un archivo .txt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlbumList_a99fa794c7f816491b536f879685a8a04}{print\+Album}} (string title) const
+\begin{DoxyCompactList}\small\item\em Imprime la información de un álbum dado su título. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una lista dinámica de álbumes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAlbumList_a8a9387311ae947549a5e4f4ae33dfcb9}\label{classAlbumList_a8a9387311ae947549a5e4f4ae33dfcb9} 
+\index{AlbumList@{AlbumList}!AlbumList@{AlbumList}}
+\index{AlbumList@{AlbumList}!AlbumList@{AlbumList}}
+\doxysubsubsection{\texorpdfstring{AlbumList()}{AlbumList()}}
+{\footnotesize\ttfamily Album\+List\+::\+Album\+List (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path,  }\item[{\mbox{\hyperlink{classArtistList}{Artist\+List}} \&}]{artist\+List,  }\item[{\mbox{\hyperlink{classSongList}{Song\+List}} \&}]{song\+List }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Ruta del archivo .txt con los datos de los álbumes. \\
+\hline
+{\em artist\+List} & Referencia a la lista de artistas para asociar los artistas a los álbumes. \\
+\hline
+{\em song\+List} & Referencia a la lista de canciones para asociar las canciones a los álbumes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbumList_a8a9387311ae947549a5e4f4ae33dfcb9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbumList_ab273a421a67952cb889fff6aad146de6}\label{classAlbumList_ab273a421a67952cb889fff6aad146de6} 
+\index{AlbumList@{AlbumList}!````~AlbumList@{\texorpdfstring{$\sim$}{\string~}AlbumList}}
+\index{````~AlbumList@{\texorpdfstring{$\sim$}{\string~}AlbumList}!AlbumList@{AlbumList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AlbumList()}{\string~AlbumList()}}
+{\footnotesize\ttfamily Album\+List\+::\texorpdfstring{$\sim$}{\string~}\+Album\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAlbumList_a9acd4d13e86aaae978cd090f834e21a9}\label{classAlbumList_a9acd4d13e86aaae978cd090f834e21a9} 
+\index{AlbumList@{AlbumList}!dump@{dump}}
+\index{dump@{dump}!AlbumList@{AlbumList}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily bool Album\+List\+::dump (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Guarda la lista de álbumes en un archivo .txt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Ruta del archivo .txt donde se guardarán los datos de los álbumes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la operación fue exitosa, false en caso contrario. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classAlbumList_a9acd4d13e86aaae978cd090f834e21a9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classAlbumList_a9acd4d13e86aaae978cd090f834e21a9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbumList_aece98eb6281e3d8fcfcae42a968788a4}\label{classAlbumList_aece98eb6281e3d8fcfcae42a968788a4} 
+\index{AlbumList@{AlbumList}!getAlbumById@{getAlbumById}}
+\index{getAlbumById@{getAlbumById}!AlbumList@{AlbumList}}
+\doxysubsubsection{\texorpdfstring{getAlbumById()}{getAlbumById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlbum}{Album}} \texorpdfstring{$\ast$}{*} Album\+List\+::get\+Album\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene un álbum por su posición en la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Índice del álbum a obtener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero al álbum solicitado o nullptr si no se encuentra. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbumList_aece98eb6281e3d8fcfcae42a968788a4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbumList_a029bdd97ecd363f2bc5b7b77f5d7d938}\label{classAlbumList_a029bdd97ecd363f2bc5b7b77f5d7d938} 
+\index{AlbumList@{AlbumList}!getCurrentSize@{getCurrentSize}}
+\index{getCurrentSize@{getCurrentSize}!AlbumList@{AlbumList}}
+\doxysubsubsection{\texorpdfstring{getCurrentSize()}{getCurrentSize()}}
+{\footnotesize\ttfamily int Album\+List\+::get\+Current\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número actual de álbumes en la lista. 
+
+\begin{DoxyReturn}{Returns}
+Número de álbumes en la lista. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbumList_a029bdd97ecd363f2bc5b7b77f5d7d938_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classAlbumList_a99fa794c7f816491b536f879685a8a04}\label{classAlbumList_a99fa794c7f816491b536f879685a8a04} 
+\index{AlbumList@{AlbumList}!printAlbum@{printAlbum}}
+\index{printAlbum@{printAlbum}!AlbumList@{AlbumList}}
+\doxysubsubsection{\texorpdfstring{printAlbum()}{printAlbum()}}
+{\footnotesize\ttfamily void Album\+List\+::print\+Album (\begin{DoxyParamCaption}\item[{string}]{title }\end{DoxyParamCaption}) const}
+
+
+
+Imprime la información de un álbum dado su título. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & El título del álbum a imprimir. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlbumList_a99fa794c7f816491b536f879685a8a04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classAlbumList_a99fa794c7f816491b536f879685a8a04_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{albumlist_8h}{albumlist.\+h}}\item 
+src/\mbox{\hyperlink{albumlist_8cpp}{albumlist.\+cpp}}\end{DoxyCompactItemize}

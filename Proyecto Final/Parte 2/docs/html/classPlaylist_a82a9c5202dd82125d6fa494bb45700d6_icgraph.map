@@ -1,0 +1,9 @@
+<map id="Playlist::getTitle" name="Playlist::getTitle">
+<area shape="rect" id="Node000001" title="Obtiene el título de la playlist." alt="" coords="341,31,469,56"/>
+<area shape="rect" id="Node000002" href="$classSpotifry.html#a1e996539672bfc8c7cbd585aa7da5668" title="Genera un string HTML con la información de las playlists de un usuario dado su email." alt="" coords="108,5,293,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,36,293,32,294,27,328,31"/>
+<area shape="rect" id="Node000004" href="$playlist_8cpp.html#a838d202b1c3aa7fd2ff34df660bd63b8" title="Sobrecarga del operador de inserción para imprimir una playlist." alt="" coords="151,55,250,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="328,55,250,64,250,59,327,50"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+</map>

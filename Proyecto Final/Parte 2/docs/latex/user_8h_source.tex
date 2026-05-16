@@ -1,0 +1,115 @@
+\doxysection{user.\+h}
+\hypertarget{user_8h_source}{}\label{user_8h_source}\index{include/user.h@{include/user.h}}
+\mbox{\hyperlink{user_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ USER\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ USER\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{date_8h}{date.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{playlist_8h}{playlist.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{song_8h}{song.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}}\ \{\mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324fadebb817413857eea6331734b76793159}{FEMALE}},\ \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324fa6e81fe1ef694726dd6f7246cfb42369f}{MALE}},\ \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324fadbf1dee1b8cd7ea3c82661943c7b74f4}{OTHER}}\};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPlaylist}{Playlist}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUser}{User}}\ \{}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ name;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ email;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDate}{Date}}\ birthdate;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}}\ gender;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_saved\_songs;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_playlists;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ num\_saved\_songs;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ num\_playlists;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSong}{Song}}**\ saved\_songs;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlaylist}{Playlist}}**\ playlists;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ init();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ pasteAttributes(\textcolor{keyword}{const}\ \mbox{\hyperlink{classUser}{User}}\&\ user);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORES\ Y\ DESTRUCTOR}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUser_a4a0137053e591fbb79d9057dd7d2283d}{User}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUser_a4a0137053e591fbb79d9057dd7d2283d}{User}}(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ email,\ \mbox{\hyperlink{classDate}{Date}}\ birthdate,\ \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}}\ gender);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUser_aa93176c0f05349bc8daf0c6074fcb929}{User}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classUser}{User}}\&\ user)\ \{\ this-\/>pasteAttributes(user);\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUser_ac00b72ad64eb4149f7b21b9f5468c2b2}{\string~User}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_ab9b2b5feb6bdd1582696eb6d44cee384}{getName}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>name;\ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a4c647e583bd964f40f687776a0d185dc}{getEmail}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>email;\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDate}{Date}}\ \mbox{\hyperlink{classUser_ae3795e6f0bd67b7cbeb6419f56530925}{getBirthdate}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>birthdate;\ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a070cd46011fd85d8c18451fdaf5ced25}{getGender}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUser_a76747aa652a16c919beb7fed821ec083}{getNumSavedSongs}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>num\_saved\_songs;\ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUser_a2479e486c1e53a38b5ce68654bc207ae}{getNumPlaylists}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>num\_playlists;\ \}}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ SETTERS}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_acabf7e5a40909656de5bc631abe5588c}{setName}}(\textcolor{keywordtype}{string}\ name)\ \{\ this-\/>name\ =\ name;\ \}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_a9d38dd7a9f5ca79cf17ecf572d42c647}{setEmail}}(\textcolor{keywordtype}{string}\ email)\ \{\ this-\/>email\ =\ email;\ \}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_a30d680a2c75f3b614b379a6e95bf0fbe}{setBirthdate}}(\mbox{\hyperlink{classDate}{Date}}\ birthdate)\ \{\ this-\/>birthdate\ =\ birthdate;\ \}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_a216b9ce9451548602334c7896cd5b583}{setGender}}(\mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}}\ gender)\ \{\ this-\/>gender\ =\ gender;\ \}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ SOBRECARGAS\ DE\ OPERADORES}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUser}{User}}\&\ \mbox{\hyperlink{classUser_a1882c79e5ec526ef08ac37357234f4f7}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classUser}{User}}\&\ user);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classSong}{Song}}\&\ \mbox{\hyperlink{classUser_ace98315465aedc52c58a6c09988b7bda}{operator[]}}(\textcolor{keywordtype}{int}\ i)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *this-\/>saved\_songs[i];\ \}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classPlaylist}{Playlist}}\&\ \mbox{\hyperlink{classUser_a8afbf5af57e68b8cdcde2a7d85a111be}{operator()}}(\textcolor{keywordtype}{int}\ i)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *this-\/>playlists[i];\ \}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classSong}{Song}}\&\ \mbox{\hyperlink{classUser_a8afbf5af57e68b8cdcde2a7d85a111be}{operator()}}(\textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ j)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ OTROS\ MÉTODOS}}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUser_a2bbb162ebbf3092bab6487a62f32a528}{addSong}}(\mbox{\hyperlink{classSong}{Song}}*\ song\_to\_add);}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUser_a50bea2ec057b392d4d02f94be3d0c9d4}{addPlaylist}}(\mbox{\hyperlink{classPlaylist}{Playlist}}*\ playlist\_to\_add);}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUser_a102f66365ae463a4281bbf45b71aadcf}{deleteSong}}(\mbox{\hyperlink{classSong}{Song}}*\ song\_to\_delete);}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUser_a4165beaa3dfb47f36b8e1c94f3e9cf65}{deletePlaylist}}(\mbox{\hyperlink{classPlaylist}{Playlist}}*\ playlist\_to\_delete);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUser_a1edfce8450e06f0ad43b3fd839647bbd}{createPlaylist}}(\mbox{\hyperlink{classSong}{Song}}**\ songs,\ \textcolor{keywordtype}{int}\ num\_songs,\ \textcolor{keywordtype}{string}\ title);}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00220\ \};}
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00228\ \textcolor{keyword}{inline}\ ostream\&\ \mbox{\hyperlink{user_8h_a4beffcafdd2fa80a301f67238176d9ad}{operator<<}}(ostream\&\ flujo,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classUser}{User}}\&\ user)\{}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordflow}{return}\ flujo\ <<\ user.\mbox{\hyperlink{classUser_ab9b2b5feb6bdd1582696eb6d44cee384}{getName}}()\ <<\ \textcolor{stringliteral}{"{}\ ("{}}}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ user.\mbox{\hyperlink{classUser_a4c647e583bd964f40f687776a0d185dc}{getEmail}}()\ <<\ \textcolor{stringliteral}{"{})\ "{}}\ <<\ endl}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ user.\mbox{\hyperlink{classUser_ae3795e6f0bd67b7cbeb6419f56530925}{getBirthdate}}()\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ user.\mbox{\hyperlink{classUser_a070cd46011fd85d8c18451fdaf5ced25}{getGender}}()\ <<\ endl}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ user.\mbox{\hyperlink{classUser_a76747aa652a16c919beb7fed821ec083}{getNumSavedSongs}}()\ <<\ \textcolor{stringliteral}{"{}\ saved\ songs\ |\ "{}}}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ user.\mbox{\hyperlink{classUser_a2479e486c1e53a38b5ce68654bc207ae}{getNumPlaylists}}()\ <<\ \textcolor{stringliteral}{"{}\ created\ playlists"{}}\ <<\ endl;}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ \}}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

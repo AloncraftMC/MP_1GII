@@ -1,0 +1,76 @@
+\doxysection{date.\+h}
+\hypertarget{date_8h_source}{}\label{date_8h_source}\index{include/date.h@{include/date.h}}
+\mbox{\hyperlink{date_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ DATE\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ DATE\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDate}{Date}}\ \{}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ day;\ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ month;\ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ year;\ \ \ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORES}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDate_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDate_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}(\textcolor{keywordtype}{int}\ day,\ \textcolor{keywordtype}{int}\ month,\ \textcolor{keywordtype}{int}\ year);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDate_a0f253815240e70f4c39cb93cc68bd3f4}{getDay}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>day;\ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDate_a332f6e3a2f6a40d73742b6dab7be0f64}{getMonth}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>month;\ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDate_a8b0869f34c2b38d108ab83ee2e770e5d}{getYear}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>year;\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDate_a2f97b9d1ac5ef0ef6b6cab3335c5303d}{setDay}}(\textcolor{keywordtype}{int}\ day)\ \{\ this-\/>day\ =\ day;\ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDate_a23aa56014dd581d691607df5d4474f64}{setMonth}}(\textcolor{keywordtype}{int}\ month)\ \{\ this-\/>month\ =\ month;\ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDate_a895c4ae9868e43577cf59d9c679d7a71}{setYear}}(\textcolor{keywordtype}{int}\ year)\ \{\ this-\/>year\ =\ year;\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ SOBRECARGAS\ DE\ OPERADORES}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDate_a673f3c9086fb0643c907565df3463acc}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDate}{Date}}\&\ date)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>day\ ==\ date.day\ \&\&}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>month\ ==\ date.month\ \&\&}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>year\ ==\ date.year;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDate_aa50f7ad426d9b78c9c7fafb4c1a40aa7}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDate}{Date}}\&\ date)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ ==\ date);\ \}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDate_accffb10f21653cea13ff0eac78852d3d}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDate}{Date}}\&\ date)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDate_a7b73a2b2a5c2cf8434561332e83d7f95}{operator>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDate}{Date}}\&\ date)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ date\ <\ *\textcolor{keyword}{this};\ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDate_aa3cbe8bfdc0bfd9e95bc33f500f502d7}{operator>=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDate}{Date}}\&\ date)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ <\ date);\ \}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDate_a56326220c79a04d4da216d6be3f14f57}{operator<=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDate}{Date}}\&\ date)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ !(date\ <\ *\textcolor{keyword}{this});\ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00135\ \textcolor{keyword}{inline}\ ostream\&\ \mbox{\hyperlink{date_8h_ac23c739ada1bdcf5e1cc738884670440}{operator<<}}(ostream\&\ flujo,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classDate}{Date}}\&\ date)\{}
+\DoxyCodeLine{00136\ \ \ \ \ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordflow}{return}\ flujo\ <<\ (date.\mbox{\hyperlink{classDate_a0f253815240e70f4c39cb93cc68bd3f4}{getDay}}()\ <\ 10\ ?\ \textcolor{stringliteral}{"{}0"{}}\ :\ \textcolor{stringliteral}{"{}"{}})\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mostrar\ 0\ si\ d\ <\ 10}}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \ date.\mbox{\hyperlink{classDate_a0f253815240e70f4c39cb93cc68bd3f4}{getDay}}()\ <<\ \textcolor{stringliteral}{"{}/"{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Día\ (-\/>\ dd)}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ (date.\mbox{\hyperlink{classDate_a332f6e3a2f6a40d73742b6dab7be0f64}{getMonth}}()\ <\ 10\ ?\ \textcolor{stringliteral}{"{}0"{}}\ :\ \textcolor{stringliteral}{"{}"{}})\ \ \ \ \ \ \ \textcolor{comment}{//\ Mostrar\ 0\ si\ m\ <\ 10}}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \ date.\mbox{\hyperlink{classDate_a332f6e3a2f6a40d73742b6dab7be0f64}{getMonth}}()\ <<\ \textcolor{stringliteral}{"{}/"{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mes\ (-\/>\ mm)}}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ (date.\mbox{\hyperlink{classDate_a8b0869f34c2b38d108ab83ee2e770e5d}{getYear}}()\ <\ 10\ ?\ \textcolor{stringliteral}{"{}0"{}}\ :\ \textcolor{stringliteral}{"{}"{}})\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mostrar\ 0\ si\ y\ <\ 10}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ (date.\mbox{\hyperlink{classDate_a8b0869f34c2b38d108ab83ee2e770e5d}{getYear}}()\ <\ 100\ ?\ \textcolor{stringliteral}{"{}0"{}}\ :\ \textcolor{stringliteral}{"{}"{}})\ \ \ \ \ \ \ \textcolor{comment}{//\ Mostrar\ 0\ si\ y\ <\ 100}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ (date.\mbox{\hyperlink{classDate_a8b0869f34c2b38d108ab83ee2e770e5d}{getYear}}()\ <\ 1000\ ?\ \textcolor{stringliteral}{"{}0"{}}\ :\ \textcolor{stringliteral}{"{}"{}})\ \ \ \ \ \ \textcolor{comment}{//\ Mostrar\ 0\ si\ y\ <\ 1000}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \ date.\mbox{\hyperlink{classDate_a8b0869f34c2b38d108ab83ee2e770e5d}{getYear}}();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Año\ (-\/>\ yyyy)}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

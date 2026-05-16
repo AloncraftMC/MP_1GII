@@ -1,0 +1,26 @@
+<map id="UserList::getUserByEmail" name="UserList::getUserByEmail">
+<area shape="rect" id="Node000001" title="Obtiene un puntero al usuario con el email dado." alt="" coords="587,156,775,181"/>
+<area shape="rect" id="Node000002" href="$classSpotifry.html#abf11042fe54cb15433352375df260224" title="Obtiene un ejemplo de el artista más escuchado por un usuario dado su email." alt="" coords="135,5,279,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="651,150,600,116,538,84,471,63,402,46,279,27,279,22,403,41,472,57,540,80,602,111,654,146"/>
+<area shape="rect" id="Node000004" href="$classSpotifry.html#a0dacaec892f8e85887ababa03566e0f5" title="Crea una nueva playlist para un usuario dado su email, el título de la playlist y los nombres de las ..." alt="" coords="122,105,291,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="603,156,538,146,409,133,291,125,292,119,409,127,539,141,604,151"/>
+<area shape="rect" id="Node000005" href="$classSpotifry.html#a663e27a3b2636ba2e7c3b19febc81cfd" title="Genera un string HTML con la información de las canciones guardadas de un usuario dado su email." alt="" coords="108,55,305,80"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="637,153,590,135,538,119,418,95,305,79,306,74,419,89,539,114,592,130,639,148"/>
+<area shape="rect" id="Node000006" href="$classSpotifry.html#a1e996539672bfc8c7cbd585aa7da5668" title="Genera un string HTML con la información de las playlists de un usuario dado su email." alt="" coords="353,257,539,283"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="645,190,540,240,488,260,486,255,538,236,643,185"/>
+<area shape="rect" id="Node000007" href="$classSpotifry.html#a062ee70449582def7fe683bbd4611df8" title="Genera un string HTML con la información de un álbum dado su título." alt="" coords="364,307,528,332"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="662,194,610,246,577,274,540,298,513,309,511,304,537,293,574,270,607,242,658,190"/>
+<area shape="rect" id="Node000008" href="$classSpotifry.html#a98dd0e4af1eab2994b6834a503146f01" title="Obtiene el número de canciones guardadas por un usuario dado su email." alt="" coords="372,156,520,181"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="573,171,520,171,520,166,573,166"/>
+<area shape="rect" id="Node000009" href="$classSpotifry.html#a71986a83aace165403a4156263801b5f" title="Constructor con parámetros." alt="" coords="141,207,272,232"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="599,186,539,195,396,210,272,219,272,213,396,204,538,190,599,181"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,131,60,156"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,37,110,44,86,64,67,88,42,132,37,129,63,85,83,61,106,40,121,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="109,135,61,142,60,137,108,130"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="131,87,109,95,77,113,51,132,48,128,74,109,107,90,129,82"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="339,286,284,287,223,282,163,269,107,246,82,226,62,202,37,158,42,155,66,199,85,223,109,241,165,264,224,277,284,282,339,281"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="356,336,297,339,231,335,166,320,135,307,106,291,76,260,54,223,41,185,34,157,39,156,46,184,59,220,80,257,110,287,138,303,168,315,232,329,297,333,356,331"/>
+<area shape="poly" id="edge13_Node000008_Node000003" title=" " alt="" coords="358,166,60,148,60,142,358,161"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="371,156,267,133,268,128,372,150"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="372,187,268,209,267,204,371,182"/>
+</map>

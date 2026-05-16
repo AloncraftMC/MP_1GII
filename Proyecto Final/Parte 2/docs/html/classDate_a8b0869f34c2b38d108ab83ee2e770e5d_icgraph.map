@@ -1,0 +1,9 @@
+<map id="Date::getYear" name="Date::getYear">
+<area shape="rect" id="Node000001" title="Obtiene el año." alt="" coords="288,31,397,56"/>
+<area shape="rect" id="Node000002" href="$classAlbumList.html#a9acd4d13e86aaae978cd090f834e21a9" title="Guarda la lista de álbumes en un archivo .txt." alt="" coords="108,5,240,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,36,240,31,241,25,275,30"/>
+<area shape="rect" id="Node000004" href="$date_8h.html#ac23c739ada1bdcf5e1cc738884670440" title="Sobrecarga del operador de inserción para imprimir una fecha en formato dd/mm/yyyy." alt="" coords="125,55,223,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="275,56,224,63,223,58,274,50"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

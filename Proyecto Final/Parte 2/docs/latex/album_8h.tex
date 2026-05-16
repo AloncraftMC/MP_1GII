@@ -1,0 +1,83 @@
+\doxysection{include/album.h File Reference}
+\hypertarget{album_8h}{}\label{album_8h}\index{include/album.h@{include/album.h}}
+
+
+Declaración de la clase \doxylink{classAlbum}{Album}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}artist.\+h"{}}\newline
+{\ttfamily \#include "{}date.\+h"{}}\newline
+{\ttfamily \#include "{}song.\+h"{}}\newline
+Include dependency graph for album.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{album_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{album_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classAlbum}{Album}}
+\begin{DoxyCompactList}\small\item\em Representa un álbum musical, con su título, artista, fecha de lanzamiento y canciones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{album_8h_a075843d3817d4532f7296e6394440fa5}{operator$<$$<$}} (ostream \&flujo, const \mbox{\hyperlink{classAlbum}{Album}} \&album)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de inserción para imprimir un álbum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaración de la clase \doxylink{classAlbum}{Album}. 
+
+\begin{DoxyAuthor}{Author}
+Alonso Hernández Robles (F1) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{album_8h_a075843d3817d4532f7296e6394440fa5}\label{album_8h_a075843d3817d4532f7296e6394440fa5} 
+\index{album.h@{album.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!album.h@{album.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{classAlbum}{Album}} \&}]{album }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador de inserción para imprimir un álbum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flujo} & Flujo de salida. \\
+\hline
+{\em album} & Álbum a imprimir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al flujo de salida.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em flujo} & Flujo de salida. \\
+\hline
+{\em album} & Álbum a imprimir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al flujo de salida con la información del álbum. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{album_8h_a075843d3817d4532f7296e6394440fa5_cgraph}
+\end{center}
+\end{figure}

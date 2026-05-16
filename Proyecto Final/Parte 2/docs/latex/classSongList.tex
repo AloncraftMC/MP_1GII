@@ -1,0 +1,184 @@
+\doxysection{Song\+List Class Reference}
+\hypertarget{classSongList}{}\label{classSongList}\index{SongList@{SongList}}
+
+
+Representa una lista dinámica de canciones utilizando bloques.  
+
+
+
+
+{\ttfamily \#include $<$songlist.\+h$>$}
+
+
+
+Collaboration diagram for Song\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classSongList__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSongList_a08466314e695fd6822fc23d217f68210}{Song\+List}} (string file\+\_\+path, \mbox{\hyperlink{classAlbumList}{Album\+List}} \&album\+List)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSongList_a438c7fdfe3606f287b419e9cc9267da5}{\texorpdfstring{$\sim$}{\string~}\+Song\+List}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSongList_aead7f865a0c47db9a0ea47d29a483d64}{add\+Song}} (string title, \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}} genre, int duration, \mbox{\hyperlink{classAlbumList}{Album\+List}} \&album\+List, string album)
+\begin{DoxyCompactList}\small\item\em Añade una nueva canción a la lista. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSongList_a0e2a4e0a0aabf74dd867dcf19a83d125}{find\+Song}} (string search\+Term, \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}} genre, int duration\+Min, int duration\+Max, \mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}results, int max\+Results, int \&num\+Results)
+\begin{DoxyCompactList}\small\item\em Busca canciones en la lista que coincidan con los criterios de búsqueda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una lista dinámica de canciones utilizando bloques. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSongList_a08466314e695fd6822fc23d217f68210}\label{classSongList_a08466314e695fd6822fc23d217f68210} 
+\index{SongList@{SongList}!SongList@{SongList}}
+\index{SongList@{SongList}!SongList@{SongList}}
+\doxysubsubsection{\texorpdfstring{SongList()}{SongList()}}
+{\footnotesize\ttfamily Song\+List\+::\+Song\+List (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path,  }\item[{\mbox{\hyperlink{classAlbumList}{Album\+List}} \&}]{album\+List }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Ruta del archivo .txt con los datos de las canciones. \\
+\hline
+{\em album\+List} & Referencia a la lista de álbumes para asociar las canciones a los álbumes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSongList_a08466314e695fd6822fc23d217f68210_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSongList_a438c7fdfe3606f287b419e9cc9267da5}\label{classSongList_a438c7fdfe3606f287b419e9cc9267da5} 
+\index{SongList@{SongList}!````~SongList@{\texorpdfstring{$\sim$}{\string~}SongList}}
+\index{````~SongList@{\texorpdfstring{$\sim$}{\string~}SongList}!SongList@{SongList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SongList()}{\string~SongList()}}
+{\footnotesize\ttfamily Song\+List\+::\texorpdfstring{$\sim$}{\string~}\+Song\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSongList_aead7f865a0c47db9a0ea47d29a483d64}\label{classSongList_aead7f865a0c47db9a0ea47d29a483d64} 
+\index{SongList@{SongList}!addSong@{addSong}}
+\index{addSong@{addSong}!SongList@{SongList}}
+\doxysubsubsection{\texorpdfstring{addSong()}{addSong()}}
+{\footnotesize\ttfamily bool Song\+List\+::add\+Song (\begin{DoxyParamCaption}\item[{string}]{title,  }\item[{\mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}}}]{genre,  }\item[{int}]{duration,  }\item[{\mbox{\hyperlink{classAlbumList}{Album\+List}} \&}]{album\+List,  }\item[{string}]{album }\end{DoxyParamCaption})}
+
+
+
+Añade una nueva canción a la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & El título de la canción. \\
+\hline
+{\em genre} & El género de la canción. \\
+\hline
+{\em duration} & La duración de la canción en segundos. \\
+\hline
+{\em album\+List} & Referencia a la lista de álbumes para asociar la canción al álbum correspondiente. \\
+\hline
+{\em album} & El título del álbum al que pertenece la canción. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la canción se añadió correctamente, false en caso contrario. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSongList_aead7f865a0c47db9a0ea47d29a483d64_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classSongList_aead7f865a0c47db9a0ea47d29a483d64_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSongList_a0e2a4e0a0aabf74dd867dcf19a83d125}\label{classSongList_a0e2a4e0a0aabf74dd867dcf19a83d125} 
+\index{SongList@{SongList}!findSong@{findSong}}
+\index{findSong@{findSong}!SongList@{SongList}}
+\doxysubsubsection{\texorpdfstring{findSong()}{findSong()}}
+{\footnotesize\ttfamily bool Song\+List\+::find\+Song (\begin{DoxyParamCaption}\item[{string}]{search\+Term,  }\item[{\mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}}}]{genre,  }\item[{int}]{duration\+Min,  }\item[{int}]{duration\+Max,  }\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{results,  }\item[{int}]{max\+Results,  }\item[{int \&}]{num\+Results }\end{DoxyParamCaption})}
+
+
+
+Busca canciones en la lista que coincidan con los criterios de búsqueda. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Term} & El término subcadena de búsqueda para el título de la canción. \\
+\hline
+{\em genre} & El género de la canción a buscar (puede ser UNKNOWN para ignorar este filtro). \\
+\hline
+{\em duration\+Min} & La duración mínima de la canción en segundos (puede ser -\/1 para ignorar este filtro). \\
+\hline
+{\em duration\+Max} & La duración máxima de la canción en segundos (puede ser -\/1 para ignorar este filtro). \\
+\hline
+{\em results} & Array de punteros a canciones donde se almacenarán los resultados encontrados. \\
+\hline
+{\em max\+Results} & El tamaño máximo del array de resultados. \\
+\hline
+{\em num\+Results} & Variable donde se almacenará el número de resultados encontrados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se encontraron canciones que coincidan con los criterios, false en caso contrario.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Term} & El término de búsqueda para el título de la canción (puede ser una subcadena). \\
+\hline
+{\em genre} & El género de la canción a buscar (puede ser UNKNOWN para no filtrar por género). \\
+\hline
+{\em duration\+Min} & La duración mínima de la canción en segundos (puede ser -\/1 para no filtrar por duración mínima). \\
+\hline
+{\em duration\+Max} & La duración máxima de la canción en segundos (puede ser -\/1 para no filtrar por duración máxima). \\
+\hline
+{\em results} & Array de punteros a canciones donde se almacenarán los resultados encontrados. \\
+\hline
+{\em max\+Results} & El tamaño máximo del array de resultados. \\
+\hline
+{\em num\+Results} & Variable donde se almacenará el número de resultados encontrados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se encontraron canciones que coincidan con los criterios, false en caso contrario. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classSongList_a0e2a4e0a0aabf74dd867dcf19a83d125_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classSongList_a0e2a4e0a0aabf74dd867dcf19a83d125_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{songlist_8h}{songlist.\+h}}\item 
+src/\mbox{\hyperlink{songlist_8cpp}{songlist.\+cpp}}\end{DoxyCompactItemize}

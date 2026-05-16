@@ -1,5 +1,14 @@
+/**
+ * @file song.cpp
+ * @author Alonso Hernández Robles (F1)
+ * @brief Implementación de la clase Song.
+ */
+
 #include "song.h"
 
+/**
+ * @brief Constructor por defecto.
+ */
 Song::Song(){
 
     this->title = "New song";
@@ -7,6 +16,12 @@ Song::Song(){
 
 }
 
+/**
+ * @brief Constructor con parámetros.
+ * @param title El título de la canción.
+ * @param genre El género de la canción.
+ * @param duration La duración de la canción en segundos.
+ */
 Song::Song(string title, Genre genre, int duration){
 
     this->title = title;
@@ -15,6 +30,10 @@ Song::Song(string title, Genre genre, int duration){
 
 }
 
+/**
+ * @brief Obtiene el género de la canción como una cadena de texto.
+ * @return El género de la canción como una cadena de texto.
+ */
 string Song::getGenre() const {
 
     switch(this->genre){

@@ -1,0 +1,46 @@
+<map id="include/song.h" name="include/song.h">
+<area shape="rect" id="Node000001" title="Declaración de la clase Song." alt="" coords="606,5,722,31"/>
+<area shape="rect" id="Node000002" href="$album_8h.html" title="Declaración de la clase Album." alt="" coords="329,79,455,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="608,37,437,81,435,76,607,32"/>
+<area shape="rect" id="Node000004" href="$songlist_8h.html" title="Declaración de la clase SongList." alt="" coords="5,225,141,251"/>
+<area shape="poly" id="edge24_Node000001_Node000004" title=" " alt="" coords="593,30,469,47,324,73,254,90,191,109,140,130,106,154,93,171,85,190,77,226,72,225,80,189,89,168,102,150,138,126,189,104,252,84,323,68,468,41,592,24"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html" title=" " alt="" coords="559,372,665,397"/>
+<area shape="poly" id="edge26_Node000001_Node000006" title=" " alt="" coords="736,21,809,33,847,43,883,57,915,75,941,99,958,128,964,163,964,239,962,262,955,283,944,301,930,317,895,343,850,362,802,374,752,382,665,387,665,382,752,377,801,369,849,357,892,338,927,313,940,298,950,281,956,261,959,239,959,164,953,130,936,102,912,80,880,62,845,48,808,38,735,26"/>
+<area shape="rect" id="Node000011" href="$playlist_8h.html" title="Declaración de la clase Playlist." alt="" coords="649,79,783,104"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="683,40,710,77,705,80,678,43"/>
+<area shape="rect" id="Node000012" href="$user_8h.html" title="Declaración de la clase User." alt="" coords="556,152,668,177"/>
+<area shape="poly" id="edge25_Node000001_Node000012" title=" " alt="" coords="655,44,640,80,618,152,612,151,635,78,650,42"/>
+<area shape="rect" id="Node000017" href="$song_8cpp.html" title="Implementación de la clase Song." alt="" coords="999,79,1102,104"/>
+<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="736,30,1000,78,999,83,735,35"/>
+<area shape="rect" id="Node000003" href="$albumlist_8h.html" title="Declaración de la clase AlbumList." alt="" coords="116,152,263,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,111,223,154,221,149,346,106"/>
+<area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="404,116,435,189,466,249,499,287,535,321,597,370,594,374,531,325,495,291,462,252,430,191,399,118"/>
+<area shape="rect" id="Node000010" href="$album_8cpp.html" title="Implementación de la clase Album." alt="" coords="287,152,401,177"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="379,117,354,153,350,150,374,114"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="161,187,94,227,91,223,158,182"/>
+<area shape="rect" id="Node000005" href="$spotifry_8h.html" title="Declaración de la clase Spotifry." alt="" coords="269,299,403,324"/>
+<area shape="poly" id="edge8_Node000003_Node000005" title=" " alt="" coords="246,180,282,197,313,224,324,242,332,262,338,298,333,299,327,264,320,244,309,227,279,202,244,185"/>
+<area shape="rect" id="Node000009" href="$albumlist_8cpp.html" title="Implementación de la clase AlbumList." alt="" coords="165,225,299,251"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="206,188,227,224,223,227,201,191"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="129,252,294,296,293,301,128,257"/>
+<area shape="rect" id="Node000008" href="$songlist_8cpp.html" title="Implementación de la clase SongList." alt="" coords="12,299,135,324"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="76,264,76,299,71,299,71,264"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="394,325,568,369,567,374,393,330"/>
+<area shape="rect" id="Node000007" href="$spotifry_8cpp.html" title="Implementación de la clase Spotifry." alt="" coords="276,372,396,397"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="339,338,339,372,333,372,333,338"/>
+<area shape="poly" id="edge22_Node000011_Node000006" title=" " alt="" coords="737,113,767,155,796,211,805,240,809,270,804,299,790,326,764,350,732,367,698,377,665,383,665,378,696,372,730,362,761,346,786,322,799,297,803,270,800,242,791,213,763,158,733,116"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="682,113,624,154,621,150,679,109"/>
+<area shape="rect" id="Node000013" href="$userlist_8h.html" title="Declaración de la clase UserList." alt="" coords="649,225,783,251"/>
+<area shape="poly" id="edge21_Node000011_Node000013" title=" " alt="" coords="719,118,719,225,713,225,713,118"/>
+<area shape="rect" id="Node000016" href="$playlist_8cpp.html" title="Implementación de la clase Playlist." alt="" coords="804,152,924,177"/>
+<area shape="poly" id="edge23_Node000011_Node000016" title=" " alt="" coords="753,107,841,149,839,154,751,112"/>
+<area shape="poly" id="edge15_Node000012_Node000005" title=" " alt="" coords="566,185,516,204,465,228,402,266,353,301,350,296,399,262,463,223,514,199,564,180"/>
+<area shape="poly" id="edge19_Node000012_Node000006" title=" " alt="" coords="615,192,615,372,609,372,609,192"/>
+<area shape="poly" id="edge14_Node000012_Node000011" title=" " alt="" coords="646,142,705,102,708,106,649,147"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="642,183,700,223,697,227,639,187"/>
+<area shape="rect" id="Node000015" href="$user_8cpp.html" title=" " alt="" coords="476,225,575,251"/>
+<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="589,188,541,227,538,223,586,184"/>
+<area shape="poly" id="edge17_Node000013_Node000005" title=" " alt="" coords="642,256,398,301,397,296,641,251"/>
+<area shape="rect" id="Node000014" href="$userlist_8cpp.html" title="Implementación de la clase UserList." alt="" coords="656,299,776,324"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="719,264,719,299,713,299,713,264"/>
+</map>

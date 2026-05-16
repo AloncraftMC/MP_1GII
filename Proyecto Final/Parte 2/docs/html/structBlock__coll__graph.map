@@ -1,0 +1,6 @@
+<map id="Block" name="Block">
+<area shape="rect" id="Node000001" title="Estructura que representa un bloque de canciones en la lista de canciones." alt="" coords="41,401,171,467"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="172,420,189,424,197,434,189,444,185,441,192,434,187,428,170,425"/>
+<area shape="rect" id="Node000002" href="$classSong.html" title="Representa una canción con un título, un género y una duración." alt="" coords="5,5,207,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,339,109,385,103,385,103,339"/>
+</map>

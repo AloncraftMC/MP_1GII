@@ -1,0 +1,16 @@
+<map id="src/album.cpp" name="src/album.cpp">
+<area shape="rect" id="Node000001" title="Implementación de la clase Album." alt="" coords="43,5,157,31"/>
+<area shape="rect" id="Node000002" href="$album_8h.html" title="Declaración de la clase Album." alt="" coords="63,79,137,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,31,103,65,97,65,97,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="60,225,140,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,106,37,125,23,138,12,153,8,163,9,172,19,189,37,204,59,217,57,222,34,209,14,192,4,173,3,162,7,151,19,134,34,121,67,102"/>
+<area shape="rect" id="Node000004" href="$artist_8h.html" title="Declaración de la clase Artist." alt="" coords="22,152,90,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="95,106,73,142,68,139,91,103"/>
+<area shape="rect" id="Node000005" href="$date_8h.html" title="Declaración de la clase Date." alt="" coords="114,152,177,177"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="110,103,133,139,128,142,105,106"/>
+<area shape="rect" id="Node000006" href="$song_8h.html" title="Declaración de la clase Song." alt="" coords="201,152,266,177"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="123,102,201,143,198,148,120,106"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="66,176,88,212,84,215,61,179"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="140,179,117,215,113,212,136,176"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="213,180,135,221,133,216,211,175"/>
+</map>

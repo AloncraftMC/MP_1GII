@@ -1,0 +1,5 @@
+<map id="Spotifry::artistaTop" name="Spotifry::artistaTop">
+<area shape="rect" id="Node000001" title="Obtiene un ejemplo de el artista más escuchado por un usuario dado su email." alt="" coords="5,5,149,31"/>
+<area shape="rect" id="Node000002" href="$classUserList.html#ae26b51fb404689da78090dd336230459" title="Obtiene un puntero al usuario con el email dado." alt="" coords="197,5,385,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,15,184,15,184,21,150,21"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Spotifry::numSongs" name="Spotifry::numSongs">
+<area shape="rect" id="Node000001" title="Obtiene el número de canciones guardadas por un usuario dado su email." alt="" coords="325,56,473,81"/>
+<area shape="rect" id="Node000002" href="$classSpotifry.html#a0dacaec892f8e85887ababa03566e0f5" title="Crea una nueva playlist para un usuario dado su email, el título de la playlist y los nombres de las ..." alt="" coords="108,5,277,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,55,244,33,246,28,334,50"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="312,65,60,48,60,42,312,60"/>
+<area shape="rect" id="Node000004" href="$classSpotifry.html#a71986a83aace165403a4156263801b5f" title="Constructor con parámetros." alt="" coords="127,107,258,132"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="334,87,246,109,244,104,333,82"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,35,61,42,60,36,99,30"/>
+</map>

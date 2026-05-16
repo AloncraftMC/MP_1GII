@@ -1,0 +1,5 @@
+<map id="Spotifry::leerTemplateHtml" name="Spotifry::leerTemplateHtml">
+<area shape="rect" id="Node000001" title="Lee una plantilla HTML desde un archivo y devuelve su contenido como un string." alt="" coords="5,5,203,31"/>
+<area shape="rect" id="Node000002" href="$classSpotifry.html#a429e70ab7a986fd1bcc99d2c47748a6a" title="Lee el contenido de un archivo." alt="" coords="251,5,405,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,15,237,15,237,21,203,21"/>
+</map>

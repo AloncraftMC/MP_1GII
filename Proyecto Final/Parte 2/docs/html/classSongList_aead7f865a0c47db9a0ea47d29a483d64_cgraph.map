@@ -1,0 +1,11 @@
+<map id="SongList::addSong" name="SongList::addSong">
+<area shape="rect" id="Node000001" title="Añade una nueva canción a la lista." alt="" coords="5,80,147,105"/>
+<area shape="rect" id="Node000002" href="$classAlbum.html#a7400a7d5c42929eb10b965f2e1af176a" title="Añade una canción al álbum." alt="" coords="226,5,354,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,78,194,39,219,32,220,37,196,45,104,82"/>
+<area shape="rect" id="Node000003" href="$classAlbumList.html#aece98eb6281e3d8fcfcae42a968788a4" title="Obtiene un álbum por su posición en la lista." alt="" coords="197,55,383,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,82,182,77,183,83,147,87"/>
+<area shape="rect" id="Node000004" href="$classAlbumList.html#a029bdd97ecd363f2bc5b7b77f5d7d938" title="Obtiene el número actual de álbumes en la lista." alt="" coords="195,104,385,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,98,181,102,181,107,147,103"/>
+<area shape="rect" id="Node000005" href="$classAlbum.html#ac7c1ad3540f1d41eea819523e1c0bc0f" title="Obtiene el título del álbum." alt="" coords="229,153,351,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="107,103,196,138,224,147,223,152,194,143,105,108"/>
+</map>

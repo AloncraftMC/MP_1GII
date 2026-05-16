@@ -1,0 +1,32 @@
+<map id="Spotifry::Spotifry" name="Spotifry::Spotifry">
+<area shape="rect" id="Node000001" title="Constructor con parámetros." alt="" coords="5,213,136,239"/>
+<area shape="rect" id="Node000002" href="$classUser.html#a2bbb162ebbf3092bab6487a62f32a528" title="Añade una canción a las canciones guardadas por el usuario si no está ya guardada." alt="" coords="218,17,334,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,212,88,179,111,136,142,91,182,52,204,40,206,45,186,56,146,94,115,139,93,182,79,214"/>
+<area shape="rect" id="Node000003" href="$classUser.html#a1edfce8450e06f0ad43b3fd839647bbd" title="Crea una nueva playlist privada con las canciones dadas y la agrega a las playlists creadas por el us..." alt="" coords="201,67,351,92"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="82,211,125,170,182,124,232,96,235,100,186,128,128,174,86,215"/>
+<area shape="rect" id="Node000006" href="$classSongList.html#a0e2a4e0a0aabf74dd867dcf19a83d125" title="Busca canciones en la lista que coincidan con los criterios de búsqueda." alt="" coords="205,139,347,164"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="96,211,183,173,206,165,208,170,185,178,98,216"/>
+<area shape="rect" id="Node000010" href="$classUser.html#a2479e486c1e53a38b5ce68654bc207ae" title="Obtiene el número de playlists creadas por el usuario." alt="" coords="193,188,359,213"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="136,215,179,210,179,215,136,221"/>
+<area shape="rect" id="Node000011" href="$classUserList.html#ae26b51fb404689da78090dd336230459" title="Obtiene un puntero al usuario con el email dado." alt="" coords="417,252,605,277"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="136,229,404,253,403,258,136,234"/>
+<area shape="rect" id="Node000012" href="$classSpotifry.html#a98dd0e4af1eab2994b6834a503146f01" title="Obtiene el número de canciones guardadas por un usuario dado su email." alt="" coords="202,289,350,315"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="105,236,185,268,226,282,224,287,183,272,103,241"/>
+<area shape="rect" id="Node000014" href="$classPlaylist.html#acadbb74f13cf3f3d02dd4d1f21f4cee4" title="Establece la fecha de creación de la playlist." alt="" coords="184,339,368,364"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="84,237,126,280,154,304,185,325,199,331,197,336,183,330,151,309,122,284,80,241"/>
+<area shape="rect" id="Node000015" href="$classPlaylist.html#a68414618814289b474867bf96ba5745a" title="Establece la configuración de privacidad de la playlist." alt="" coords="203,388,349,413"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="80,237,118,303,148,342,186,375,195,380,192,385,182,379,145,346,114,306,75,240"/>
+<area shape="rect" id="Node000004" href="$classUser.html#a50bea2ec057b392d4d02f94be3d0c9d4" title="Añade una playlist a las playlists creadas por el usuario si no está ya agregada." alt="" coords="445,5,577,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="323,64,415,39,446,32,447,37,417,45,325,69"/>
+<area shape="rect" id="Node000005" href="$classPlaylist.html#aea3e692e2fcfd7e7313498037228da40" title="Añade una canción a la playlist si el usuario que la añade es el creador de la playlist." alt="" coords="444,55,579,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="351,73,430,69,431,74,351,78"/>
+<area shape="rect" id="Node000007" href="$classSong.html#ae305917a759e91936bce1faf4afae886" title="Obtiene la duración de la canción en segundos." alt="" coords="442,104,581,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="347,138,428,126,429,131,348,144"/>
+<area shape="rect" id="Node000008" href="$classSong.html#ac84072062021a880613034b02f74c301" title="Obtiene el género de la canción como una cadena de texto." alt="" coords="450,153,573,179"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="347,153,436,159,436,164,347,158"/>
+<area shape="rect" id="Node000009" href="$classSong.html#a925af949926d58af4a28daa9ad2f993e" title="Obtiene el título de la canción." alt="" coords="455,203,567,228"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="328,162,369,173,417,187,449,197,448,202,415,193,367,178,326,167"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="350,288,417,277,418,282,351,293"/>
+<area shape="rect" id="Node000013" href="$classUser.html#a76747aa652a16c919beb7fed821ec083" title="Obtiene el número de canciones guardadas por el usuario." alt="" coords="416,301,607,327"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="350,303,403,306,402,311,350,308"/>
+</map>

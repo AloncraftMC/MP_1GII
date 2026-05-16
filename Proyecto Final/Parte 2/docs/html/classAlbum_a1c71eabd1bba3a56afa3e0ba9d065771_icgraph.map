@@ -1,0 +1,15 @@
+<map id="Album::getArtist" name="Album::getArtist">
+<area shape="rect" id="Node000001" title="Obtiene el artista del álbum." alt="" coords="353,80,481,105"/>
+<area shape="rect" id="Node000002" href="$classAlbumList.html#a9acd4d13e86aaae978cd090f834e21a9" title="Guarda la lista de álbumes en un archivo .txt." alt="" coords="141,5,273,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="378,76,304,45,266,33,268,28,306,39,380,71"/>
+<area shape="rect" id="Node000004" href="$classSpotifry.html#a663e27a3b2636ba2e7c3b19febc81cfd" title="Genera un string HTML con la información de las canciones guardadas de un usuario dado su email." alt="" coords="108,55,305,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="339,86,305,82,306,77,340,81"/>
+<area shape="rect" id="Node000005" href="$album_8cpp.html#a075843d3817d4532f7296e6394440fa5" title="Sobrecarga del operador de inserción para imprimir un álbum." alt="" coords="157,104,256,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="340,104,257,114,256,108,339,99"/>
+<area shape="rect" id="Node000006" href="$classAlbumList.html#a99fa794c7f816491b536f879685a8a04" title="Imprime la información de un álbum dado su título." alt="" coords="123,153,290,179"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="378,114,306,143,264,156,262,151,304,138,376,109"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,37,109,45,61,60,59,55,107,39,136,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="124,151,107,143,68,113,41,82,46,79,72,109,109,138,126,146"/>
+</map>

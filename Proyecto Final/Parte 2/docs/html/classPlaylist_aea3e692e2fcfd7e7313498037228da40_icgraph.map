@@ -1,0 +1,11 @@
+<map id="Playlist::addSong" name="Playlist::addSong">
+<area shape="rect" id="Node000001" title="Añade una canción a la playlist si el usuario que la añade es el creador de la playlist." alt="" coords="523,31,657,56"/>
+<area shape="rect" id="Node000002" href="$classUser.html#a1edfce8450e06f0ad43b3fd839647bbd" title="Crea una nueva playlist privada con las canciones dadas y la agrega a las playlists creadas por el us..." alt="" coords="325,31,475,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="509,46,475,46,475,41,509,41"/>
+<area shape="rect" id="Node000003" href="$classSpotifry.html#a0dacaec892f8e85887ababa03566e0f5" title="Crea una nueva playlist para un usuario dado su email, el título de la playlist y los nombres de las ..." alt="" coords="108,5,277,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,35,277,31,278,26,312,30"/>
+<area shape="rect" id="Node000005" href="$classSpotifry.html#a71986a83aace165403a4156263801b5f" title="Constructor con parámetros." alt="" coords="127,55,258,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="312,56,259,62,258,57,311,51"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

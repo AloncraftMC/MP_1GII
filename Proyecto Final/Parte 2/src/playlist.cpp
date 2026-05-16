@@ -1,5 +1,14 @@
+/**
+ * @file playlist.cpp
+ * @author Alonso Hernández Robles (F1)
+ * @brief Implementación de la clase Playlist.
+ */
+
 #include "playlist.h"
 
+/**
+ * @brief Inicializa la lista de canciones vacía y los contadores relacionados.
+ */
 void Playlist::init(){
 
     this->max_songs = 0;
@@ -8,6 +17,11 @@ void Playlist::init(){
 
 }
 
+/**
+ * @brief Copia los atributos de otra playlist a esta, asumiendo que esta está vacía.
+ * @param playlist La playlist de la que se copiarán los atributos.
+ * @warning Este método no libera la memoria del array `songs`, por lo que debe ser llamado solo en constructores o después de liberar la memoria del array.
+ */
 void Playlist::pasteAttributes(const Playlist& playlist){
 
     this->title = playlist.title;
@@ -24,6 +38,9 @@ void Playlist::pasteAttributes(const Playlist& playlist){
 
 }
 
+/**
+ * @brief Constructor por defecto.
+ */
 Playlist::Playlist(){
 
     this->title = "New playlist";
@@ -34,6 +51,13 @@ Playlist::Playlist(){
 
 }
 
+/**
+ * @brief Constructor con parámetros.
+ * @param title El título de la playlist.
+ * @param creator El usuario creador de la playlist.
+ * @param creationDate La fecha de creación de la playlist.
+ * @param privacy La configuración de privacidad de la playlist.
+ */
 Playlist::Playlist(string title, User* creator, Date creationDate, PlaylistPrivacy privacy){
 
     this->title = title;
@@ -44,6 +68,10 @@ Playlist::Playlist(string title, User* creator, Date creationDate, PlaylistPriva
 
 }
 
+/**
+ * @brief Destructor.
+ * @warning Sólo libera la memoria del array de punteros a canciones, no de las canciones ni del creador, ya que la playlist no es el propietario de esos objetos.
+ */
 Playlist::~Playlist(){
 
     this->creator = nullptr;
@@ -53,6 +81,12 @@ Playlist::~Playlist(){
 
 }
 
+/**
+ * @brief Añade una canción a la playlist si el usuario que la agrega es el creador de la playlist.
+ * @param song La canción a añadir.
+ * @param whoAddsIt El usuario que intenta añadir la canción.
+ * @return true si la canción fue añadida exitosamente, false en caso contrario.
+ */
 bool Playlist::addSong(Song* song, User* whoAddsIt){
 
     if(whoAddsIt != this->creator)  return false;
@@ -83,6 +117,12 @@ bool Playlist::addSong(Song* song, User* whoAddsIt){
 
 }
 
+/**
+ * @brief Elimina una canción de la playlist si el usuario que la elimina es el creador de la playlist.
+ * @param song La canción a eliminar.
+ * @param whoRemovesIt El usuario que intenta eliminar la canción.
+ * @return true si la canción fue eliminada exitosamente, false en caso contrario.
+ */
 bool Playlist::deleteSong(Song* song, User* whoRemovesIt){
 
     if(whoRemovesIt != this->creator)  return false;
@@ -126,6 +166,11 @@ bool Playlist::deleteSong(Song* song, User* whoRemovesIt){
 
 }
 
+/**
+ * @brief Sobrecarga del operador de asignación.
+ * @param playlist La playlist a asignar a esta.
+ * @return Una referencia a esta playlist después de la asignación.
+ */
 Playlist& Playlist::operator=(const Playlist& playlist){
 
     if(&playlist != this){
@@ -139,6 +184,12 @@ Playlist& Playlist::operator=(const Playlist& playlist){
 
 }
 
+/**
+ * @brief Sobrecarga del operador de inserción para imprimir una playlist.
+ * @param flujo Flujo de salida.
+ * @param playlist Playlist a imprimir.
+ * @return Referencia al flujo de salida.
+ */
 ostream& operator<<(ostream& flujo, const Playlist& playlist){
 
     flujo << playlist.getTitle() << " | "

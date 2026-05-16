@@ -1,0 +1,180 @@
+\doxysection{User\+List Class Reference}
+\hypertarget{classUserList}{}\label{classUserList}\index{UserList@{UserList}}
+
+
+Representa una lista de usuarios.  
+
+
+
+
+{\ttfamily \#include $<$userlist.\+h$>$}
+
+
+
+Collaboration diagram for User\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classUserList__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUserList_af8ff6d909af4608a32665d537d4d5982}{User\+List}} (string users\+\_\+file\+\_\+path, string spotifry\+\_\+db\+\_\+file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUserList_a6da872f3173fef7a989febb292325a49}{\texorpdfstring{$\sim$}{\string~}\+User\+List}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUserList_ae26b51fb404689da78090dd336230459}{get\+User\+By\+Email}} (string email)
+\begin{DoxyCompactList}\small\item\em Obtiene un puntero al usuario con el email dado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUserList_aeff9047f6c0fed17f6f4540f098ea6c5}{get\+Current\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número actual de usuarios en la lista. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUserList_a24b4e84c4e94bd0ceade2d4516cca81c}{get\+Number\+Of\+Playlists}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número total de playlists creadas por los usuarios. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUserList_a2c693e9cfb7281daae01aaef479856a9}{add\+User}} (\mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}user\+\_\+to\+\_\+add)
+\begin{DoxyCompactList}\small\item\em Añade un usuario a la lista de usuarios si no se ha alcanzado el límite máximo de usuarios. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUserList_a70c4c2a512ddcba60da7c730ffdece75}{add\+Playlist}} (\mbox{\hyperlink{classPlaylist}{Playlist}} \texorpdfstring{$\ast$}{*}playlist\+\_\+to\+\_\+add)
+\begin{DoxyCompactList}\small\item\em Añade una playlist a la lista de playlists si no se ha alcanzado el límite máximo de playlists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una lista de usuarios. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classUserList_af8ff6d909af4608a32665d537d4d5982}\label{classUserList_af8ff6d909af4608a32665d537d4d5982} 
+\index{UserList@{UserList}!UserList@{UserList}}
+\index{UserList@{UserList}!UserList@{UserList}}
+\doxysubsubsection{\texorpdfstring{UserList()}{UserList()}}
+{\footnotesize\ttfamily User\+List\+::\+User\+List (\begin{DoxyParamCaption}\item[{string}]{users\+\_\+file\+\_\+path,  }\item[{string}]{spotifry\+\_\+db\+\_\+file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em users\+\_\+file\+\_\+path} & Ruta del archivo .txt con los datos de los usuarios. \\
+\hline
+{\em spotifry\+\_\+db\+\_\+file\+\_\+path} & Ruta del archivo .txt con los datos de las canciones y playlists de los usuarios. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classUserList_af8ff6d909af4608a32665d537d4d5982_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUserList_a6da872f3173fef7a989febb292325a49}\label{classUserList_a6da872f3173fef7a989febb292325a49} 
+\index{UserList@{UserList}!````~UserList@{\texorpdfstring{$\sim$}{\string~}UserList}}
+\index{````~UserList@{\texorpdfstring{$\sim$}{\string~}UserList}!UserList@{UserList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}UserList()}{\string~UserList()}}
+{\footnotesize\ttfamily User\+List\+::\texorpdfstring{$\sim$}{\string~}\+User\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUserList_a70c4c2a512ddcba60da7c730ffdece75}\label{classUserList_a70c4c2a512ddcba60da7c730ffdece75} 
+\index{UserList@{UserList}!addPlaylist@{addPlaylist}}
+\index{addPlaylist@{addPlaylist}!UserList@{UserList}}
+\doxysubsubsection{\texorpdfstring{addPlaylist()}{addPlaylist()}}
+{\footnotesize\ttfamily bool User\+List\+::add\+Playlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlaylist}{Playlist}} \texorpdfstring{$\ast$}{*}}]{playlist\+\_\+to\+\_\+add }\end{DoxyParamCaption})}
+
+
+
+Añade una playlist a la lista de playlists si no se ha alcanzado el límite máximo de playlists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist\+\_\+to\+\_\+add} & Un puntero a la playlist que se desea añadir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la playlist se añadió exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classUserList_a2c693e9cfb7281daae01aaef479856a9}\label{classUserList_a2c693e9cfb7281daae01aaef479856a9} 
+\index{UserList@{UserList}!addUser@{addUser}}
+\index{addUser@{addUser}!UserList@{UserList}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily bool User\+List\+::add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}}]{user\+\_\+to\+\_\+add }\end{DoxyParamCaption})}
+
+
+
+Añade un usuario a la lista de usuarios si no se ha alcanzado el límite máximo de usuarios. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+to\+\_\+add} & Un puntero al usuario que se desea añadir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si el usuario se añadió exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classUserList_a2c693e9cfb7281daae01aaef479856a9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUserList_aeff9047f6c0fed17f6f4540f098ea6c5}\label{classUserList_aeff9047f6c0fed17f6f4540f098ea6c5} 
+\index{UserList@{UserList}!getCurrentSize@{getCurrentSize}}
+\index{getCurrentSize@{getCurrentSize}!UserList@{UserList}}
+\doxysubsubsection{\texorpdfstring{getCurrentSize()}{getCurrentSize()}}
+{\footnotesize\ttfamily int User\+List\+::get\+Current\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número actual de usuarios en la lista. 
+
+\begin{DoxyReturn}{Returns}
+El número actual de usuarios en la lista. 
+\end{DoxyReturn}
+\Hypertarget{classUserList_a24b4e84c4e94bd0ceade2d4516cca81c}\label{classUserList_a24b4e84c4e94bd0ceade2d4516cca81c} 
+\index{UserList@{UserList}!getNumberOfPlaylists@{getNumberOfPlaylists}}
+\index{getNumberOfPlaylists@{getNumberOfPlaylists}!UserList@{UserList}}
+\doxysubsubsection{\texorpdfstring{getNumberOfPlaylists()}{getNumberOfPlaylists()}}
+{\footnotesize\ttfamily int User\+List\+::get\+Number\+Of\+Playlists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número total de playlists creadas por los usuarios. 
+
+\begin{DoxyReturn}{Returns}
+El número total de playlists creadas por los usuarios. 
+\end{DoxyReturn}
+\Hypertarget{classUserList_ae26b51fb404689da78090dd336230459}\label{classUserList_ae26b51fb404689da78090dd336230459} 
+\index{UserList@{UserList}!getUserByEmail@{getUserByEmail}}
+\index{getUserByEmail@{getUserByEmail}!UserList@{UserList}}
+\doxysubsubsection{\texorpdfstring{getUserByEmail()}{getUserByEmail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*} User\+List\+::get\+User\+By\+Email (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})}
+
+
+
+Obtiene un puntero al usuario con el email dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & El email del usuario a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un puntero al usuario con el email dado, o nullptr si no se encuentra ningún usuario con ese email. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUserList_ae26b51fb404689da78090dd336230459_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{userlist_8h}{userlist.\+h}}\item 
+src/\mbox{\hyperlink{userlist_8cpp}{userlist.\+cpp}}\end{DoxyCompactItemize}

@@ -1,5 +1,15 @@
+/**
+ * @file album.cpp
+ * @author Alonso Hernández Robles (F1)
+ * @brief Implementación de la clase Album.
+ */
+
 #include "album.h"
 
+/**
+ * @brief Copia los atributos de otro álbum a este álbum.
+ * @param album El álbum del cual se copian los atributos.
+ */
 void Album::pasteAttributes(const Album& album){
 
     this->title = album.title;
@@ -13,6 +23,9 @@ void Album::pasteAttributes(const Album& album){
 
 }
 
+/**
+ * @brief Constructor por defecto.
+ */
 Album::Album(){
 
     this->title = "New album";
@@ -23,6 +36,14 @@ Album::Album(){
 
 }
 
+/**
+ * @brief Constructor con parámetros.
+ * @param title Título del álbum.
+ * @param artist Puntero al artista del álbum.
+ * @param releaseDate Fecha de lanzamiento del álbum.
+ * @param songs Array de punteros a las canciones del álbum.
+ * @param num_songs Número de canciones en el álbum.
+ */
 Album::Album(string title, Artist* artist, Date releaseDate, Song** songs, int num_songs){
 
     this->title = title;
@@ -45,6 +66,10 @@ Album::Album(string title, Artist* artist, Date releaseDate, Song** songs, int n
 
 }
 
+/**
+ * @brief Destructor.
+ * @warning Sólo libera la memoria del array de punteros a canciones, no de las canciones ni del artista, ya que el álbum no es el propietario de esos objetos.
+ */
 Album::~Album(){
 
     this->artist = nullptr;
@@ -54,6 +79,11 @@ Album::~Album(){
 
 }
 
+/**
+ * @brief Establece las canciones del álbum.
+ * @param num_songs El número de canciones en el álbum.
+ * @param songs El array de punteros a las canciones del álbum.
+ */
 void Album::setNewSongs(int num_songs, Song** songs){
 
     this->num_songs = num_songs;
@@ -75,6 +105,11 @@ void Album::setNewSongs(int num_songs, Song** songs){
 
 }
 
+/**
+ * @brief Sobrecarga del operador de asignación.
+ * @param album El álbum a asignar.
+ * @return Referencia al álbum asignado.
+ */
 Album& Album::operator=(const Album& album){
 
     if(&album != this){
@@ -88,6 +123,11 @@ Album& Album::operator=(const Album& album){
 
 }
 
+/**
+ * @brief Añade una canción al álbum.
+ * @param song Puntero a la canción a añadir.
+ * @return true si la canción se añadió correctamente, false en caso contrario.
+ */
 bool Album::addSong(Song* song) {
     
     for(int i = 0; i < this->num_songs; i++) {
@@ -105,6 +145,12 @@ bool Album::addSong(Song* song) {
 
 }
 
+/**
+ * @brief Sobrecarga del operador de inserción para imprimir un álbum.
+ * @param flujo Flujo de salida.
+ * @param album Álbum a imprimir.
+ * @return Referencia al flujo de salida con la información del álbum.
+ */
 ostream& operator<<(ostream& flujo, const Album& album){
 
     flujo << album.getTitle() << " - "

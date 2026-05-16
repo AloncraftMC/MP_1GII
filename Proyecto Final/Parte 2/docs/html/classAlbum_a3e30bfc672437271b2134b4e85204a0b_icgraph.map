@@ -1,0 +1,13 @@
+<map id="Album::getSong" name="Album::getSong">
+<area shape="rect" id="Node000001" title="Obtiene una canción del álbum." alt="" coords="353,55,479,80"/>
+<area shape="rect" id="Node000002" href="$classAlbumList.html#a9acd4d13e86aaae978cd090f834e21a9" title="Guarda la lista de álbumes en un archivo .txt." alt="" coords="141,5,273,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="348,54,261,33,262,28,349,49"/>
+<area shape="rect" id="Node000004" href="$classSpotifry.html#a663e27a3b2636ba2e7c3b19febc81cfd" title="Genera un string HTML con la información de las canciones guardadas de un usuario dado su email." alt="" coords="108,55,305,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="340,70,306,70,306,65,340,65"/>
+<area shape="rect" id="Node000005" href="$classAlbumList.html#a99fa794c7f816491b536f879685a8a04" title="Imprime la información de un álbum dado su título." alt="" coords="123,104,290,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="349,86,262,107,261,101,348,81"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,37,109,45,61,60,59,55,107,39,136,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="140,103,107,94,59,79,61,74,109,89,142,98"/>
+</map>

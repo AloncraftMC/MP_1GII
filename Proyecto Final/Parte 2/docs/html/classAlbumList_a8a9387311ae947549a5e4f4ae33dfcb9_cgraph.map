@@ -1,0 +1,9 @@
+<map id="AlbumList::AlbumList" name="AlbumList::AlbumList">
+<area shape="rect" id="Node000001" title="Constructor con parámetros." alt="" coords="5,55,165,80"/>
+<area shape="rect" id="Node000002" href="$classArtistList.html#a29039023e18a1c2c560edb5b42cc6506" title="Obtiene un artista por su posición en la lista." alt="" coords="219,5,392,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,52,234,31,235,36,143,57"/>
+<area shape="rect" id="Node000003" href="$classArtistList.html#a059820503930fa166c703c3a7cd3b4a0" title="Obtiene el número actual de artistas en la lista." alt="" coords="213,55,397,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,65,200,65,200,70,166,70"/>
+<area shape="rect" id="Node000004" href="$classArtist.html#ada3713832b9dfdbbf8cec8ac5305ab2d" title="Obtiene el nombre del artista." alt="" coords="243,104,368,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,77,235,98,234,104,142,83"/>
+</map>

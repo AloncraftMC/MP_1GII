@@ -1,0 +1,7 @@
+<map id="User::getName" name="User::getName">
+<area shape="rect" id="Node000001" title="Obtiene el nombre del usuario." alt="" coords="152,31,272,56"/>
+<area shape="rect" id="Node000002" href="$playlist_8cpp.html#a838d202b1c3aa7fd2ff34df660bd63b8" title="Sobrecarga del operador de inserción para imprimir una playlist." alt="" coords="5,5,104,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,34,104,29,105,23,139,29"/>
+<area shape="rect" id="Node000003" href="$user_8h.html#a4beffcafdd2fa80a301f67238176d9ad" title="Sobrecarga del operador de inserción." alt="" coords="5,55,104,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,57,105,62,104,57,138,52"/>
+</map>

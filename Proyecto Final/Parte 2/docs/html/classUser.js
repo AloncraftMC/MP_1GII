@@ -1,0 +1,26 @@
+var classUser =
+[
+    [ "User", "classUser.html#a4a0137053e591fbb79d9057dd7d2283d", null ],
+    [ "User", "classUser.html#a4c7c69bf8583127bdfcb6c8b09ab8700", null ],
+    [ "User", "classUser.html#aa93176c0f05349bc8daf0c6074fcb929", null ],
+    [ "~User", "classUser.html#ac00b72ad64eb4149f7b21b9f5468c2b2", null ],
+    [ "addPlaylist", "classUser.html#a50bea2ec057b392d4d02f94be3d0c9d4", null ],
+    [ "addSong", "classUser.html#a2bbb162ebbf3092bab6487a62f32a528", null ],
+    [ "createPlaylist", "classUser.html#a1edfce8450e06f0ad43b3fd839647bbd", null ],
+    [ "deletePlaylist", "classUser.html#a4165beaa3dfb47f36b8e1c94f3e9cf65", null ],
+    [ "deleteSong", "classUser.html#a102f66365ae463a4281bbf45b71aadcf", null ],
+    [ "getBirthdate", "classUser.html#ae3795e6f0bd67b7cbeb6419f56530925", null ],
+    [ "getEmail", "classUser.html#a4c647e583bd964f40f687776a0d185dc", null ],
+    [ "getGender", "classUser.html#a070cd46011fd85d8c18451fdaf5ced25", null ],
+    [ "getName", "classUser.html#ab9b2b5feb6bdd1582696eb6d44cee384", null ],
+    [ "getNumPlaylists", "classUser.html#a2479e486c1e53a38b5ce68654bc207ae", null ],
+    [ "getNumSavedSongs", "classUser.html#a76747aa652a16c919beb7fed821ec083", null ],
+    [ "operator()", "classUser.html#a8afbf5af57e68b8cdcde2a7d85a111be", null ],
+    [ "operator()", "classUser.html#a28a8e4db10c5f6856046b0c0006e9df5", null ],
+    [ "operator=", "classUser.html#a1882c79e5ec526ef08ac37357234f4f7", null ],
+    [ "operator[]", "classUser.html#ace98315465aedc52c58a6c09988b7bda", null ],
+    [ "setBirthdate", "classUser.html#a30d680a2c75f3b614b379a6e95bf0fbe", null ],
+    [ "setEmail", "classUser.html#a9d38dd7a9f5ca79cf17ecf572d42c647", null ],
+    [ "setGender", "classUser.html#a216b9ce9451548602334c7896cd5b583", null ],
+    [ "setName", "classUser.html#acabf7e5a40909656de5bc631abe5588c", null ]
+];

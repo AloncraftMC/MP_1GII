@@ -1,0 +1,7 @@
+<map id="SongList::findSong" name="SongList::findSong">
+<area shape="rect" id="Node000001" title="Busca canciones en la lista que coincidan con los criterios de búsqueda." alt="" coords="184,31,325,56"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="43,5,98,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,34,98,24,99,19,171,29"/>
+<area shape="rect" id="Node000003" href="$classSpotifry.html#a71986a83aace165403a4156263801b5f" title="Constructor con parámetros." alt="" coords="5,55,136,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,57,137,61,136,56,170,52"/>
+</map>

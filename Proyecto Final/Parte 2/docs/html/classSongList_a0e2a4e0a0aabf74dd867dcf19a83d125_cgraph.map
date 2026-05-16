@@ -1,0 +1,9 @@
+<map id="SongList::findSong" name="SongList::findSong">
+<area shape="rect" id="Node000001" title="Busca canciones en la lista que coincidan con los criterios de búsqueda." alt="" coords="5,55,147,80"/>
+<area shape="rect" id="Node000002" href="$classSong.html#ae305917a759e91936bce1faf4afae886" title="Obtiene la duración de la canción en segundos." alt="" coords="195,5,333,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,52,201,32,202,37,126,57"/>
+<area shape="rect" id="Node000003" href="$classSong.html#ac84072062021a880613034b02f74c301" title="Obtiene el género de la canción como una cadena de texto." alt="" coords="203,55,325,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,65,189,65,189,70,147,70"/>
+<area shape="rect" id="Node000004" href="$classSong.html#a925af949926d58af4a28daa9ad2f993e" title="Obtiene el título de la canción." alt="" coords="208,104,320,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,77,202,98,201,103,124,83"/>
+</map>

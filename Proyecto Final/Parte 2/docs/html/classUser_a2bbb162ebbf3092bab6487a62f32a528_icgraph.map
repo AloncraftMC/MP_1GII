@@ -1,0 +1,5 @@
+<map id="User::addSong" name="User::addSong">
+<area shape="rect" id="Node000001" title="Añade una canción a las canciones guardadas por el usuario si no está ya guardada." alt="" coords="184,5,300,31"/>
+<area shape="rect" id="Node000002" href="$classSpotifry.html#a71986a83aace165403a4156263801b5f" title="Constructor con parámetros." alt="" coords="5,5,136,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,21,136,21,136,15,170,15"/>
+</map>

@@ -1,0 +1,27 @@
+<map id="src/userlist.cpp" name="src/userlist.cpp">
+<area shape="rect" id="Node000001" title="Implementación de la clase UserList." alt="" coords="81,5,201,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,79,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,33,71,73,68,68,123,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="103,79,178,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,31,143,65,138,65,138,31"/>
+<area shape="rect" id="Node000004" href="$userlist_8h.html" title="Declaración de la clase UserList." alt="" coords="202,79,285,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,28,217,68,214,73,156,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="173,372,253,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="235,106,219,127,203,153,176,224,163,299,161,312,163,323,175,343,190,361,186,364,170,347,158,325,156,312,158,298,171,222,198,151,214,124,231,103"/>
+<area shape="rect" id="Node000006" href="$user_8h.html" title="Declaración de la clase User." alt="" coords="213,152,274,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="246,104,246,138,241,138,241,104"/>
+<area shape="rect" id="Node000008" href="$playlist_8h.html" title="Declaración de la clase Playlist." alt="" coords="281,225,363,251"/>
+<area shape="poly" id="edge16_Node000004_Node000008" title=" " alt="" coords="255,103,288,151,316,211,311,213,284,153,251,106"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="236,179,201,229,183,263,170,299,168,311,170,323,180,343,193,360,189,363,175,346,165,325,162,311,165,298,178,261,197,226,232,176"/>
+<area shape="rect" id="Node000007" href="$date_8h.html" title="Declaración de la clase Date." alt="" coords="269,299,332,324"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="249,177,271,250,289,286,284,288,266,252,243,179"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="251,176,293,215,290,219,248,180"/>
+<area shape="rect" id="Node000009" href="$song_8h.html" title="Declaración de la clase Song." alt="" coords="180,299,245,324"/>
+<area shape="poly" id="edge15_Node000006_Node000009" title=" " alt="" coords="242,178,227,226,218,285,213,284,222,225,236,177"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="288,326,239,365,236,361,285,322"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="333,250,350,285,353,306,347,325,331,344,311,358,267,376,265,371,308,354,327,340,342,323,348,305,345,286,328,252"/>
+<area shape="poly" id="edge14_Node000008_Node000006" title=" " alt="" coords="314,227,272,188,275,184,318,223"/>
+<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="321,252,311,286,305,285,316,250"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="306,253,244,293,241,289,303,248"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="215,324,215,358,210,358,210,324"/>
+</map>

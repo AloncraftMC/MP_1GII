@@ -78,8 +78,8 @@ PDF: [Guión Práctica 5](PDFs/Practica5MP_2526.pdf)
 - [`main.cpp`](Práctica%205/Parte%202/src/main.cpp)
 
 ### Proyecto Final:
-PDF: [Guión Proyecto Final Parte 1](PDFs/practica_final_mp_2526_parte1.pdf)
-PDF: [Guión Proyecto Final Parte 2](PDFs/practica_final_mp_2526_parte2.pdf)
+- PDF Parte 1: [Guión Proyecto Final Parte 1](PDFs/practica_final_mp_2526_parte1.pdf)
+- PDF Parte 2: [Guión Proyecto Final Parte 2](PDFs/practica_final_mp_2526_parte2.pdf)
 
 #### Parte 1:
 - [`album.cpp`](Proyecto%20Final/Parte%201/src/album.cpp)
@@ -126,4 +126,8 @@ PDF: [Guión Proyecto Final Parte 2](PDFs/practica_final_mp_2526_parte2.pdf)
 - [`userlist.h`](Proyecto%20Final/Parte%202/include/userlist.h)
 - [`users.txt`](Proyecto%20Final/Parte%202/data/users.txt)
 - [`usuario_alice.html`](Proyecto%20Final/Parte%202/data/usuario_alice.html)
+
+##### Documentación (Doxygen):
+- HTML: [`index.html`](Proyecto%20Final/Parte%202/docs/html/index.html)
+- LaTeX/PDF: [`refman.pdf`](Proyecto%20Final/Parte%202/docs/latex/refman.pdf)
 

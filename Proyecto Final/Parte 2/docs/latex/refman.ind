@@ -1,0 +1,500 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Album}
+    \subitem {Album}, \hyperpage{8}
+  \item {\texorpdfstring{$\sim$}{\string~}AlbumList}
+    \subitem {AlbumList}, \hyperpage{15}
+  \item {\texorpdfstring{$\sim$}{\string~}ArtistList}
+    \subitem {ArtistList}, \hyperpage{22}
+  \item {\texorpdfstring{$\sim$}{\string~}Playlist}
+    \subitem {Playlist}, \hyperpage{35}
+  \item {\texorpdfstring{$\sim$}{\string~}SongList}
+    \subitem {SongList}, \hyperpage{48}
+  \item {\texorpdfstring{$\sim$}{\string~}User}
+    \subitem {User}, \hyperpage{67}
+  \item {\texorpdfstring{$\sim$}{\string~}UserList}
+    \subitem {UserList}, \hyperpage{79}
+
+  \indexspace
+
+  \item {addPlaylist}
+    \subitem {User}, \hyperpage{68}
+    \subitem {UserList}, \hyperpage{79}
+  \item {addSong}
+    \subitem {Album}, \hyperpage{8}
+    \subitem {Playlist}, \hyperpage{35}
+    \subitem {SongList}, \hyperpage{48}
+    \subitem {User}, \hyperpage{68}
+  \item {addUser}
+    \subitem {UserList}, \hyperpage{79}
+  \item {Album}, \hyperpage{5}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Album}, \hyperpage{8}
+    \subitem {addSong}, \hyperpage{8}
+    \subitem {Album}, \hyperpage{7, 8}
+    \subitem {getArtist}, \hyperpage{9}
+    \subitem {getNumSongs}, \hyperpage{9}
+    \subitem {getReleaseDate}, \hyperpage{10}
+    \subitem {getSong}, \hyperpage{10}
+    \subitem {getTitle}, \hyperpage{11}
+    \subitem {operator=}, \hyperpage{11}
+    \subitem {operator[]}, \hyperpage{12}
+    \subitem {setArtist}, \hyperpage{12}
+    \subitem {setNewSongs}, \hyperpage{12}
+    \subitem {setReleaseDate}, \hyperpage{13}
+    \subitem {setTitle}, \hyperpage{13}
+  \item {album.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{115}
+  \item {album.h}
+    \subitem {operator$<$$<$}, \hyperpage{84}
+  \item {AlbumList}, \hyperpage{13}
+    \subitem {\texorpdfstring{$\sim$}{\string~}AlbumList}, 
+		\hyperpage{15}
+    \subitem {AlbumList}, \hyperpage{14}
+    \subitem {dump}, \hyperpage{15}
+    \subitem {getAlbumById}, \hyperpage{16}
+    \subitem {getCurrentSize}, \hyperpage{17}
+    \subitem {printAlbum}, \hyperpage{17}
+  \item {albumlist.h}
+    \subitem {MAX\_ALBUMS}, \hyperpage{88}
+  \item {Artist}, \hyperpage{19}
+    \subitem {Artist}, \hyperpage{19}
+    \subitem {getName}, \hyperpage{20}
+    \subitem {setName}, \hyperpage{20}
+  \item {artist.h}
+    \subitem {operator$<$$<$}, \hyperpage{90}
+  \item {artistaTop}
+    \subitem {Spotifry}, \hyperpage{54}
+  \item {ArtistList}, \hyperpage{21}
+    \subitem {\texorpdfstring{$\sim$}{\string~}ArtistList}, 
+		\hyperpage{22}
+    \subitem {ArtistList}, \hyperpage{21}
+    \subitem {getArtistById}, \hyperpage{22}
+    \subitem {getCurrentSize}, \hyperpage{22}
+  \item {artistlist.h}
+    \subitem {MAX\_ARTISTS}, \hyperpage{92}
+
+  \indexspace
+
+  \item {Block}, \hyperpage{23}
+    \subitem {current\_size}, \hyperpage{25}
+    \subitem {list}, \hyperpage{25}
+    \subitem {next}, \hyperpage{25}
+  \item {BLOCK\_MAX\_SIZE}
+    \subitem {songlist.h}, \hyperpage{104}
+  \item {BLUES}
+    \subitem {song.h}, \hyperpage{101}
+
+  \indexspace
+
+  \item {CLASSICAL}
+    \subitem {song.h}, \hyperpage{101}
+  \item {COUNTRY}
+    \subitem {song.h}, \hyperpage{101}
+  \item {createPlaylist}
+    \subitem {Spotifry}, \hyperpage{55}
+    \subitem {User}, \hyperpage{69}
+  \item {current\_size}
+    \subitem {Block}, \hyperpage{25}
+
+  \indexspace
+
+  \item {Date}, \hyperpage{25}
+    \subitem {Date}, \hyperpage{27}
+    \subitem {getDay}, \hyperpage{28}
+    \subitem {getMonth}, \hyperpage{28}
+    \subitem {getYear}, \hyperpage{28}
+    \subitem {operator!=}, \hyperpage{29}
+    \subitem {operator$<$}, \hyperpage{29}
+    \subitem {operator$<$=}, \hyperpage{30}
+    \subitem {operator$>$}, \hyperpage{30}
+    \subitem {operator$>$=}, \hyperpage{31}
+    \subitem {operator==}, \hyperpage{30}
+    \subitem {setDay}, \hyperpage{31}
+    \subitem {setMonth}, \hyperpage{31}
+    \subitem {setYear}, \hyperpage{31}
+  \item {date.h}
+    \subitem {operator$<$$<$}, \hyperpage{94}
+  \item {deletePlaylist}
+    \subitem {User}, \hyperpage{70}
+  \item {deleteSong}
+    \subitem {Playlist}, \hyperpage{36}
+    \subitem {User}, \hyperpage{71}
+  \item {dump}
+    \subitem {AlbumList}, \hyperpage{15}
+
+  \indexspace
+
+  \item {ELECTRONIC}
+    \subitem {song.h}, \hyperpage{101}
+
+  \indexspace
+
+  \item {FEMALE}
+    \subitem {user.h}, \hyperpage{109}
+  \item {findSong}
+    \subitem {SongList}, \hyperpage{49}
+  \item {FOLK}
+    \subitem {song.h}, \hyperpage{101}
+
+  \indexspace
+
+  \item {Gender}
+    \subitem {user.h}, \hyperpage{109}
+  \item {generarCanciones}
+    \subitem {Spotifry}, \hyperpage{56}
+  \item {generarPlaylists}
+    \subitem {Spotifry}, \hyperpage{57}
+  \item {Genre}
+    \subitem {song.h}, \hyperpage{101}
+  \item {getAlbumById}
+    \subitem {AlbumList}, \hyperpage{16}
+  \item {getAlbumList}
+    \subitem {Spotifry}, \hyperpage{58}
+  \item {getArtist}
+    \subitem {Album}, \hyperpage{9}
+  \item {getArtistById}
+    \subitem {ArtistList}, \hyperpage{22}
+  \item {getBirthdate}
+    \subitem {User}, \hyperpage{71}
+  \item {getCreationDate}
+    \subitem {Playlist}, \hyperpage{36}
+  \item {getCreator}
+    \subitem {Playlist}, \hyperpage{37}
+  \item {getCurrentSize}
+    \subitem {AlbumList}, \hyperpage{17}
+    \subitem {ArtistList}, \hyperpage{22}
+    \subitem {UserList}, \hyperpage{80}
+  \item {getDay}
+    \subitem {Date}, \hyperpage{28}
+  \item {getDuration}
+    \subitem {Song}, \hyperpage{43}
+  \item {getEmail}
+    \subitem {User}, \hyperpage{71}
+  \item {getGender}
+    \subitem {User}, \hyperpage{72}
+  \item {getGenre}
+    \subitem {Song}, \hyperpage{44}
+  \item {getMaxSongs}
+    \subitem {Playlist}, \hyperpage{37}
+  \item {getMonth}
+    \subitem {Date}, \hyperpage{28}
+  \item {getName}
+    \subitem {Artist}, \hyperpage{20}
+    \subitem {User}, \hyperpage{72}
+  \item {getNumberOfPlaylists}
+    \subitem {UserList}, \hyperpage{80}
+  \item {getNumPlaylists}
+    \subitem {User}, \hyperpage{73}
+  \item {getNumSavedSongs}
+    \subitem {User}, \hyperpage{73}
+  \item {getNumSongs}
+    \subitem {Album}, \hyperpage{9}
+    \subitem {Playlist}, \hyperpage{37}
+  \item {getPrivacy}
+    \subitem {Playlist}, \hyperpage{38}
+  \item {getReleaseDate}
+    \subitem {Album}, \hyperpage{10}
+  \item {getSong}
+    \subitem {Album}, \hyperpage{10}
+  \item {getSongList}
+    \subitem {Spotifry}, \hyperpage{59}
+  \item {getTitle}
+    \subitem {Album}, \hyperpage{11}
+    \subitem {Playlist}, \hyperpage{38}
+    \subitem {Song}, \hyperpage{44}
+  \item {getUserByEmail}
+    \subitem {UserList}, \hyperpage{80}
+  \item {getUserList}
+    \subitem {Spotifry}, \hyperpage{59}
+  \item {getYear}
+    \subitem {Date}, \hyperpage{28}
+
+  \indexspace
+
+  \item {HIPHOP}
+    \subitem {song.h}, \hyperpage{101}
+
+  \indexspace
+
+  \item {include/album.h}, \hyperpage{83}, \hyperpage{85}
+  \item {include/albumlist.h}, \hyperpage{86}, \hyperpage{88}
+  \item {include/artist.h}, \hyperpage{89, 90}
+  \item {include/artistlist.h}, \hyperpage{91}, \hyperpage{93}
+  \item {include/date.h}, \hyperpage{93}, \hyperpage{95}
+  \item {include/playlist.h}, \hyperpage{96}, \hyperpage{98}
+  \item {include/song.h}, \hyperpage{100}, \hyperpage{102}
+  \item {include/songlist.h}, \hyperpage{103}, \hyperpage{105}
+  \item {include/spotifry.h}, \hyperpage{105}, \hyperpage{107}
+  \item {include/user.h}, \hyperpage{107}, \hyperpage{110}
+  \item {include/userlist.h}, \hyperpage{111}, \hyperpage{113}
+
+  \indexspace
+
+  \item {JAZZ}
+    \subitem {song.h}, \hyperpage{101}
+
+  \indexspace
+
+  \item {leerArchivo}
+    \subitem {Spotifry}, \hyperpage{59}
+  \item {leerTemplateHtml}
+    \subitem {Spotifry}, \hyperpage{60}
+  \item {list}
+    \subitem {Block}, \hyperpage{25}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{120}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{120}
+  \item {MALE}
+    \subitem {user.h}, \hyperpage{109}
+  \item {MAX\_ALBUMS}
+    \subitem {albumlist.h}, \hyperpage{88}
+  \item {MAX\_ARTISTS}
+    \subitem {artistlist.h}, \hyperpage{92}
+  \item {MAX\_PLAYLISTS}
+    \subitem {userlist.h}, \hyperpage{113}
+  \item {MAX\_USERS}
+    \subitem {userlist.h}, \hyperpage{113}
+  \item {METAL}
+    \subitem {song.h}, \hyperpage{101}
+
+  \indexspace
+
+  \item {next}
+    \subitem {Block}, \hyperpage{25}
+  \item {numPlaylists}
+    \subitem {Spotifry}, \hyperpage{61}
+  \item {numSongs}
+    \subitem {Spotifry}, \hyperpage{62}
+
+  \indexspace
+
+  \item {operator!=}
+    \subitem {Date}, \hyperpage{29}
+    \subitem {Playlist}, \hyperpage{38}
+    \subitem {Song}, \hyperpage{45}
+  \item {operator$<$}
+    \subitem {Date}, \hyperpage{29}
+  \item {operator$<$$<$}
+    \subitem {album.cpp}, \hyperpage{115}
+    \subitem {album.h}, \hyperpage{84}
+    \subitem {artist.h}, \hyperpage{90}
+    \subitem {date.h}, \hyperpage{94}
+    \subitem {playlist.cpp}, \hyperpage{122}
+    \subitem {playlist.h}, \hyperpage{98}
+    \subitem {song.h}, \hyperpage{101}
+    \subitem {user.h}, \hyperpage{109}
+  \item {operator$<$=}
+    \subitem {Date}, \hyperpage{30}
+  \item {operator$>$}
+    \subitem {Date}, \hyperpage{30}
+  \item {operator$>$=}
+    \subitem {Date}, \hyperpage{31}
+  \item {operator()}
+    \subitem {User}, \hyperpage{74}
+  \item {operator=}
+    \subitem {Album}, \hyperpage{11}
+    \subitem {Playlist}, \hyperpage{39}
+    \subitem {User}, \hyperpage{75}
+  \item {operator==}
+    \subitem {Date}, \hyperpage{30}
+    \subitem {Playlist}, \hyperpage{39}
+    \subitem {Song}, \hyperpage{45}
+  \item {operator[]}
+    \subitem {Album}, \hyperpage{12}
+    \subitem {Playlist}, \hyperpage{39}
+    \subitem {User}, \hyperpage{75}
+  \item {OTHER}
+    \subitem {user.h}, \hyperpage{109}
+
+  \indexspace
+
+  \item {Playlist}, \hyperpage{32}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Playlist}, 
+		\hyperpage{35}
+    \subitem {addSong}, \hyperpage{35}
+    \subitem {deleteSong}, \hyperpage{36}
+    \subitem {getCreationDate}, \hyperpage{36}
+    \subitem {getCreator}, \hyperpage{37}
+    \subitem {getMaxSongs}, \hyperpage{37}
+    \subitem {getNumSongs}, \hyperpage{37}
+    \subitem {getPrivacy}, \hyperpage{38}
+    \subitem {getTitle}, \hyperpage{38}
+    \subitem {operator!=}, \hyperpage{38}
+    \subitem {operator=}, \hyperpage{39}
+    \subitem {operator==}, \hyperpage{39}
+    \subitem {operator[]}, \hyperpage{39}
+    \subitem {Playlist}, \hyperpage{34, 35}
+    \subitem {setCreationDate}, \hyperpage{40}
+    \subitem {setPrivacy}, \hyperpage{40}
+    \subitem {setTitle}, \hyperpage{41}
+  \item {playlist.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{122}
+  \item {playlist.h}
+    \subitem {operator$<$$<$}, \hyperpage{98}
+    \subitem {PlaylistPrivacy}, \hyperpage{97}
+    \subitem {PRIVATE}, \hyperpage{98}
+    \subitem {PUBLIC}, \hyperpage{98}
+  \item {PlaylistPrivacy}
+    \subitem {playlist.h}, \hyperpage{97}
+  \item {POP}
+    \subitem {song.h}, \hyperpage{101}
+  \item {printAlbum}
+    \subitem {AlbumList}, \hyperpage{17}
+  \item {PRIVATE}
+    \subitem {playlist.h}, \hyperpage{98}
+  \item {PUBLIC}
+    \subitem {playlist.h}, \hyperpage{98}
+
+  \indexspace
+
+  \item {reemplazar}
+    \subitem {Spotifry}, \hyperpage{63}
+  \item {REGGAE}
+    \subitem {song.h}, \hyperpage{101}
+  \item {ROCK}
+    \subitem {song.h}, \hyperpage{101}
+
+  \indexspace
+
+  \item {setArtist}
+    \subitem {Album}, \hyperpage{12}
+  \item {setBirthdate}
+    \subitem {User}, \hyperpage{75}
+  \item {setCreationDate}
+    \subitem {Playlist}, \hyperpage{40}
+  \item {setDay}
+    \subitem {Date}, \hyperpage{31}
+  \item {setDuration}
+    \subitem {Song}, \hyperpage{46}
+  \item {setEmail}
+    \subitem {User}, \hyperpage{75}
+  \item {setGender}
+    \subitem {User}, \hyperpage{76}
+  \item {setGenre}
+    \subitem {Song}, \hyperpage{46}
+  \item {setMonth}
+    \subitem {Date}, \hyperpage{31}
+  \item {setName}
+    \subitem {Artist}, \hyperpage{20}
+    \subitem {User}, \hyperpage{76}
+  \item {setNewSongs}
+    \subitem {Album}, \hyperpage{12}
+  \item {setPrivacy}
+    \subitem {Playlist}, \hyperpage{40}
+  \item {setReleaseDate}
+    \subitem {Album}, \hyperpage{13}
+  \item {setTitle}
+    \subitem {Album}, \hyperpage{13}
+    \subitem {Playlist}, \hyperpage{41}
+    \subitem {Song}, \hyperpage{46}
+  \item {setYear}
+    \subitem {Date}, \hyperpage{31}
+  \item {Song}, \hyperpage{41}
+    \subitem {getDuration}, \hyperpage{43}
+    \subitem {getGenre}, \hyperpage{44}
+    \subitem {getTitle}, \hyperpage{44}
+    \subitem {operator!=}, \hyperpage{45}
+    \subitem {operator==}, \hyperpage{45}
+    \subitem {setDuration}, \hyperpage{46}
+    \subitem {setGenre}, \hyperpage{46}
+    \subitem {setTitle}, \hyperpage{46}
+    \subitem {Song}, \hyperpage{43}
+  \item {song.h}
+    \subitem {BLUES}, \hyperpage{101}
+    \subitem {CLASSICAL}, \hyperpage{101}
+    \subitem {COUNTRY}, \hyperpage{101}
+    \subitem {ELECTRONIC}, \hyperpage{101}
+    \subitem {FOLK}, \hyperpage{101}
+    \subitem {Genre}, \hyperpage{101}
+    \subitem {HIPHOP}, \hyperpage{101}
+    \subitem {JAZZ}, \hyperpage{101}
+    \subitem {METAL}, \hyperpage{101}
+    \subitem {operator$<$$<$}, \hyperpage{101}
+    \subitem {POP}, \hyperpage{101}
+    \subitem {REGGAE}, \hyperpage{101}
+    \subitem {ROCK}, \hyperpage{101}
+    \subitem {UNKNOWN}, \hyperpage{101}
+  \item {SongList}, \hyperpage{46}
+    \subitem {\texorpdfstring{$\sim$}{\string~}SongList}, 
+		\hyperpage{48}
+    \subitem {addSong}, \hyperpage{48}
+    \subitem {findSong}, \hyperpage{49}
+    \subitem {SongList}, \hyperpage{47}
+  \item {songlist.h}
+    \subitem {BLOCK\_MAX\_SIZE}, \hyperpage{104}
+  \item {Spotifry}, \hyperpage{51}
+    \subitem {artistaTop}, \hyperpage{54}
+    \subitem {createPlaylist}, \hyperpage{55}
+    \subitem {generarCanciones}, \hyperpage{56}
+    \subitem {generarPlaylists}, \hyperpage{57}
+    \subitem {getAlbumList}, \hyperpage{58}
+    \subitem {getSongList}, \hyperpage{59}
+    \subitem {getUserList}, \hyperpage{59}
+    \subitem {leerArchivo}, \hyperpage{59}
+    \subitem {leerTemplateHtml}, \hyperpage{60}
+    \subitem {numPlaylists}, \hyperpage{61}
+    \subitem {numSongs}, \hyperpage{62}
+    \subitem {reemplazar}, \hyperpage{63}
+    \subitem {Spotifry}, \hyperpage{53}
+  \item {src/album.cpp}, \hyperpage{114}
+  \item {src/albumlist.cpp}, \hyperpage{115}
+  \item {src/artist.cpp}, \hyperpage{116}
+  \item {src/artistlist.cpp}, \hyperpage{117}
+  \item {src/date.cpp}, \hyperpage{118}
+  \item {src/main.cpp}, \hyperpage{119}
+  \item {src/playlist.cpp}, \hyperpage{121}
+  \item {src/song.cpp}, \hyperpage{123}
+  \item {src/songlist.cpp}, \hyperpage{124}
+  \item {src/spotifry.cpp}, \hyperpage{125}
+  \item {src/user.cpp}, \hyperpage{126}
+  \item {src/userlist.cpp}, \hyperpage{127}
+
+  \indexspace
+
+  \item {UNKNOWN}
+    \subitem {song.h}, \hyperpage{101}
+  \item {User}, \hyperpage{64}
+    \subitem {\texorpdfstring{$\sim$}{\string~}User}, \hyperpage{67}
+    \subitem {addPlaylist}, \hyperpage{68}
+    \subitem {addSong}, \hyperpage{68}
+    \subitem {createPlaylist}, \hyperpage{69}
+    \subitem {deletePlaylist}, \hyperpage{70}
+    \subitem {deleteSong}, \hyperpage{71}
+    \subitem {getBirthdate}, \hyperpage{71}
+    \subitem {getEmail}, \hyperpage{71}
+    \subitem {getGender}, \hyperpage{72}
+    \subitem {getName}, \hyperpage{72}
+    \subitem {getNumPlaylists}, \hyperpage{73}
+    \subitem {getNumSavedSongs}, \hyperpage{73}
+    \subitem {operator()}, \hyperpage{74}
+    \subitem {operator=}, \hyperpage{75}
+    \subitem {operator[]}, \hyperpage{75}
+    \subitem {setBirthdate}, \hyperpage{75}
+    \subitem {setEmail}, \hyperpage{75}
+    \subitem {setGender}, \hyperpage{76}
+    \subitem {setName}, \hyperpage{76}
+    \subitem {User}, \hyperpage{67}
+  \item {user.h}
+    \subitem {FEMALE}, \hyperpage{109}
+    \subitem {Gender}, \hyperpage{109}
+    \subitem {MALE}, \hyperpage{109}
+    \subitem {operator$<$$<$}, \hyperpage{109}
+    \subitem {OTHER}, \hyperpage{109}
+  \item {UserList}, \hyperpage{76}
+    \subitem {\texorpdfstring{$\sim$}{\string~}UserList}, 
+		\hyperpage{79}
+    \subitem {addPlaylist}, \hyperpage{79}
+    \subitem {addUser}, \hyperpage{79}
+    \subitem {getCurrentSize}, \hyperpage{80}
+    \subitem {getNumberOfPlaylists}, \hyperpage{80}
+    \subitem {getUserByEmail}, \hyperpage{80}
+    \subitem {UserList}, \hyperpage{78}
+  \item {userlist.h}
+    \subitem {MAX\_PLAYLISTS}, \hyperpage{113}
+    \subitem {MAX\_USERS}, \hyperpage{113}
+
+\end{theindex}

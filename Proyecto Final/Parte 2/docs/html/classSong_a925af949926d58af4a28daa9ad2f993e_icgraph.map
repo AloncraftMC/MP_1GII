@@ -1,0 +1,21 @@
+<map id="Song::getTitle" name="Song::getTitle">
+<area shape="rect" id="Node000001" title="Obtiene el título de la canción." alt="" coords="429,129,541,155"/>
+<area shape="rect" id="Node000002" href="$classAlbumList.html#a9acd4d13e86aaae978cd090f834e21a9" title="Guarda la lista de álbumes en un archivo .txt." alt="" coords="217,104,349,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,136,349,128,349,122,415,131"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="43,104,98,129"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="415,149,306,151,184,145,138,137,98,127,99,122,139,132,184,139,306,146,415,144"/>
+<area shape="rect" id="Node000004" href="$classSongList.html#a0e2a4e0a0aabf74dd867dcf19a83d125" title="Busca canciones en la lista que coincidan con los criterios de búsqueda." alt="" coords="212,255,353,280"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="468,168,432,208,408,228,383,246,355,257,353,253,380,241,405,224,428,204,464,164"/>
+<area shape="rect" id="Node000006" href="$classSpotifry.html#a663e27a3b2636ba2e7c3b19febc81cfd" title="Genera un string HTML con la información de las canciones guardadas de un usuario dado su email." alt="" coords="184,5,381,31"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="464,120,428,81,405,61,380,44,354,33,356,28,383,40,408,57,431,77,468,116"/>
+<area shape="rect" id="Node000007" href="$song_8h.html#a71fbb621095556441f5bd36d4ab15c81" title="Sobrecarga del operador de inserción para imprimir una canción." alt="" coords="233,205,332,231"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="445,163,382,188,326,208,325,203,380,184,443,158"/>
+<area shape="rect" id="Node000008" href="$classAlbumList.html#a99fa794c7f816491b536f879685a8a04" title="Imprime la información de un álbum dado su título." alt="" coords="199,55,366,80"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="449,125,380,94,344,83,345,77,382,89,451,120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="203,119,98,119,98,114,203,114"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="198,253,183,246,147,219,117,187,77,131,82,128,121,183,151,215,185,241,200,249"/>
+<area shape="rect" id="Node000005" href="$classSpotifry.html#a71986a83aace165403a4156263801b5f" title="Constructor con parámetros." alt="" coords="5,255,136,280"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="198,270,136,270,136,265,198,265"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="204,37,185,44,131,75,89,106,86,102,128,71,183,40,203,32"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="215,86,99,113,98,108,214,81"/>
+</map>

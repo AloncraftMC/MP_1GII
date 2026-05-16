@@ -1,0 +1,52 @@
+\doxysection{songlist.\+h}
+\hypertarget{songlist_8h_source}{}\label{songlist_8h_source}\index{include/songlist.h@{include/songlist.h}}
+\mbox{\hyperlink{songlist_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ SONGLIST\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ SONGLIST\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{albumlist_8h}{albumlist.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{song_8h}{song.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{songlist_8h_a4be921592188781137837c41de93a4d2}{BLOCK\_MAX\_SIZE}}\ =\ 10;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structBlock}{Block}}\{}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classSong}{Song}}*\ \mbox{\hyperlink{structBlock_a0be9a2dec680d535865fbcf82d287606}{list}}[\mbox{\hyperlink{songlist_8h_a4be921592188781137837c41de93a4d2}{BLOCK\_MAX\_SIZE}}];\ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structBlock_abf5afb9add55cc15869303bd9b4970e0}{current\_size}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{structBlock}{Block}}*\ \mbox{\hyperlink{structBlock_ab4c6c04b6b3a24184d6f9daffcbeff98}{next}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAlbumList}{AlbumList}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSongList}{SongList}}\{}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structBlock}{Block}}*\ firstBlock;\ \ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structBlock}{Block}}*\ lastBlock;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR\ Y\ DESTRUCTOR}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSongList}{SongList}}(\textcolor{keywordtype}{string}\ file\_path,\ \mbox{\hyperlink{classAlbumList}{AlbumList}}\&\ albumList);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSongList_a438c7fdfe3606f287b419e9cc9267da5}{\string~SongList}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ OTROS\ MÉTODOS}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSongList_aead7f865a0c47db9a0ea47d29a483d64}{addSong}}(\textcolor{keywordtype}{string}\ title,\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}}\ genre,\ \textcolor{keywordtype}{int}\ duration,\ \mbox{\hyperlink{classAlbumList}{AlbumList}}\ \&albumList,\ \textcolor{keywordtype}{string}\ album);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSongList_a0e2a4e0a0aabf74dd867dcf19a83d125}{findSong}}(\textcolor{keywordtype}{string}\ searchTerm,\ \mbox{\hyperlink{song_8h_a5cd9403a8971f75311aa139040d38bbd}{Genre}}\ genre,\ \textcolor{keywordtype}{int}\ durationMin,\ \textcolor{keywordtype}{int}\ durationMax,\ \mbox{\hyperlink{classSong}{Song}}**\ results,\ \textcolor{keywordtype}{int}\ maxResults,\ \textcolor{keywordtype}{int}\&\ numResults);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

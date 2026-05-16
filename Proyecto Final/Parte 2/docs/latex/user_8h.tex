@@ -1,0 +1,108 @@
+\doxysection{include/user.h File Reference}
+\hypertarget{user_8h}{}\label{user_8h}\index{include/user.h@{include/user.h}}
+
+
+Declaración de la clase \doxylink{classUser}{User}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}date.\+h"{}}\newline
+{\ttfamily \#include "{}playlist.\+h"{}}\newline
+{\ttfamily \#include "{}song.\+h"{}}\newline
+Include dependency graph for user.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{user_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{user_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classUser}{User}}
+\begin{DoxyCompactList}\small\item\em Representa a un usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}} \{ \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324fadebb817413857eea6331734b76793159}{FEMALE}}
+, \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324fa6e81fe1ef694726dd6f7246cfb42369f}{MALE}}
+, \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324fadbf1dee1b8cd7ea3c82661943c7b74f4}{OTHER}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum para representar el género de un usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{user_8h_a4beffcafdd2fa80a301f67238176d9ad}{operator$<$$<$}} (ostream \&flujo, const \mbox{\hyperlink{classUser}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de inserción. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaración de la clase \doxylink{classUser}{User}. 
+
+\begin{DoxyAuthor}{Author}
+Alonso Hernández Robles (F1) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{user_8h_a3667e3c5ec056737c8789615a989324f}\label{user_8h_a3667e3c5ec056737c8789615a989324f} 
+\index{user.h@{user.h}!Gender@{Gender}}
+\index{Gender@{Gender}!user.h@{user.h}}
+\doxysubsubsection{\texorpdfstring{Gender}{Gender}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}}}
+
+
+
+Enum para representar el género de un usuario. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FEMALE@{FEMALE}!user.h@{user.h}}\index{user.h@{user.h}!FEMALE@{FEMALE}}}\Hypertarget{user_8h_a3667e3c5ec056737c8789615a989324fadebb817413857eea6331734b76793159}\label{user_8h_a3667e3c5ec056737c8789615a989324fadebb817413857eea6331734b76793159} 
+FEMALE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MALE@{MALE}!user.h@{user.h}}\index{user.h@{user.h}!MALE@{MALE}}}\Hypertarget{user_8h_a3667e3c5ec056737c8789615a989324fa6e81fe1ef694726dd6f7246cfb42369f}\label{user_8h_a3667e3c5ec056737c8789615a989324fa6e81fe1ef694726dd6f7246cfb42369f} 
+MALE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OTHER@{OTHER}!user.h@{user.h}}\index{user.h@{user.h}!OTHER@{OTHER}}}\Hypertarget{user_8h_a3667e3c5ec056737c8789615a989324fadbf1dee1b8cd7ea3c82661943c7b74f4}\label{user_8h_a3667e3c5ec056737c8789615a989324fadbf1dee1b8cd7ea3c82661943c7b74f4} 
+OTHER&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{user_8h_a4beffcafdd2fa80a301f67238176d9ad}\label{user_8h_a4beffcafdd2fa80a301f67238176d9ad} 
+\index{user.h@{user.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!user.h@{user.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{classUser}{User}} \&}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de inserción. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flujo} & Flujo de salida. \\
+\hline
+{\em user} & Usuario a imprimir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al flujo de salida. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{user_8h_a4beffcafdd2fa80a301f67238176d9ad_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,55 @@
+\doxysection{userlist.\+h}
+\hypertarget{userlist_8h_source}{}\label{userlist_8h_source}\index{include/userlist.h@{include/userlist.h}}
+\mbox{\hyperlink{userlist_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ USERLIST\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ USERLIST\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{user_8h}{user.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{playlist_8h}{playlist.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{userlist_8h_aa16157acd021e610b224ca91b2adc4eb}{MAX\_USERS}}\ =\ 1000;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{userlist_8h_ae6e4b78b3104b041ec1dd3fd4ed0a74e}{MAX\_PLAYLISTS}}\ =\ 2000;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUserList}{UserList}}\{}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ current\_size;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUser}{User}}*\ list[\mbox{\hyperlink{userlist_8h_aa16157acd021e610b224ca91b2adc4eb}{MAX\_USERS}}];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ number\_of\_playlists;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlaylist}{Playlist}}*\ playlists[\mbox{\hyperlink{userlist_8h_ae6e4b78b3104b041ec1dd3fd4ed0a74e}{MAX\_PLAYLISTS}}];\ \ \ \ \ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR\ Y\ DESTRUCTOR}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUserList}{UserList}}(\textcolor{keywordtype}{string}\ users\_file\_path,\ \textcolor{keywordtype}{string}\ spotifry\_db\_file\_path);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUserList_a6da872f3173fef7a989febb292325a49}{\string~UserList}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUser}{User}}*\ \mbox{\hyperlink{classUserList_ae26b51fb404689da78090dd336230459}{getUserByEmail}}(\textcolor{keywordtype}{string}\ email);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUserList_aeff9047f6c0fed17f6f4540f098ea6c5}{getCurrentSize}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>current\_size;\ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUserList_a24b4e84c4e94bd0ceade2d4516cca81c}{getNumberOfPlaylists}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>number\_of\_playlists;\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ OTROS\ MÉTODOS}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserList_a2c693e9cfb7281daae01aaef479856a9}{addUser}}(\mbox{\hyperlink{classUser}{User}}*\ user\_to\_add);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserList_a70c4c2a512ddcba60da7c730ffdece75}{addPlaylist}}(\mbox{\hyperlink{classPlaylist}{Playlist}}*\ playlist\_to\_add);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,17 @@
+<map id="include/user.h" name="include/user.h">
+<area shape="rect" id="Node000001" title="Declaración de la clase User." alt="" coords="61,5,173,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="46,225,126,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,33,77,54,52,80,26,114,11,153,8,165,11,176,28,199,51,216,48,221,24,203,6,178,3,165,6,151,22,111,48,77,74,50,99,29"/>
+<area shape="rect" id="Node000003" href="$date_8h.html" title="Declaración de la clase Date." alt="" coords="20,152,83,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,33,83,53,66,80,57,109,54,139,48,138,51,108,61,78,79,50,100,29"/>
+<area shape="rect" id="Node000004" href="$playlist_8h.html" title="Declaración de la clase Playlist." alt="" coords="75,79,158,104"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="112,31,111,65,105,65,107,31"/>
+<area shape="rect" id="Node000005" href="$song_8h.html" title="Declaración de la clase Song." alt="" coords="159,152,224,177"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="132,29,153,50,172,77,184,108,191,138,186,139,179,110,168,80,149,53,128,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="59,176,77,212,72,214,55,179"/>
+<area shape="poly" id="edge9_Node000004_Node000001" title=" " alt="" coords="121,78,123,44,128,45,126,79"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="117,105,94,213,89,212,111,104"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="108,106,73,144,69,140,104,103"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="130,102,171,141,167,144,127,106"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="176,180,116,220,113,215,173,175"/>
+</map>

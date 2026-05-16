@@ -1,0 +1,437 @@
+\doxysection{Spotifry Class Reference}
+\hypertarget{classSpotifry}{}\label{classSpotifry}\index{Spotifry@{Spotifry}}
+
+
+Representa la aplicación principal de gestión de música, que contiene listas de artistas, álbumes, canciones y usuarios.  
+
+
+
+
+{\ttfamily \#include $<$spotifry.\+h$>$}
+
+
+
+Collaboration diagram for Spotifry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classSpotifry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSpotifry_a71986a83aace165403a4156263801b5f}{Spotifry}} (string albums\+\_\+file\+\_\+path, string songs\+\_\+file\+\_\+path, string users\+\_\+file\+\_\+path, string spotifry\+\_\+db\+\_\+file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSongList}{Song\+List}} \& \mbox{\hyperlink{classSpotifry_ad45a7aa9d64bb8a9c61ee6bf4e884dde}{get\+Song\+List}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la lista de canciones. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlbumList}{Album\+List}} \& \mbox{\hyperlink{classSpotifry_a051f93bdbcb7b1cbb90379c11fc5305a}{get\+Album\+List}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la lista de artistas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUserList}{User\+List}} \& \mbox{\hyperlink{classSpotifry_a0f66c46c7a936b66f571913e18a9283d}{get\+User\+List}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la lista de usuarios. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSpotifry_a0dacaec892f8e85887ababa03566e0f5}{create\+Playlist}} (string user\+\_\+email, string playlist\+\_\+title, int num\+\_\+songs, string \texorpdfstring{$\ast$}{*}song\+\_\+names)
+\begin{DoxyCompactList}\small\item\em Crea una nueva playlist para un usuario dado su email, el título de la playlist y los nombres de las canciones a incluir en la playlist. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifry_a429e70ab7a986fd1bcc99d2c47748a6a}{leer\+Archivo}} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Lee el contenido de un archivo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifry_a0717561700f9f654c4a62eb1b254f033}{reemplazar}} (string html, const string \&tag, const string \&valor)
+\begin{DoxyCompactList}\small\item\em Reemplaza una etiqueta en un string HTML por un valor dado. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifry_aef0d3bee4942a6338b455c964ee56208}{leer\+Template\+Html}} (string string)
+\begin{DoxyCompactList}\small\item\em Lee una plantilla HTML desde un archivo y devuelve su contenido como un string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSpotifry_a062ee70449582def7fe683bbd4611df8}{num\+Playlists}} (string user\+Email)
+\begin{DoxyCompactList}\small\item\em Genera un string HTML con la información de un álbum dado su título. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSpotifry_a98dd0e4af1eab2994b6834a503146f01}{num\+Songs}} (string user\+Email)
+\begin{DoxyCompactList}\small\item\em Obtiene el número de canciones guardadas por un usuario dado su email. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifry_abf11042fe54cb15433352375df260224}{artista\+Top}} (string user\+Email)
+\begin{DoxyCompactList}\small\item\em Obtiene un ejemplo de el artista más escuchado por un usuario dado su email. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifry_a1e996539672bfc8c7cbd585aa7da5668}{generar\+Playlists}} (string user\+Email)
+\begin{DoxyCompactList}\small\item\em Genera un string HTML con la información de las playlists de un usuario dado su email. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifry_a663e27a3b2636ba2e7c3b19febc81cfd}{generar\+Canciones}} (string user\+Email)
+\begin{DoxyCompactList}\small\item\em Genera un string HTML con la información de las canciones guardadas de un usuario dado su email. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa la aplicación principal de gestión de música, que contiene listas de artistas, álbumes, canciones y usuarios. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSpotifry_a71986a83aace165403a4156263801b5f}\label{classSpotifry_a71986a83aace165403a4156263801b5f} 
+\index{Spotifry@{Spotifry}!Spotifry@{Spotifry}}
+\index{Spotifry@{Spotifry}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{Spotifry()}{Spotifry()}}
+{\footnotesize\ttfamily Spotifry\+::\+Spotifry (\begin{DoxyParamCaption}\item[{string}]{albums\+\_\+file\+\_\+path,  }\item[{string}]{songs\+\_\+file\+\_\+path,  }\item[{string}]{users\+\_\+file\+\_\+path,  }\item[{string}]{spotifry\+\_\+db\+\_\+file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em albums\+\_\+file\+\_\+path} & Ruta del archivo .txt con los datos de los álbumes. \\
+\hline
+{\em songs\+\_\+file\+\_\+path} & Ruta del archivo .txt con los datos de las canciones. \\
+\hline
+{\em users\+\_\+file\+\_\+path} & Ruta del archivo .txt con los datos de los usuarios. \\
+\hline
+{\em spotifry\+\_\+db\+\_\+file\+\_\+path} & Ruta del archivo .txt con los datos de las canciones y playlists de los usuarios. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_a71986a83aace165403a4156263801b5f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSpotifry_abf11042fe54cb15433352375df260224}\label{classSpotifry_abf11042fe54cb15433352375df260224} 
+\index{Spotifry@{Spotifry}!artistaTop@{artistaTop}}
+\index{artistaTop@{artistaTop}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{artistaTop()}{artistaTop()}}
+{\footnotesize\ttfamily string Spotifry\+::artista\+Top (\begin{DoxyParamCaption}\item[{string}]{user\+Email }\end{DoxyParamCaption})}
+
+
+
+Obtiene un ejemplo de el artista más escuchado por un usuario dado su email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Email} & El email del usuario para el cual se obtendrá el artista más escuchado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Coldplay 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_abf11042fe54cb15433352375df260224_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classSpotifry_abf11042fe54cb15433352375df260224_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_a0dacaec892f8e85887ababa03566e0f5}\label{classSpotifry_a0dacaec892f8e85887ababa03566e0f5} 
+\index{Spotifry@{Spotifry}!createPlaylist@{createPlaylist}}
+\index{createPlaylist@{createPlaylist}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{createPlaylist()}{createPlaylist()}}
+{\footnotesize\ttfamily bool Spotifry\+::create\+Playlist (\begin{DoxyParamCaption}\item[{string}]{user\+\_\+email,  }\item[{string}]{playlist\+\_\+title,  }\item[{int}]{num\+\_\+songs,  }\item[{string \texorpdfstring{$\ast$}{*}}]{song\+\_\+names }\end{DoxyParamCaption})}
+
+
+
+Crea una nueva playlist para un usuario dado su email, el título de la playlist y los nombres de las canciones a incluir en la playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+email} & El email del usuario para el cual se creará la playlist. \\
+\hline
+{\em playlist\+\_\+title} & El título de la nueva playlist. \\
+\hline
+{\em num\+\_\+songs} & El número de canciones a incluir en la playlist. \\
+\hline
+{\em song\+\_\+names} & Un array de strings con los nombres de las canciones a incluir en la playlist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la playlist se creó correctamente, false en caso contrario. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_a0dacaec892f8e85887ababa03566e0f5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classSpotifry_a0dacaec892f8e85887ababa03566e0f5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_a663e27a3b2636ba2e7c3b19febc81cfd}\label{classSpotifry_a663e27a3b2636ba2e7c3b19febc81cfd} 
+\index{Spotifry@{Spotifry}!generarCanciones@{generarCanciones}}
+\index{generarCanciones@{generarCanciones}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{generarCanciones()}{generarCanciones()}}
+{\footnotesize\ttfamily string Spotifry\+::generar\+Canciones (\begin{DoxyParamCaption}\item[{string}]{user\+Email }\end{DoxyParamCaption})}
+
+
+
+Genera un string HTML con la información de las canciones guardadas de un usuario dado su email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Email} & El email del usuario para el cual se generará el HTML de las canciones guardadas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un string HTML con la información de las canciones guardadas del usuario, o una cadena vacía si el usuario no se encuentra o no tiene canciones guardadas. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_a663e27a3b2636ba2e7c3b19febc81cfd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classSpotifry_a663e27a3b2636ba2e7c3b19febc81cfd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_a1e996539672bfc8c7cbd585aa7da5668}\label{classSpotifry_a1e996539672bfc8c7cbd585aa7da5668} 
+\index{Spotifry@{Spotifry}!generarPlaylists@{generarPlaylists}}
+\index{generarPlaylists@{generarPlaylists}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{generarPlaylists()}{generarPlaylists()}}
+{\footnotesize\ttfamily string Spotifry\+::generar\+Playlists (\begin{DoxyParamCaption}\item[{string}]{user\+Email }\end{DoxyParamCaption})}
+
+
+
+Genera un string HTML con la información de las playlists de un usuario dado su email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Email} & El email del usuario para el cual se generará el HTML de las playlists. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un string HTML con la información de las playlists del usuario, o una cadena vacía si el usuario no se encuentra o no tiene playlists. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_a1e996539672bfc8c7cbd585aa7da5668_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classSpotifry_a1e996539672bfc8c7cbd585aa7da5668_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_a051f93bdbcb7b1cbb90379c11fc5305a}\label{classSpotifry_a051f93bdbcb7b1cbb90379c11fc5305a} 
+\index{Spotifry@{Spotifry}!getAlbumList@{getAlbumList}}
+\index{getAlbumList@{getAlbumList}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{getAlbumList()}{getAlbumList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlbumList}{Album\+List}} \& Spotifry\+::get\+Album\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la lista de artistas. 
+
+\begin{DoxyReturn}{Returns}
+Referencia a la lista de artistas. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classSpotifry_a051f93bdbcb7b1cbb90379c11fc5305a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_ad45a7aa9d64bb8a9c61ee6bf4e884dde}\label{classSpotifry_ad45a7aa9d64bb8a9c61ee6bf4e884dde} 
+\index{Spotifry@{Spotifry}!getSongList@{getSongList}}
+\index{getSongList@{getSongList}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{getSongList()}{getSongList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSongList}{Song\+List}} \& Spotifry\+::get\+Song\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la lista de canciones. 
+
+\begin{DoxyReturn}{Returns}
+Referencia a la lista de canciones. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classSpotifry_ad45a7aa9d64bb8a9c61ee6bf4e884dde_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_a0f66c46c7a936b66f571913e18a9283d}\label{classSpotifry_a0f66c46c7a936b66f571913e18a9283d} 
+\index{Spotifry@{Spotifry}!getUserList@{getUserList}}
+\index{getUserList@{getUserList}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{getUserList()}{getUserList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUserList}{User\+List}} \& Spotifry\+::get\+User\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la lista de usuarios. 
+
+\begin{DoxyReturn}{Returns}
+Referencia a la lista de usuarios. 
+\end{DoxyReturn}
+\Hypertarget{classSpotifry_a429e70ab7a986fd1bcc99d2c47748a6a}\label{classSpotifry_a429e70ab7a986fd1bcc99d2c47748a6a} 
+\index{Spotifry@{Spotifry}!leerArchivo@{leerArchivo}}
+\index{leerArchivo@{leerArchivo}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{leerArchivo()}{leerArchivo()}}
+{\footnotesize\ttfamily string Spotifry\+::leer\+Archivo (\begin{DoxyParamCaption}\item[{const string \&}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Lee el contenido de un archivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Ruta del archivo a leer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Contenido del archivo. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_a429e70ab7a986fd1bcc99d2c47748a6a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_aef0d3bee4942a6338b455c964ee56208}\label{classSpotifry_aef0d3bee4942a6338b455c964ee56208} 
+\index{Spotifry@{Spotifry}!leerTemplateHtml@{leerTemplateHtml}}
+\index{leerTemplateHtml@{leerTemplateHtml}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{leerTemplateHtml()}{leerTemplateHtml()}}
+{\footnotesize\ttfamily string Spotifry\+::leer\+Template\+Html (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Lee una plantilla HTML desde un archivo y devuelve su contenido como un string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Ruta del archivo de la plantilla HTML a leer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Contenido de la plantilla HTML como un string.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Ruta del archivo de la plantilla HTML a leer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Contenido de la plantilla HTML como un string. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_aef0d3bee4942a6338b455c964ee56208_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classSpotifry_aef0d3bee4942a6338b455c964ee56208_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_a062ee70449582def7fe683bbd4611df8}\label{classSpotifry_a062ee70449582def7fe683bbd4611df8} 
+\index{Spotifry@{Spotifry}!numPlaylists@{numPlaylists}}
+\index{numPlaylists@{numPlaylists}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{numPlaylists()}{numPlaylists()}}
+{\footnotesize\ttfamily int Spotifry\+::num\+Playlists (\begin{DoxyParamCaption}\item[{string}]{user\+Email }\end{DoxyParamCaption})}
+
+
+
+Genera un string HTML con la información de un álbum dado su título. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em album\+Title} & El título del álbum para el cual se generará el HTML. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un string HTML con la información del álbum, o un mensaje de error si el álbum no se encuentra. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_a062ee70449582def7fe683bbd4611df8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classSpotifry_a062ee70449582def7fe683bbd4611df8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_a98dd0e4af1eab2994b6834a503146f01}\label{classSpotifry_a98dd0e4af1eab2994b6834a503146f01} 
+\index{Spotifry@{Spotifry}!numSongs@{numSongs}}
+\index{numSongs@{numSongs}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{numSongs()}{numSongs()}}
+{\footnotesize\ttfamily int Spotifry\+::num\+Songs (\begin{DoxyParamCaption}\item[{string}]{user\+Email }\end{DoxyParamCaption})}
+
+
+
+Obtiene el número de canciones guardadas por un usuario dado su email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Email} & El email del usuario para el cual se obtendrá el número de canciones guardadas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El número de canciones guardadas por el usuario, o -\/1 si el usuario no se encuentra. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_a98dd0e4af1eab2994b6834a503146f01_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpotifry_a98dd0e4af1eab2994b6834a503146f01_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSpotifry_a0717561700f9f654c4a62eb1b254f033}\label{classSpotifry_a0717561700f9f654c4a62eb1b254f033} 
+\index{Spotifry@{Spotifry}!reemplazar@{reemplazar}}
+\index{reemplazar@{reemplazar}!Spotifry@{Spotifry}}
+\doxysubsubsection{\texorpdfstring{reemplazar()}{reemplazar()}}
+{\footnotesize\ttfamily string Spotifry\+::reemplazar (\begin{DoxyParamCaption}\item[{string}]{html,  }\item[{const string \&}]{tag,  }\item[{const string \&}]{valor }\end{DoxyParamCaption})}
+
+
+
+Reemplaza una etiqueta en un string HTML por un valor dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em html} & El string HTML donde se realizará el reemplazo. \\
+\hline
+{\em tag} & La etiqueta a reemplazar (formato "{}\{\{\+TAG\}\}"{}). \\
+\hline
+{\em valor} & El valor que reemplazará a la etiqueta en el string HTML. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El string HTML resultante después de realizar el reemplazo. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classSpotifry_a0717561700f9f654c4a62eb1b254f033_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{spotifry_8h}{spotifry.\+h}}\item 
+src/\mbox{\hyperlink{spotifry_8cpp}{spotifry.\+cpp}}\end{DoxyCompactItemize}

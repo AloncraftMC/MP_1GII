@@ -1,0 +1,16 @@
+<map id="include/albumlist.h" name="include/albumlist.h">
+<area shape="rect" id="Node000001" title="Declaración de la clase AlbumList." alt="" coords="158,5,305,31"/>
+<area shape="rect" id="Node000002" href="$songlist_8h.html" title="Declaración de la clase SongList." alt="" coords="163,79,299,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,44,234,79,229,79,229,44"/>
+<area shape="rect" id="Node000003" href="$spotifry_8h.html" title="Declaración de la clase Spotifry." alt="" coords="59,152,193,177"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="199,40,174,58,154,80,137,118,130,152,124,151,131,117,149,77,171,54,196,36"/>
+<area shape="rect" id="Node000007" href="$albumlist_8cpp.html" title="Implementación de la clase AlbumList." alt="" coords="323,79,457,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="270,34,365,76,363,81,268,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,114,145,154,142,150,201,110"/>
+<area shape="rect" id="Node000006" href="$songlist_8cpp.html" title="Implementación de la clase SongList." alt="" coords="217,152,339,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="249,114,273,150,268,153,244,117"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="5,225,111,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="107,189,71,227,67,223,104,185"/>
+<area shape="rect" id="Node000005" href="$spotifry_8cpp.html" title="Implementación de la clase Spotifry." alt="" coords="135,225,255,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="149,185,186,223,182,227,145,189"/>
+</map>

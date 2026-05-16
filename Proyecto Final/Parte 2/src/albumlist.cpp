@@ -1,11 +1,25 @@
+/**
+ * @file albumlist.cpp
+ * @author Alonso Hernández Robles (F1)
+ * @brief Implementación de la clase AlbumList.
+ */
+
 #include <fstream>
 #include <sstream>
 #include "albumlist.h"
 #include "artistlist.h"
 
+/**
+ * @brief Constructor con parámetros.
+ * @param file_path Ruta del archivo .txt con los datos de los álbumes.
+ * @param artistList Referencia a la lista de artistas para asociar los artistas a los álbumes.
+ * @param songList Referencia a la lista de canciones para asociar las canciones a los álbumes.
+ */
 AlbumList::AlbumList(string file_path, ArtistList& artistList, SongList& songList){
 
     this->current_size = 0;
+
+    // Lectura del archivo de álbumes
 
     ifstream file(file_path, ios::in);
 
@@ -16,12 +30,16 @@ AlbumList::AlbumList(string file_path, ArtistList& artistList, SongList& songLis
 
     }
 
+    // Lectura de líneas
+
     string line;
 
     while(getline(file, line)){
 
         if(!line.empty() && line.back() == '\r') line.pop_back();
         if(line.empty()) continue;
+
+        // Lectura de campos
 
         stringstream dataSS(line);
 
@@ -39,6 +57,8 @@ AlbumList::AlbumList(string file_path, ArtistList& artistList, SongList& songLis
         if(releaseDateString.empty())   { cerr << "Error: Invalid row format." << endl; continue; }
         if(artistString.empty())        { cerr << "Error: Invalid row format." << endl; continue; }
         if(numSongsString.empty())      { cerr << "Error: Invalid row format." << endl; continue; }
+
+        // Lectura de campos de fecha
 
         stringstream releaseDateSS(releaseDateString);
 
@@ -59,6 +79,8 @@ AlbumList::AlbumList(string file_path, ArtistList& artistList, SongList& songLis
         int year = stoi(yearString);
 
         Date releaseDate = Date(day, month, year);
+
+        // Lectura de canciones
 
         int numSongs = stoi(numSongsString);
 
@@ -81,6 +103,8 @@ AlbumList::AlbumList(string file_path, ArtistList& artistList, SongList& songLis
         
         }
 
+        // Búsqueda del artista en la lista de artistas
+
         Artist* artistPtr = nullptr;
         bool found = false;
 
@@ -88,10 +112,14 @@ AlbumList::AlbumList(string file_path, ArtistList& artistList, SongList& songLis
             if(artistList.getArtistById(i)->getName() == artistString)
                 artistPtr = artistList.getArtistById(i);
 
+        // Búsqueda de las canciones en la lista de canciones
+
         Song** emptySongs = new Song*[numSongs];
 
         for(int i = 0; i < numSongs; i++)
             emptySongs[i] = nullptr;
+
+        // Creación del álbum y adición a la lista de álbumes
 
         Album* albumPtr = new Album(title, artistPtr, releaseDate, emptySongs, numSongs);
 
@@ -106,6 +134,9 @@ AlbumList::AlbumList(string file_path, ArtistList& artistList, SongList& songLis
 
 }
 
+/**
+ * @brief Destructor.
+ */
 AlbumList::~AlbumList(){
 
     for(int i = 0; i < this->current_size; i++)
@@ -113,13 +144,22 @@ AlbumList::~AlbumList(){
 
 }
 
+/**
+ * @brief Guarda la lista de álbumes en un archivo .txt.
+ * @param file_path Ruta del archivo .txt donde se guardarán los datos de los álbumes.
+ * @return true si la operación fue exitosa, false en caso contrario.
+ */
 bool AlbumList::dump(string file_path){
+
+    // Escritura del archivo de álbumes
 
     ofstream file(file_path);
 
     if(!file.is_open()) return false;
 
     for(int i = 0; i < this->current_size; i++){
+
+        // Álbum actual
 
         Album* album = this->list[i];
 
@@ -153,13 +193,21 @@ bool AlbumList::dump(string file_path){
 
 }
 
+/**
+ * @brief Imprime la información de un álbum dado su título.
+ * @param title El título del álbum a imprimir.
+ */
 void AlbumList::printAlbum(string title) const {
+
+    // Búsqueda del álbum por título
 
     bool found = false;
 
     for(int i = 0; i < this->current_size && !found; i++){
 
         if(this->list[i] != nullptr && this->list[i]->getTitle() == title){
+
+            // Álbum encontrado
         
             found = true;
 

@@ -1,5 +1,8 @@
 #include "user.h"
 
+/**
+ * @brief Inicializa los valores necesarios invocado por los constructores.
+ */
 void User::init(){
 
     this->max_saved_songs = 4;
@@ -13,6 +16,10 @@ void User::init(){
 
 }
 
+/**
+ * @brief Pega los valores de otro objeto al implícito asumiendo que es vacío.
+ * @param user El objeto User del cual se pegarán los valores.
+ */
 void User::pasteAttributes(const User& user){
 
     this->name = user.name;
@@ -38,6 +45,9 @@ void User::pasteAttributes(const User& user){
 
 }
 
+/**
+ * @brief Constructor por defecto.
+ */
 User::User(){
 
     this->name = "New user";
@@ -48,6 +58,13 @@ User::User(){
 
 }
 
+/**
+ * @brief Constructor con parámetros.
+ * @param name Nombre y apellidos del usuario.
+ * @param email Correo electrónico del usuario.
+ * @param birthdate Fecha de nacimiento del usuario.
+ * @param gender Género del usuario.
+ */
 User::User(string name, string email, Date birthdate, Gender gender){
 
     this->name = name;
@@ -58,6 +75,10 @@ User::User(string name, string email, Date birthdate, Gender gender){
 
 }
 
+/**
+ * @brief Destructor.
+ * @warning Sólo libera la memoria de los arrays de punteros a canciones y playlists, no de las canciones ni playlists en sí, ya que el usuario no es el propietario de esos objetos.
+ */
 User::~User(){
 
     for(int i = 0; i < this->num_playlists; i++)
@@ -71,6 +92,10 @@ User::~User(){
 
 }
 
+/**
+ * @brief Obtiene el género del usuario como string.
+ * @return El género del usuario como string.
+ */
 string User::getGender() const {
 
     switch(gender){
@@ -82,6 +107,11 @@ string User::getGender() const {
 
 }
 
+/**
+ * @brief Sobrecarga del operador de asignación.
+ * @param user El objeto User que se asignará al implícito.
+ * @return Una referencia al objeto User resultante de la asignación.
+ */
 User& User::operator=(const User& user){
 
     if(&user != this){
@@ -96,10 +126,21 @@ User& User::operator=(const User& user){
 
 }
 
+/**
+ * @brief Sobrecarga del operador de indexación `()` para acceder a las canciones de una playlist específica.
+ * @param i El índice de la playlist a la que pertenece la canción.
+ * @param j El índice de la canción dentro de la playlist.
+ * @return Una referencia a la canción en la posición dada dentro de la playlist dada.
+ */
 const Song& User::operator()(int i, int j) const{
     return (*this->playlists[i])[j];
 }
 
+/**
+ * @brief Añade una canción a las canciones guardadas por el usuario si no está ya guardada.
+ * @param song_to_add Puntero a la canción que se añadirá.
+ * @return true si la canción se añadió exitosamente, false en caso contrario.
+ */
 bool User::addSong(Song* song_to_add){
 
     // Ignorar si ya está guardada
@@ -133,6 +174,11 @@ bool User::addSong(Song* song_to_add){
 
 }
 
+/**
+ * @brief Añade una playlist a las playlists creadas por el usuario si no está ya añadida.
+ * @param playlist_to_add Puntero a la playlist que se añadirá.
+ * @return true si la playlist se añadió exitosamente, false en caso contrario.
+ */
 bool User::addPlaylist(Playlist* playlist_to_add){
 
     // Ignorar si ya está guardada
@@ -166,6 +212,11 @@ bool User::addPlaylist(Playlist* playlist_to_add){
 
 }
 
+/**
+ * @brief Elimina una canción de las canciones guardadas por el usuario si está guardada.
+ * @param song_to_delete Puntero a la canción que se eliminará.
+ * @return true si la canción se eliminó exitosamente, false en caso contrario.
+ */
 bool User::deleteSong(Song* song_to_delete){
 
     // Encontrar la posición
@@ -208,6 +259,11 @@ bool User::deleteSong(Song* song_to_delete){
 
 }
 
+/**
+ * @brief Elimina una playlist de las playlists creadas por el usuario si está creada.
+ * @param playlist_to_delete Puntero a la playlist que se eliminará.
+ * @return true si la playlist se eliminó exitosamente, false en caso contrario.
+ */
 bool User::deletePlaylist(Playlist* playlist_to_delete){
 
     // Encontrar la posición
@@ -250,6 +306,13 @@ bool User::deletePlaylist(Playlist* playlist_to_delete){
 
 }
 
+/**
+ * @brief Crea una nueva playlist privada con las canciones dadas y la añade a las playlists creadas por el usuario.
+ * @param songs Array de punteros a las canciones que se añadirán a la nueva playlist.
+ * @param num_songs El número de canciones en el array `songs`.
+ * @param title El título de la nueva playlist.
+ * @return true si la playlist se creó y añadió exitosamente, false si no se pudo crear o añadir la playlist.
+ */
 bool User::createPlaylist(Song** songs, int num_songs, string title){
 
     Playlist* playlist = new Playlist(title, this, Date(), PRIVATE);

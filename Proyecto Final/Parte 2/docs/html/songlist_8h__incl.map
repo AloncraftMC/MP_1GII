@@ -1,0 +1,21 @@
+<map id="include/songlist.h" name="include/songlist.h">
+<area shape="rect" id="Node000001" title="Declaración de la clase SongList." alt="" coords="5,5,141,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="47,299,127,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,33,34,53,16,80,14,91,16,103,28,156,44,206,77,285,72,287,39,208,22,157,11,105,8,91,11,78,30,49,54,29"/>
+<area shape="rect" id="Node000003" href="$albumlist_8h.html" title="Declaración de la clase AlbumList." alt="" coords="26,79,121,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="76,31,76,65,71,65,71,31"/>
+<area shape="rect" id="Node000007" href="$song_8h.html" title="Declaración de la clase Song." alt="" coords="267,225,333,251"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="87,29,279,213,276,217,84,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="74,105,68,167,67,209,71,250,80,285,75,286,65,251,62,209,63,167,69,104"/>
+<area shape="rect" id="Node000004" href="$album_8h.html" title="Declaración de la clase Album." alt="" coords="85,152,160,177"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="84,103,109,139,105,142,79,106"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="111,179,93,200,79,226,75,256,80,285,75,286,70,256,73,225,89,197,107,176"/>
+<area shape="rect" id="Node000005" href="$artist_8h.html" title="Declaración de la clase Artist." alt="" coords="89,225,157,251"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="125,178,125,212,120,212,120,178"/>
+<area shape="rect" id="Node000006" href="$date_8h.html" title="Declaración de la clase Date." alt="" coords="181,225,243,251"/>
+<area shape="poly" id="edge8_Node000004_Node000006" title=" " alt="" coords="139,175,188,214,185,219,135,179"/>
+<area shape="poly" id="edge10_Node000004_Node000007" title=" " alt="" coords="152,175,260,218,258,223,150,180"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="119,252,101,288,96,285,114,250"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="193,253,120,294,118,289,191,248"/>
+<area shape="poly" id="edge11_Node000007_Node000002" title=" " alt="" coords="268,253,135,297,133,292,266,248"/>
+</map>

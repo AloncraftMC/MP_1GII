@@ -1,0 +1,429 @@
+\doxysection{Playlist Class Reference}
+\hypertarget{classPlaylist}{}\label{classPlaylist}\index{Playlist@{Playlist}}
+
+
+Representa una lista de reproducción creada por un usuario, con un título, una fecha de creación, una lista de canciones y una configuración de privacidad.  
+
+
+
+
+{\ttfamily \#include $<$playlist.\+h$>$}
+
+
+
+Collaboration diagram for Playlist\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPlaylist__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlaylist_aef38d55e42995be147977726350f3ada}{Playlist}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlaylist_a26874800682c042154551424875dd916}{Playlist}} (string title, \mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}creator, \mbox{\hyperlink{classDate}{Date}} creation\+Date, \mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}{Playlist\+Privacy}} privacy)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlaylist_a4ec33dd0bee19bda3371b94dd0cb2f47}{Playlist}} (const \mbox{\hyperlink{classPlaylist}{Playlist}} \&playlist)
+\begin{DoxyCompactList}\small\item\em Constructor copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlaylist_aacd9a69e347fc19a9a0787d7a7ce9df4}{\texorpdfstring{$\sim$}{\string~}\+Playlist}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classPlaylist_a82a9c5202dd82125d6fa494bb45700d6}{get\+Title}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el título de la playlist. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classUser}{User}} \& \mbox{\hyperlink{classPlaylist_ae9f1260ea5310b51efe79b2bd7e1eb23}{get\+Creator}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el creador de la playlist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDate}{Date}} \mbox{\hyperlink{classPlaylist_a3fce97bb488c3ed4222028f9cd72b645}{get\+Creation\+Date}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la fecha de creación de la playlist. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlaylist_a2f1f620c55ed11b5f3e4dc1f42a1f45d}{get\+Max\+Songs}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número máximo de canciones en la playlist. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlaylist_a81701f493986b4b67769c571eeedff1a}{get\+Num\+Songs}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número de canciones en la playlist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}{Playlist\+Privacy}} \mbox{\hyperlink{classPlaylist_a5dc1ecc36852d6f9a7a27c520a33b751}{get\+Privacy}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la configuración de privacidad de la playlist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlaylist_affaa2e1fffb6f50920ca90a087766fca}{set\+Title}} (string title)
+\begin{DoxyCompactList}\small\item\em Establece el título de la playlist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlaylist_acadbb74f13cf3f3d02dd4d1f21f4cee4}{set\+Creation\+Date}} (\mbox{\hyperlink{classDate}{Date}} creation\+Date)
+\begin{DoxyCompactList}\small\item\em Establece la fecha de creación de la playlist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlaylist_a68414618814289b474867bf96ba5745a}{set\+Privacy}} (\mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}{Playlist\+Privacy}} privacy)
+\begin{DoxyCompactList}\small\item\em Establece la configuración de privacidad de la playlist. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPlaylist_aea3e692e2fcfd7e7313498037228da40}{add\+Song}} (\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}song, \mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}who\+Adds\+It)
+\begin{DoxyCompactList}\small\item\em Añade una canción a la playlist si el usuario que la añade es el creador de la playlist. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPlaylist_ad481ca8d7ab1c9223cc33d543ec6dcf4}{delete\+Song}} (\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}song, \mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}who\+Removes\+It)
+\begin{DoxyCompactList}\small\item\em Elimina una canción de la playlist si el usuario que la elimina es el creador de la playlist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlaylist}{Playlist}} \& \mbox{\hyperlink{classPlaylist_aae9ab789969887bcc8f6f06b6617e355}{operator=}} (const \mbox{\hyperlink{classPlaylist}{Playlist}} \&playlist)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de asignación. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPlaylist_ab7873a446bec2231e7b63d5e4dcb71dc}{operator==}} (const \mbox{\hyperlink{classPlaylist}{Playlist}} \&playlist)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de igualdad. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPlaylist_a486f2fa74365d214deaafe31c30c83f2}{operator!=}} (const \mbox{\hyperlink{classPlaylist}{Playlist}} \&playlist)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de desigualdad. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classSong}{Song}} \& \mbox{\hyperlink{classPlaylist_a1edd21aad9bc7fdb2e84a4d21d1caa52}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de indexación para acceder a las canciones de la playlist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una lista de reproducción creada por un usuario, con un título, una fecha de creación, una lista de canciones y una configuración de privacidad. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPlaylist_aef38d55e42995be147977726350f3ada}\label{classPlaylist_aef38d55e42995be147977726350f3ada} 
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{Playlist()}{Playlist()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Playlist\+::\+Playlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\Hypertarget{classPlaylist_a26874800682c042154551424875dd916}\label{classPlaylist_a26874800682c042154551424875dd916} 
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{Playlist()}{Playlist()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Playlist\+::\+Playlist (\begin{DoxyParamCaption}\item[{string}]{title,  }\item[{\mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}}]{creator,  }\item[{\mbox{\hyperlink{classDate}{Date}}}]{creation\+Date,  }\item[{\mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}{Playlist\+Privacy}}}]{privacy }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Título de la playlist. \\
+\hline
+{\em creator} & Puntero al usuario creador de la playlist. \\
+\hline
+{\em creation\+Date} & Fecha de creación de la playlist. \\
+\hline
+{\em privacy} & Configuración de privacidad de la playlist.\\
+\hline
+{\em title} & El título de la playlist. \\
+\hline
+{\em creator} & El usuario creador de la playlist. \\
+\hline
+{\em creation\+Date} & La fecha de creación de la playlist. \\
+\hline
+{\em privacy} & La configuración de privacidad de la playlist. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPlaylist_a4ec33dd0bee19bda3371b94dd0cb2f47}\label{classPlaylist_a4ec33dd0bee19bda3371b94dd0cb2f47} 
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{Playlist()}{Playlist()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Playlist\+::\+Playlist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlaylist}{Playlist}} \&}]{playlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist} & La playlist a copiar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPlaylist_aacd9a69e347fc19a9a0787d7a7ce9df4}\label{classPlaylist_aacd9a69e347fc19a9a0787d7a7ce9df4} 
+\index{Playlist@{Playlist}!````~Playlist@{\texorpdfstring{$\sim$}{\string~}Playlist}}
+\index{````~Playlist@{\texorpdfstring{$\sim$}{\string~}Playlist}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Playlist()}{\string~Playlist()}}
+{\footnotesize\ttfamily Playlist\+::\texorpdfstring{$\sim$}{\string~}\+Playlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\begin{DoxyWarning}{Warning}
+Sólo libera la memoria del array de punteros a canciones, no de las canciones ni del creador, ya que la playlist no es el propietario de esos objetos. 
+\end{DoxyWarning}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPlaylist_aea3e692e2fcfd7e7313498037228da40}\label{classPlaylist_aea3e692e2fcfd7e7313498037228da40} 
+\index{Playlist@{Playlist}!addSong@{addSong}}
+\index{addSong@{addSong}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{addSong()}{addSong()}}
+{\footnotesize\ttfamily bool Playlist\+::add\+Song (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}}]{song,  }\item[{\mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}}]{who\+Adds\+It }\end{DoxyParamCaption})}
+
+
+
+Añade una canción a la playlist si el usuario que la añade es el creador de la playlist. 
+
+Añade una canción a la playlist si el usuario que la agrega es el creador de la playlist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em song} & La canción a añadir. \\
+\hline
+{\em who\+Adds\+It} & El usuario que intenta añadir la canción. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la canción fue añadida exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlaylist_aea3e692e2fcfd7e7313498037228da40_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlaylist_ad481ca8d7ab1c9223cc33d543ec6dcf4}\label{classPlaylist_ad481ca8d7ab1c9223cc33d543ec6dcf4} 
+\index{Playlist@{Playlist}!deleteSong@{deleteSong}}
+\index{deleteSong@{deleteSong}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{deleteSong()}{deleteSong()}}
+{\footnotesize\ttfamily bool Playlist\+::delete\+Song (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}}]{song,  }\item[{\mbox{\hyperlink{classUser}{User}} \texorpdfstring{$\ast$}{*}}]{who\+Removes\+It }\end{DoxyParamCaption})}
+
+
+
+Elimina una canción de la playlist si el usuario que la elimina es el creador de la playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song} & La canción a eliminar. \\
+\hline
+{\em who\+Removes\+It} & El usuario que intenta eliminar la canción. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la canción fue eliminada exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classPlaylist_a3fce97bb488c3ed4222028f9cd72b645}\label{classPlaylist_a3fce97bb488c3ed4222028f9cd72b645} 
+\index{Playlist@{Playlist}!getCreationDate@{getCreationDate}}
+\index{getCreationDate@{getCreationDate}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{getCreationDate()}{getCreationDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDate}{Date}} Playlist\+::get\+Creation\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la fecha de creación de la playlist. 
+
+\begin{DoxyReturn}{Returns}
+La fecha de creación de la playlist. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classPlaylist_a3fce97bb488c3ed4222028f9cd72b645_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlaylist_ae9f1260ea5310b51efe79b2bd7e1eb23}\label{classPlaylist_ae9f1260ea5310b51efe79b2bd7e1eb23} 
+\index{Playlist@{Playlist}!getCreator@{getCreator}}
+\index{getCreator@{getCreator}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{getCreator()}{getCreator()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classUser}{User}} \& Playlist\+::get\+Creator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el creador de la playlist. 
+
+\begin{DoxyReturn}{Returns}
+Una referencia constante al usuario creador de la playlist. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classPlaylist_ae9f1260ea5310b51efe79b2bd7e1eb23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlaylist_a2f1f620c55ed11b5f3e4dc1f42a1f45d}\label{classPlaylist_a2f1f620c55ed11b5f3e4dc1f42a1f45d} 
+\index{Playlist@{Playlist}!getMaxSongs@{getMaxSongs}}
+\index{getMaxSongs@{getMaxSongs}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{getMaxSongs()}{getMaxSongs()}}
+{\footnotesize\ttfamily int Playlist\+::get\+Max\+Songs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número máximo de canciones en la playlist. 
+
+\begin{DoxyReturn}{Returns}
+El número máximo de canciones en la playlist. 
+\end{DoxyReturn}
+\Hypertarget{classPlaylist_a81701f493986b4b67769c571eeedff1a}\label{classPlaylist_a81701f493986b4b67769c571eeedff1a} 
+\index{Playlist@{Playlist}!getNumSongs@{getNumSongs}}
+\index{getNumSongs@{getNumSongs}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{getNumSongs()}{getNumSongs()}}
+{\footnotesize\ttfamily int Playlist\+::get\+Num\+Songs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número de canciones en la playlist. 
+
+\begin{DoxyReturn}{Returns}
+El número de canciones en la playlist. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlaylist_a81701f493986b4b67769c571eeedff1a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlaylist_a5dc1ecc36852d6f9a7a27c520a33b751}\label{classPlaylist_a5dc1ecc36852d6f9a7a27c520a33b751} 
+\index{Playlist@{Playlist}!getPrivacy@{getPrivacy}}
+\index{getPrivacy@{getPrivacy}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{getPrivacy()}{getPrivacy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}{Playlist\+Privacy}} Playlist\+::get\+Privacy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la configuración de privacidad de la playlist. 
+
+\begin{DoxyReturn}{Returns}
+La configuración de privacidad de la playlist. 
+\end{DoxyReturn}
+\Hypertarget{classPlaylist_a82a9c5202dd82125d6fa494bb45700d6}\label{classPlaylist_a82a9c5202dd82125d6fa494bb45700d6} 
+\index{Playlist@{Playlist}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily string Playlist\+::get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el título de la playlist. 
+
+\begin{DoxyReturn}{Returns}
+El título de la playlist. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlaylist_a82a9c5202dd82125d6fa494bb45700d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlaylist_a486f2fa74365d214deaafe31c30c83f2}\label{classPlaylist_a486f2fa74365d214deaafe31c30c83f2} 
+\index{Playlist@{Playlist}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Playlist\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlaylist}{Playlist}} \&}]{playlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de desigualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist} & La playlist a comparar con esta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si las playlists son diferentes, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classPlaylist_aae9ab789969887bcc8f6f06b6617e355}\label{classPlaylist_aae9ab789969887bcc8f6f06b6617e355} 
+\index{Playlist@{Playlist}!operator=@{operator=}}
+\index{operator=@{operator=}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlaylist}{Playlist}} \& Playlist\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlaylist}{Playlist}} \&}]{playlist }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist} & La playlist a asignar a esta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia a esta playlist después de la asignación. 
+\end{DoxyReturn}
+\Hypertarget{classPlaylist_ab7873a446bec2231e7b63d5e4dcb71dc}\label{classPlaylist_ab7873a446bec2231e7b63d5e4dcb71dc} 
+\index{Playlist@{Playlist}!operator==@{operator==}}
+\index{operator==@{operator==}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Playlist\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlaylist}{Playlist}} \&}]{playlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de igualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist} & La playlist a comparar con esta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si las playlists son iguales (título y creador), false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classPlaylist_a1edd21aad9bc7fdb2e84a4d21d1caa52}\label{classPlaylist_a1edd21aad9bc7fdb2e84a4d21d1caa52} 
+\index{Playlist@{Playlist}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classSong}{Song}} \& Playlist\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de indexación para acceder a las canciones de la playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & El índice de la canción a acceder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia constante a la canción en la posición i de la playlist. 
+\end{DoxyReturn}
+\Hypertarget{classPlaylist_acadbb74f13cf3f3d02dd4d1f21f4cee4}\label{classPlaylist_acadbb74f13cf3f3d02dd4d1f21f4cee4} 
+\index{Playlist@{Playlist}!setCreationDate@{setCreationDate}}
+\index{setCreationDate@{setCreationDate}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{setCreationDate()}{setCreationDate()}}
+{\footnotesize\ttfamily void Playlist\+::set\+Creation\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDate}{Date}}}]{creation\+Date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la fecha de creación de la playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creation\+Date} & La nueva fecha de creación de la playlist. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlaylist_acadbb74f13cf3f3d02dd4d1f21f4cee4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlaylist_a68414618814289b474867bf96ba5745a}\label{classPlaylist_a68414618814289b474867bf96ba5745a} 
+\index{Playlist@{Playlist}!setPrivacy@{setPrivacy}}
+\index{setPrivacy@{setPrivacy}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{setPrivacy()}{setPrivacy()}}
+{\footnotesize\ttfamily void Playlist\+::set\+Privacy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{playlist_8h_ab1ba7bda4cb011c3a1ee0633067c3fa8}{Playlist\+Privacy}}}]{privacy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la configuración de privacidad de la playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em privacy} & La nueva configuración de privacidad de la playlist. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classPlaylist_a68414618814289b474867bf96ba5745a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlaylist_affaa2e1fffb6f50920ca90a087766fca}\label{classPlaylist_affaa2e1fffb6f50920ca90a087766fca} 
+\index{Playlist@{Playlist}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void Playlist\+::set\+Title (\begin{DoxyParamCaption}\item[{string}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el título de la playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & El nuevo título de la playlist. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{playlist_8h}{playlist.\+h}}\item 
+src/\mbox{\hyperlink{playlist_8cpp}{playlist.\+cpp}}\end{DoxyCompactItemize}

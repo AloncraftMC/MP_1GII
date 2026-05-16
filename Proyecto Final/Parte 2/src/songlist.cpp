@@ -1,11 +1,24 @@
+/**
+ * @file songlist.cpp
+ * @author Alonso Hernández Robles (F1)
+ * @brief Implementación de la clase SongList.
+ */
+
 #include <fstream>
 #include <sstream>
 #include "songlist.h"
 
+/**
+ * @brief Constructor con parámetros.
+ * @param file_path Ruta del archivo .txt con los datos de las canciones.
+ * @param albumList Referencia a la lista de álbumes para asociar las canciones a los álbumes.
+ */
 SongList::SongList(string file_path, AlbumList& albumList){
 
     this->firstBlock = nullptr;
     this->lastBlock = nullptr;
+
+    // Lectura del archivo de canciones
 
     ifstream file(file_path, ios::in);
 
@@ -16,12 +29,16 @@ SongList::SongList(string file_path, AlbumList& albumList){
 
     }
 
+    // Lectura de líneas
+
     string line;
 
     while(getline(file, line)){
 
         if(!line.empty() && line.back() == '\r') line.pop_back();
         if(line.empty()) continue;
+
+        // Lectura de campos
 
         stringstream dataSS(line);
 
@@ -65,6 +82,9 @@ SongList::SongList(string file_path, AlbumList& albumList){
 
 }
 
+/**
+ * @brief Destructor.
+ */
 SongList::~SongList(){
 
     Block* block = firstBlock;
@@ -82,7 +102,18 @@ SongList::~SongList(){
     
 }
 
+/**
+ * @brief Añade una nueva canción a la lista.
+ * @param title El título de la canción.
+ * @param genre El género de la canción.
+ * @param duration La duración de la canción en segundos.
+ * @param albumList Referencia a la lista de álbumes para asociar la canción al álbum correspondiente.
+ * @param album El título del álbum al que pertenece la canción.
+ * @return true si la canción se añadió correctamente, false en caso contrario.
+ */
 bool SongList::addSong(string title, Genre genre, int duration, AlbumList& albumList, string album){
+
+    // Búsqueda del álbum en la lista de álbumes
 
     bool found = false;
     Album* albumPtr = nullptr;
@@ -100,9 +131,13 @@ bool SongList::addSong(string title, Genre genre, int duration, AlbumList& album
 
     if(!found)  return false;
 
+    // Creación de la canción y adición al álbum correspondiente
+
     Song* song = new Song(title, genre, duration);
 
     albumPtr->addSong(song);
+
+    // Crear primer bloque si la lista de canciones está vacía
 
     if(this->lastBlock == nullptr){
 
@@ -115,6 +150,8 @@ bool SongList::addSong(string title, Genre genre, int duration, AlbumList& album
         this->firstBlock = first;
 
     }
+
+    // Crear nuevo bloque si el último bloque de la lista de canciones está lleno
 
     Block* last = this->lastBlock;
 
@@ -131,12 +168,25 @@ bool SongList::addSong(string title, Genre genre, int duration, AlbumList& album
 
     }
 
+    // Añadir la canción al último bloque de la lista de canciones
+
     last->list[last->current_size++] = song;
 
     return true;
 
 }
 
+/**
+ * @brief Busca canciones en la lista que coincidan con los criterios de búsqueda.
+ * @param searchTerm El término de búsqueda para el título de la canción (puede ser una subcadena).
+ * @param genre El género de la canción a buscar (puede ser UNKNOWN para no filtrar por género).
+ * @param durationMin La duración mínima de la canción en segundos (puede ser -1 para no filtrar por duración mínima).
+ * @param durationMax La duración máxima de la canción en segundos (puede ser -1 para no filtrar por duración máxima).
+ * @param results Array de punteros a canciones donde se almacenarán los resultados encontrados.
+ * @param maxResults El tamaño máximo del array de resultados.
+ * @param numResults Variable donde se almacenará el número de resultados encontrados.
+ * @return true si se encontraron canciones que coincidan con los criterios, false en caso contrario.
+ */
 bool SongList::findSong(string searchTerm, Genre genre, int durationMin, int durationMax, Song** results, int maxResults, int& numResults){
 
     numResults = 0;
@@ -160,9 +210,13 @@ bool SongList::findSong(string searchTerm, Genre genre, int durationMin, int dur
         
     }
 
+    // Recorrido por bloques de la lista de canciones
+
     Block* block = this->firstBlock;
 
     while(block != nullptr){
+
+        // Recorrido por canciones del bloque actual
 
         for(int i = 0; i < block->current_size; i++){
 
@@ -174,6 +228,8 @@ bool SongList::findSong(string searchTerm, Genre genre, int durationMin, int dur
             if(genre != Genre::UNKNOWN && song->getGenre() != genreString)                  continue;
             if(durationMin != -1 && song->getDuration() < durationMin)                      continue;
             if(durationMax != -1 && song->getDuration() > durationMax)                      continue;
+
+            // Añadir canción a resultados si coincide con criterios de búsqueda
 
             results[numResults++] = song;
 

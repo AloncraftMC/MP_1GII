@@ -1,0 +1,116 @@
+\doxysection{Artist\+List Class Reference}
+\hypertarget{classArtistList}{}\label{classArtistList}\index{ArtistList@{ArtistList}}
+
+
+Representa una lista dinámica de artistas.  
+
+
+
+
+{\ttfamily \#include $<$artistlist.\+h$>$}
+
+
+
+Collaboration diagram for Artist\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classArtistList__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArtistList_a02751c1c6a7b74f03c4646ac0ff691c8}{Artist\+List}} (string file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArtistList_a9fa3b1787595100320bd4c0f22146c85}{\texorpdfstring{$\sim$}{\string~}\+Artist\+List}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classArtistList_a059820503930fa166c703c3a7cd3b4a0}{get\+Current\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número actual de artistas en la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArtist}{Artist}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classArtistList_a29039023e18a1c2c560edb5b42cc6506}{get\+Artist\+By\+Id}} (int i) const
+\begin{DoxyCompactList}\small\item\em Obtiene un artista por su posición en la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una lista dinámica de artistas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classArtistList_a02751c1c6a7b74f03c4646ac0ff691c8}\label{classArtistList_a02751c1c6a7b74f03c4646ac0ff691c8} 
+\index{ArtistList@{ArtistList}!ArtistList@{ArtistList}}
+\index{ArtistList@{ArtistList}!ArtistList@{ArtistList}}
+\doxysubsubsection{\texorpdfstring{ArtistList()}{ArtistList()}}
+{\footnotesize\ttfamily Artist\+List\+::\+Artist\+List (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Ruta del archivo .txt con los datos de los artistas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classArtistList_a9fa3b1787595100320bd4c0f22146c85}\label{classArtistList_a9fa3b1787595100320bd4c0f22146c85} 
+\index{ArtistList@{ArtistList}!````~ArtistList@{\texorpdfstring{$\sim$}{\string~}ArtistList}}
+\index{````~ArtistList@{\texorpdfstring{$\sim$}{\string~}ArtistList}!ArtistList@{ArtistList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ArtistList()}{\string~ArtistList()}}
+{\footnotesize\ttfamily Artist\+List\+::\texorpdfstring{$\sim$}{\string~}\+Artist\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classArtistList_a29039023e18a1c2c560edb5b42cc6506}\label{classArtistList_a29039023e18a1c2c560edb5b42cc6506} 
+\index{ArtistList@{ArtistList}!getArtistById@{getArtistById}}
+\index{getArtistById@{getArtistById}!ArtistList@{ArtistList}}
+\doxysubsubsection{\texorpdfstring{getArtistById()}{getArtistById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArtist}{Artist}} \texorpdfstring{$\ast$}{*} Artist\+List\+::get\+Artist\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene un artista por su posición en la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Índice del artista a obtener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero al artista solicitado o nullptr si no se encuentra. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classArtistList_a29039023e18a1c2c560edb5b42cc6506_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classArtistList_a059820503930fa166c703c3a7cd3b4a0}\label{classArtistList_a059820503930fa166c703c3a7cd3b4a0} 
+\index{ArtistList@{ArtistList}!getCurrentSize@{getCurrentSize}}
+\index{getCurrentSize@{getCurrentSize}!ArtistList@{ArtistList}}
+\doxysubsubsection{\texorpdfstring{getCurrentSize()}{getCurrentSize()}}
+{\footnotesize\ttfamily int Artist\+List\+::get\+Current\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número actual de artistas en la lista. 
+
+\begin{DoxyReturn}{Returns}
+Número de artistas en la lista. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classArtistList_a059820503930fa166c703c3a7cd3b4a0_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{artistlist_8h}{artistlist.\+h}}\item 
+src/\mbox{\hyperlink{artistlist_8cpp}{artistlist.\+cpp}}\end{DoxyCompactItemize}

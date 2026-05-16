@@ -1,0 +1,65 @@
+\doxysection{spotifry.\+h}
+\hypertarget{spotifry_8h_source}{}\label{spotifry_8h_source}\index{include/spotifry.h@{include/spotifry.h}}
+\mbox{\hyperlink{spotifry_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ SPOTIFRY\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ SPOTIFRY\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{albumlist_8h}{albumlist.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{artistlist_8h}{artistlist.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{songlist_8h}{songlist.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{user_8h}{user.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{userlist_8h}{userlist.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSpotifry}{Spotifry}}\{}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classArtistList}{ArtistList}}\ artists;\ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAlbumList}{AlbumList}}\ albums;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSongList}{SongList}}\ songs;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUserList}{UserList}}\ users;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSpotifry}{Spotifry}}(\textcolor{keywordtype}{string}\ albums\_file\_path,\ \textcolor{keywordtype}{string}\ songs\_file\_path,\ \textcolor{keywordtype}{string}\ users\_file\_path,\ \textcolor{keywordtype}{string}\ spotifry\_db\_file\_path);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classSongList}{SongList}}\&\ \mbox{\hyperlink{classSpotifry_ad45a7aa9d64bb8a9c61ee6bf4e884dde}{getSongList}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>songs;\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classAlbumList}{AlbumList}}\&\ \mbox{\hyperlink{classSpotifry_a051f93bdbcb7b1cbb90379c11fc5305a}{getAlbumList}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>albums;\ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classUserList}{UserList}}\&\ \mbox{\hyperlink{classSpotifry_a0f66c46c7a936b66f571913e18a9283d}{getUserList}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>users;\ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ OTROS\ MÉTODOS}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSpotifry_a0dacaec892f8e85887ababa03566e0f5}{createPlaylist}}(\textcolor{keywordtype}{string}\ user\_email,\ \textcolor{keywordtype}{string}\ playlist\_title,\ \textcolor{keywordtype}{int}\ num\_songs,\ \textcolor{keywordtype}{string}*\ song\_names);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classSpotifry_a429e70ab7a986fd1bcc99d2c47748a6a}{leerArchivo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ nombre);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classSpotifry_a0717561700f9f654c4a62eb1b254f033}{reemplazar}}(\textcolor{keywordtype}{string}\ html,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ tag,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ valor);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classSpotifry_aef0d3bee4942a6338b455c964ee56208}{leerTemplateHtml}}(\textcolor{keywordtype}{string}\ \textcolor{keywordtype}{string});}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSpotifry_a062ee70449582def7fe683bbd4611df8}{numPlaylists}}(\textcolor{keywordtype}{string}\ userEmail);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSpotifry_a98dd0e4af1eab2994b6834a503146f01}{numSongs}}(\textcolor{keywordtype}{string}\ userEmail);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classSpotifry_abf11042fe54cb15433352375df260224}{artistaTop}}(\textcolor{keywordtype}{string}\ userEmail);}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classSpotifry_a1e996539672bfc8c7cbd585aa7da5668}{generarPlaylists}}(\textcolor{keywordtype}{string}\ userEmail);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classSpotifry_a663e27a3b2636ba2e7c3b19febc81cfd}{generarCanciones}}(\textcolor{keywordtype}{string}\ userEmail);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

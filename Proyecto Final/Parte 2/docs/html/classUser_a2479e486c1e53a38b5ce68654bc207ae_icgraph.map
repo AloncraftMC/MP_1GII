@@ -1,0 +1,14 @@
+<map id="User::getNumPlaylists" name="User::getNumPlaylists">
+<area shape="rect" id="Node000001" title="Obtiene el número de playlists creadas por el usuario." alt="" coords="341,80,508,105"/>
+<area shape="rect" id="Node000002" href="$classSpotifry.html#a1e996539672bfc8c7cbd585aa7da5668" title="Genera un string HTML con la información de las playlists de un usuario dado su email." alt="" coords="108,5,293,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="380,77,292,45,254,33,255,28,294,39,382,72"/>
+<area shape="rect" id="Node000004" href="$classSpotifry.html#a062ee70449582def7fe683bbd4611df8" title="Genera un string HTML con la información de un álbum dado su título." alt="" coords="119,55,283,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="327,84,283,79,283,74,328,79"/>
+<area shape="rect" id="Node000005" href="$user_8h.html#a4beffcafdd2fa80a301f67238176d9ad" title="Sobrecarga del operador de inserción." alt="" coords="151,104,250,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="328,106,251,114,250,109,327,100"/>
+<area shape="rect" id="Node000006" href="$classSpotifry.html#a71986a83aace165403a4156263801b5f" title="Constructor con parámetros." alt="" coords="135,153,266,179"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="379,113,294,143,252,156,250,151,293,138,377,108"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,35,60,42,60,37,102,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="105,56,60,50,61,44,106,51"/>
+</map>

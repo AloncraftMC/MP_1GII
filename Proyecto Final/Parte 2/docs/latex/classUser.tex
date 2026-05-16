@@ -1,0 +1,551 @@
+\doxysection{User Class Reference}
+\hypertarget{classUser}{}\label{classUser}\index{User@{User}}
+
+
+Representa a un usuario.  
+
+
+
+
+{\ttfamily \#include $<$user.\+h$>$}
+
+
+
+Collaboration diagram for User\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classUser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUser_a4a0137053e591fbb79d9057dd7d2283d}{User}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUser_a4c7c69bf8583127bdfcb6c8b09ab8700}{User}} (string name, string email, \mbox{\hyperlink{classDate}{Date}} birthdate, \mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}} gender)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUser_aa93176c0f05349bc8daf0c6074fcb929}{User}} (const \mbox{\hyperlink{classUser}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUser_ac00b72ad64eb4149f7b21b9f5468c2b2}{\texorpdfstring{$\sim$}{\string~}\+User}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_ab9b2b5feb6bdd1582696eb6d44cee384}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del usuario. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_a4c647e583bd964f40f687776a0d185dc}{get\+Email}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el correo electrónico del usuario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDate}{Date}} \mbox{\hyperlink{classUser_ae3795e6f0bd67b7cbeb6419f56530925}{get\+Birthdate}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la fecha de nacimiento del usuario. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_a070cd46011fd85d8c18451fdaf5ced25}{get\+Gender}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el género del usuario como string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUser_a76747aa652a16c919beb7fed821ec083}{get\+Num\+Saved\+Songs}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número de canciones guardadas por el usuario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUser_a2479e486c1e53a38b5ce68654bc207ae}{get\+Num\+Playlists}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número de playlists creadas por el usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_acabf7e5a40909656de5bc631abe5588c}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a9d38dd7a9f5ca79cf17ecf572d42c647}{set\+Email}} (string email)
+\begin{DoxyCompactList}\small\item\em Establece el correo electrónico del usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a30d680a2c75f3b614b379a6e95bf0fbe}{set\+Birthdate}} (\mbox{\hyperlink{classDate}{Date}} birthdate)
+\begin{DoxyCompactList}\small\item\em Establece la fecha de nacimiento del usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a216b9ce9451548602334c7896cd5b583}{set\+Gender}} (\mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}} gender)
+\begin{DoxyCompactList}\small\item\em Establece el género del usuario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUser}{User}} \& \mbox{\hyperlink{classUser_a1882c79e5ec526ef08ac37357234f4f7}{operator=}} (const \mbox{\hyperlink{classUser}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de asignación. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSong}{Song}} \& \mbox{\hyperlink{classUser_ace98315465aedc52c58a6c09988b7bda}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de indexación {\ttfamily \mbox{[}\mbox{]}} para acceder a las canciones guardadas por el usuario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlaylist}{Playlist}} \& \mbox{\hyperlink{classUser_a8afbf5af57e68b8cdcde2a7d85a111be}{operator()}} (int i) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de indexación {\ttfamily ()} para acceder a las playlists creadas por el usuario. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classSong}{Song}} \& \mbox{\hyperlink{classUser_a28a8e4db10c5f6856046b0c0006e9df5}{operator()}} (int i, int j) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de indexación {\ttfamily ()} para acceder a las canciones de una playlist específica. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUser_a2bbb162ebbf3092bab6487a62f32a528}{add\+Song}} (\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}song\+\_\+to\+\_\+add)
+\begin{DoxyCompactList}\small\item\em Añade una canción a las canciones guardadas por el usuario si no está ya guardada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUser_a50bea2ec057b392d4d02f94be3d0c9d4}{add\+Playlist}} (\mbox{\hyperlink{classPlaylist}{Playlist}} \texorpdfstring{$\ast$}{*}playlist\+\_\+to\+\_\+add)
+\begin{DoxyCompactList}\small\item\em Añade una playlist a las playlists creadas por el usuario si no está ya agregada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUser_a102f66365ae463a4281bbf45b71aadcf}{delete\+Song}} (\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}song\+\_\+to\+\_\+delete)
+\begin{DoxyCompactList}\small\item\em Elimina una canción de las canciones guardadas por el usuario si está guardada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUser_a4165beaa3dfb47f36b8e1c94f3e9cf65}{delete\+Playlist}} (\mbox{\hyperlink{classPlaylist}{Playlist}} \texorpdfstring{$\ast$}{*}playlist\+\_\+to\+\_\+delete)
+\begin{DoxyCompactList}\small\item\em Elimina una playlist de las playlists creadas por el usuario si está creada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUser_a1edfce8450e06f0ad43b3fd839647bbd}{create\+Playlist}} (\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}songs, int num\+\_\+songs, string title)
+\begin{DoxyCompactList}\small\item\em Crea una nueva playlist privada con las canciones dadas y la agrega a las playlists creadas por el usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa a un usuario. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classUser_a4a0137053e591fbb79d9057dd7d2283d}\label{classUser_a4a0137053e591fbb79d9057dd7d2283d} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\Hypertarget{classUser_a4c7c69bf8583127bdfcb6c8b09ab8700}\label{classUser_a4c7c69bf8583127bdfcb6c8b09ab8700} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{email,  }\item[{\mbox{\hyperlink{classDate}{Date}}}]{birthdate,  }\item[{\mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}}}]{gender }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Nombre y apellidos del usuario. \\
+\hline
+{\em email} & Correo electrónico del usuario. \\
+\hline
+{\em birthdate} & Fecha de nacimiento del usuario. \\
+\hline
+{\em gender} & Género del usuario. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_aa93176c0f05349bc8daf0c6074fcb929}\label{classUser_aa93176c0f05349bc8daf0c6074fcb929} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUser}{User}} \&}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & El objeto \doxylink{classUser}{User} del cual se copiarán los valores. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_ac00b72ad64eb4149f7b21b9f5468c2b2}\label{classUser_ac00b72ad64eb4149f7b21b9f5468c2b2} 
+\index{User@{User}!````~User@{\texorpdfstring{$\sim$}{\string~}User}}
+\index{````~User@{\texorpdfstring{$\sim$}{\string~}User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}User()}{\string~User()}}
+{\footnotesize\ttfamily User\+::\texorpdfstring{$\sim$}{\string~}\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\begin{DoxyWarning}{Warning}
+Sólo libera la memoria de los arrays de punteros a canciones y playlists, no de las canciones ni playlists en sí, ya que el usuario no es el propietario de esos objetos. 
+\end{DoxyWarning}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUser_a50bea2ec057b392d4d02f94be3d0c9d4}\label{classUser_a50bea2ec057b392d4d02f94be3d0c9d4} 
+\index{User@{User}!addPlaylist@{addPlaylist}}
+\index{addPlaylist@{addPlaylist}!User@{User}}
+\doxysubsubsection{\texorpdfstring{addPlaylist()}{addPlaylist()}}
+{\footnotesize\ttfamily bool User\+::add\+Playlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlaylist}{Playlist}} \texorpdfstring{$\ast$}{*}}]{playlist\+\_\+to\+\_\+add }\end{DoxyParamCaption})}
+
+
+
+Añade una playlist a las playlists creadas por el usuario si no está ya agregada. 
+
+Añade una playlist a las playlists creadas por el usuario si no está ya añadida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist\+\_\+to\+\_\+add} & Puntero a la playlist que se añadirá. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la playlist se añadió exitosamente, false si no se pudo agregar.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em playlist\+\_\+to\+\_\+add} & Puntero a la playlist que se añadirá. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la playlist se añadió exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUser_a50bea2ec057b392d4d02f94be3d0c9d4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_a2bbb162ebbf3092bab6487a62f32a528}\label{classUser_a2bbb162ebbf3092bab6487a62f32a528} 
+\index{User@{User}!addSong@{addSong}}
+\index{addSong@{addSong}!User@{User}}
+\doxysubsubsection{\texorpdfstring{addSong()}{addSong()}}
+{\footnotesize\ttfamily bool User\+::add\+Song (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}}]{song\+\_\+to\+\_\+add }\end{DoxyParamCaption})}
+
+
+
+Añade una canción a las canciones guardadas por el usuario si no está ya guardada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+\_\+to\+\_\+add} & Puntero a la canción que se añadirá. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la canción se añadió exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classUser_a2bbb162ebbf3092bab6487a62f32a528_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_a1edfce8450e06f0ad43b3fd839647bbd}\label{classUser_a1edfce8450e06f0ad43b3fd839647bbd} 
+\index{User@{User}!createPlaylist@{createPlaylist}}
+\index{createPlaylist@{createPlaylist}!User@{User}}
+\doxysubsubsection{\texorpdfstring{createPlaylist()}{createPlaylist()}}
+{\footnotesize\ttfamily bool User\+::create\+Playlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{songs,  }\item[{int}]{num\+\_\+songs,  }\item[{string}]{title }\end{DoxyParamCaption})}
+
+
+
+Crea una nueva playlist privada con las canciones dadas y la agrega a las playlists creadas por el usuario. 
+
+Crea una nueva playlist privada con las canciones dadas y la añade a las playlists creadas por el usuario.
+
+
+\begin{DoxyParams}{Parameters}
+{\em songs} & Array de punteros a las canciones que se agregarán a la nueva playlist. \\
+\hline
+{\em num\+\_\+songs} & El número de canciones en el array {\ttfamily songs}. \\
+\hline
+{\em title} & El título de la nueva playlist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la playlist se creó y agregó exitosamente, false si no se pudo crear o agregar la playlist.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em songs} & Array de punteros a las canciones que se añadirán a la nueva playlist. \\
+\hline
+{\em num\+\_\+songs} & El número de canciones en el array {\ttfamily songs}. \\
+\hline
+{\em title} & El título de la nueva playlist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la playlist se creó y añadió exitosamente, false si no se pudo crear o añadir la playlist. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classUser_a1edfce8450e06f0ad43b3fd839647bbd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUser_a1edfce8450e06f0ad43b3fd839647bbd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_a4165beaa3dfb47f36b8e1c94f3e9cf65}\label{classUser_a4165beaa3dfb47f36b8e1c94f3e9cf65} 
+\index{User@{User}!deletePlaylist@{deletePlaylist}}
+\index{deletePlaylist@{deletePlaylist}!User@{User}}
+\doxysubsubsection{\texorpdfstring{deletePlaylist()}{deletePlaylist()}}
+{\footnotesize\ttfamily bool User\+::delete\+Playlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlaylist}{Playlist}} \texorpdfstring{$\ast$}{*}}]{playlist\+\_\+to\+\_\+delete }\end{DoxyParamCaption})}
+
+
+
+Elimina una playlist de las playlists creadas por el usuario si está creada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist\+\_\+to\+\_\+delete} & Puntero a la playlist que se eliminará. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la playlist se eliminó exitosamente, false si no se pudo eliminar.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em playlist\+\_\+to\+\_\+delete} & Puntero a la playlist que se eliminará. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la playlist se eliminó exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a102f66365ae463a4281bbf45b71aadcf}\label{classUser_a102f66365ae463a4281bbf45b71aadcf} 
+\index{User@{User}!deleteSong@{deleteSong}}
+\index{deleteSong@{deleteSong}!User@{User}}
+\doxysubsubsection{\texorpdfstring{deleteSong()}{deleteSong()}}
+{\footnotesize\ttfamily bool User\+::delete\+Song (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSong}{Song}} \texorpdfstring{$\ast$}{*}}]{song\+\_\+to\+\_\+delete }\end{DoxyParamCaption})}
+
+
+
+Elimina una canción de las canciones guardadas por el usuario si está guardada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+\_\+to\+\_\+delete} & Puntero a la canción que se eliminará. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la canción se eliminó exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classUser_ae3795e6f0bd67b7cbeb6419f56530925}\label{classUser_ae3795e6f0bd67b7cbeb6419f56530925} 
+\index{User@{User}!getBirthdate@{getBirthdate}}
+\index{getBirthdate@{getBirthdate}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getBirthdate()}{getBirthdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDate}{Date}} User\+::get\+Birthdate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la fecha de nacimiento del usuario. 
+
+\begin{DoxyReturn}{Returns}
+La fecha de nacimiento del usuario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classUser_ae3795e6f0bd67b7cbeb6419f56530925_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_a4c647e583bd964f40f687776a0d185dc}\label{classUser_a4c647e583bd964f40f687776a0d185dc} 
+\index{User@{User}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily string User\+::get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el correo electrónico del usuario. 
+
+\begin{DoxyReturn}{Returns}
+El correo electrónico del usuario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classUser_a4c647e583bd964f40f687776a0d185dc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_a070cd46011fd85d8c18451fdaf5ced25}\label{classUser_a070cd46011fd85d8c18451fdaf5ced25} 
+\index{User@{User}!getGender@{getGender}}
+\index{getGender@{getGender}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getGender()}{getGender()}}
+{\footnotesize\ttfamily string User\+::get\+Gender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el género del usuario como string. 
+
+\begin{DoxyReturn}{Returns}
+El género del usuario como string. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classUser_a070cd46011fd85d8c18451fdaf5ced25_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_ab9b2b5feb6bdd1582696eb6d44cee384}\label{classUser_ab9b2b5feb6bdd1582696eb6d44cee384} 
+\index{User@{User}!getName@{getName}}
+\index{getName@{getName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el nombre del usuario. 
+
+\begin{DoxyReturn}{Returns}
+El nombre del usuario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classUser_ab9b2b5feb6bdd1582696eb6d44cee384_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_a2479e486c1e53a38b5ce68654bc207ae}\label{classUser_a2479e486c1e53a38b5ce68654bc207ae} 
+\index{User@{User}!getNumPlaylists@{getNumPlaylists}}
+\index{getNumPlaylists@{getNumPlaylists}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getNumPlaylists()}{getNumPlaylists()}}
+{\footnotesize\ttfamily int User\+::get\+Num\+Playlists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número de playlists creadas por el usuario. 
+
+\begin{DoxyReturn}{Returns}
+El número de playlists creadas por el usuario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUser_a2479e486c1e53a38b5ce68654bc207ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_a76747aa652a16c919beb7fed821ec083}\label{classUser_a76747aa652a16c919beb7fed821ec083} 
+\index{User@{User}!getNumSavedSongs@{getNumSavedSongs}}
+\index{getNumSavedSongs@{getNumSavedSongs}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getNumSavedSongs()}{getNumSavedSongs()}}
+{\footnotesize\ttfamily int User\+::get\+Num\+Saved\+Songs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número de canciones guardadas por el usuario. 
+
+\begin{DoxyReturn}{Returns}
+El número de canciones guardadas por el usuario. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUser_a76747aa652a16c919beb7fed821ec083_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUser_a8afbf5af57e68b8cdcde2a7d85a111be}\label{classUser_a8afbf5af57e68b8cdcde2a7d85a111be} 
+\index{User@{User}!operator()@{operator()}}
+\index{operator()@{operator()}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlaylist}{Playlist}} \& User\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de indexación {\ttfamily ()} para acceder a las playlists creadas por el usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & El índice de la playlist a acceder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia a la playlist en la posición dada del array {\ttfamily playlists}. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a28a8e4db10c5f6856046b0c0006e9df5}\label{classUser_a28a8e4db10c5f6856046b0c0006e9df5} 
+\index{User@{User}!operator()@{operator()}}
+\index{operator()@{operator()}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classSong}{Song}} \& User\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador de indexación {\ttfamily ()} para acceder a las canciones de una playlist específica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & El índice de la playlist a la que pertenece la canción. \\
+\hline
+{\em j} & El índice de la canción dentro de la playlist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia a la canción en la posición dada dentro de la playlist dada. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a1882c79e5ec526ef08ac37357234f4f7}\label{classUser_a1882c79e5ec526ef08ac37357234f4f7} 
+\index{User@{User}!operator=@{operator=}}
+\index{operator=@{operator=}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} \& User\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUser}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & El objeto \doxylink{classUser}{User} que se asignará al implícito. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia al objeto \doxylink{classUser}{User} resultante de la asignación. 
+\end{DoxyReturn}
+\Hypertarget{classUser_ace98315465aedc52c58a6c09988b7bda}\label{classUser_ace98315465aedc52c58a6c09988b7bda} 
+\index{User@{User}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSong}{Song}} \& User\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador de indexación {\ttfamily \mbox{[}\mbox{]}} para acceder a las canciones guardadas por el usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & El índice de la canción a acceder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia a la canción en la posición dada del array {\ttfamily saved\+\_\+songs}. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a30d680a2c75f3b614b379a6e95bf0fbe}\label{classUser_a30d680a2c75f3b614b379a6e95bf0fbe} 
+\index{User@{User}!setBirthdate@{setBirthdate}}
+\index{setBirthdate@{setBirthdate}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setBirthdate()}{setBirthdate()}}
+{\footnotesize\ttfamily void User\+::set\+Birthdate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDate}{Date}}}]{birthdate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la fecha de nacimiento del usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em birthdate} & La fecha de nacimiento del usuario. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_a9d38dd7a9f5ca79cf17ecf572d42c647}\label{classUser_a9d38dd7a9f5ca79cf17ecf572d42c647} 
+\index{User@{User}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily void User\+::set\+Email (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el correo electrónico del usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & El correo electrónico del usuario. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_a216b9ce9451548602334c7896cd5b583}\label{classUser_a216b9ce9451548602334c7896cd5b583} 
+\index{User@{User}!setGender@{setGender}}
+\index{setGender@{setGender}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setGender()}{setGender()}}
+{\footnotesize\ttfamily void User\+::set\+Gender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{user_8h_a3667e3c5ec056737c8789615a989324f}{Gender}}}]{gender }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el género del usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gender} & El género del usuario. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_acabf7e5a40909656de5bc631abe5588c}\label{classUser_acabf7e5a40909656de5bc631abe5588c} 
+\index{User@{User}!setName@{setName}}
+\index{setName@{setName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void User\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el nombre del usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & El nombre del usuario. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{user_8h}{user.\+h}}\item 
+src/\mbox{\hyperlink{user_8cpp}{user.\+cpp}}\end{DoxyCompactItemize}
