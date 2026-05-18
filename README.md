@@ -128,6 +128,6 @@ PDF: [Guión Práctica 5](PDFs/Practica5MP_2526.pdf)
 - [`usuario_alice.html`](Proyecto%20Final/Parte%202/data/usuario_alice.html)
 
 ##### Documentación (Doxygen):
-- HTML: [`index.html`](Proyecto%20Final/Parte%202/docs/html/index.html)
-- LaTeX/PDF: [`refman.pdf`](Proyecto%20Final/Parte%202/docs/latex/refman.pdf)
+- HTML: [`index.html`](https://aloncraftmc.github.io/MP_1GII/Proyecto%20Final/Parte%202/docs/html/index.html)
+- LaTeX/PDF: [`refman.pdf`](https://aloncraftmc.github.io/MP_1GII/Proyecto%20Final/Parte%202/docs/latex/refman.pdf)
 
